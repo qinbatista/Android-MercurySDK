@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/xsolla_base_4"
+    android:paddingBottom="@dimen/xsolla_base_4"
+    android:baselineAligned="false">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/xsolla_base_8"
+        android:layout_marginStart="@dimen/xsolla_base_8"
+        android:layout_gravity="center"
+        android:background="@color/material_grey_600"
+        android:padding="1dp">
+
+            <ImageView
+                android:layout_width="@dimen/xsolla_base_32"
+                android:layout_height="@dimen/xsolla_base_32"
+                android:contentDescription="summary_item_image"
+                android:background="@color/xsolla_white"
+                android:padding="1dp"
+                android:id="@+id/xsolla_iv"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/xsolla_base_8"
+        android:layout_marginStart="@dimen/xsolla_base_8"
+        android:layout_weight="3"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity=""
+            android:textColor="@color/xsolla_black"
+            android:textSize="@dimen/xsolla_textMedium"
+            android:text="Сhicken Leg"
+            android:id="@+id/xsolla_tv_title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="It is the cooked version of Raw Chicken Leg which is gutted from chicken."
+            android:ellipsize="marquee"
+            android:id="@+id/xsolla_tv_description" />
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/xsolla_green"
+            android:textSize="@dimen/xsolla_textSmall"
+            android:text=" Bonus"
+            android:id="@+id/xsolla_tv_bonus"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/xsolla_base_8">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/xsolla_black"
+            android:textSize="@dimen/xsolla_textMedium"
+            android:text="$19.99"
+            android:id="@+id/xsolla_tv_price"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+</LinearLayout>

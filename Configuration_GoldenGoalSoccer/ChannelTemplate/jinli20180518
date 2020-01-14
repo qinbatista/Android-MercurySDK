@@ -1,0 +1,137 @@
+{
+	"APPID": "383DAED0D2CF4123A1F88C5E9953D8C4",
+	"APPKEY": "MIICdQIBADANBgkqhkiG9w0BAQEFAASCAl8wggJbAgEAAoGBALt+FsC9EYlAsSGrEv34bu0ryl03maF8ZN9Gb57DxIEkFlDHt6AEtzyNJr8L4K8g+1cKVRdm/OtK8zUc/pDQChGTnH8jU+y99wBUOZriu/UnbH6v9HReF1TBKybQr0LPhrbVwxrnnNkhc8c3Fk/26sW1aA3JgDqHHXgHNWwRiO6HAgMBAAECgYAPKOPIE8F+OofX9BAmDtdRP/At11gJsZgqYXSW/rc9xeA0CeH0A02ZjMQsQFabcmxAHmrA6KfckoPVsJF4vgmCPJmIPGomDRS3e9dtbqa2RJQj294dFXsSHpiGCxMM8bXiYTPuawODzVxuph08FVs4VbaTVBFXwyznNOuXsa0PqQJBAPiuL++Dwn+VNZWv8zWl6L5sCInaezOXU8NI6vlOAhTxy1xANWXJNat5wOgBDvrmgvF2P46iHsDPY7hyypXwY1MCQQDBAtl4luTbpUFSIdJIWcjPHI6wwV+Ofw6VTsH42tnKJWnmfGSRVnk+NuVh+m6DXpGpFoUatVebX2eOWOWKPvV9AkB96MPAg3fQ3R06YtHDUfNbpptUINjMMExqzdqay5JmRF5woNnoZU3VOlofnZmWE2wtEW/wqcjkWpzk4MoNzJ6dAkAwCj2GvkgIQ4GWp8RnLbHFmx4I8JiQJx/CGfA9uHsszVMmgx+k7RkQWymM0YBgQlGO/IP0ud4sVfq4e3fmiPUhAkBUUhReWaPQjBCT95yZQbKNtDlq2jhvGc72CrwSKwMr3iptBezuexuQxDYjFNzhACuSxRp393ZslTc+vKGSASZd",
+	"ADChannel":"",
+	"SDKPay":"0,1",
+	"production1":
+	{
+		"ydpid":"001",
+		"ltpid":"001",
+		"dxpid":"001",
+		"channelpid":"a02",
+		"pricefloat":"6.00",
+		"desc":"2500金币"
+	},
+	"production2":
+	{
+		"ydpid":"002",
+		"ltpid":"002",
+		"dxpid":"002",
+		"channelpid":"a02",		
+		"pricefloat":"18.00",
+		"desc":"8000金币"						
+	},
+	"production3":
+	{
+		"ydpid":"003",
+		"ltpid":"003",
+		"dxpid":"003",
+		"channelpid":"a02",		
+		"pricefloat":"30.00",
+		"desc":"15000金币"						
+	},
+	"production4":
+	{
+		"ydpid":"004",
+		"ltpid":"004",
+		"dxpid":"004",
+		"channelpid":"a02",		
+		"pricefloat":"68.00",
+		"desc":"40000金币"						
+	},
+	"production5":
+	{
+		"ydpid":"005",
+		"ltpid":"005",
+		"dxpid":"005",
+		"channelpid":"a02",		
+		"pricefloat":"98.00",
+		"desc":"110000金币"						
+	},
+	"production6":
+	{
+		"ydpid":"006",
+		"ltpid":"006",
+		"dxpid":"006",
+		"channelpid":"a02",		
+		"pricefloat":"6.00",
+		"desc":"解锁后续关卡"						
+	},
+	"production7":
+	{
+		"ydpid":"007",
+		"ltpid":"007",
+		"dxpid":"007",
+		"channelpid":"a02",		
+		"pricefloat":"6.00",
+		"desc":"解锁关卡-2"						
+	},
+	"production8":
+	{
+		"ydpid":"008",
+		"ltpid":"008",
+		"dxpid":"008",
+		"channelpid":"a02",		
+		"pricefloat":"6.00",
+		"desc":"解锁关卡-3"						
+	},
+	"production9":
+	{
+		"ydpid":"009",
+		"ltpid":"009",
+		"dxpid":"009",
+		"channelpid":"a02",		
+		"pricefloat":"6.00",
+		"desc":"解锁关卡-4"						
+	},
+	"production10":
+	{
+		"ydpid":"010",
+		"ltpid":"010",
+		"dxpid":"010",
+		"channelpid":"a02",		
+		"pricefloat":"6.00",
+		"desc":"解锁关卡-5"						
+	},
+	"production11":
+	{
+		"ydpid":"011",
+		"ltpid":"011",
+		"dxpid":"011",
+		"channelpid":"a02",		
+		"pricefloat":"6.00",
+		"desc":"解锁关卡-6"						
+	},
+	"production12": {
+		"ydpid": "001",
+		"ltpid": "001",
+		"dxpid": "001",
+		"channelpid": "a02",
+		"pricefloat": "45.00",
+		"desc": "铁甲马克 "
+	},
+	"production13": {
+		"ydpid": "001",
+		"ltpid": "001",
+		"dxpid": "001",
+		"channelpid": "a02",
+		"pricefloat": "18.00",
+		"desc": "解锁游戏"
+	},
+	"production14": {
+		"ydpid": "001",
+		"ltpid": "001",
+		"dxpid": "001",
+		"channelpid": "a02",
+		"pricefloat": "18.00",
+		"desc": "桂英"
+	},
+	"production15": {
+		"ydpid": "001",
+		"ltpid": "001",
+		"dxpid": "001",
+		"channelpid": "a02",
+		"pricefloat": "30.00",
+		"desc": "自由猎人"
+	}
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/xsolla_base_8">
+
+    <TextView
+        android:text="@string/xsolla_your_payment_accounts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/xsolla_base_8"
+        android:layout_marginStart="@dimen/xsolla_base_8"
+        android:textColor="@color/xsolla_text_accent"
+        android:textSize="@dimen/xsolla_textLarge"
+        android:id="@+id/tvTitle" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="LinearLayoutManager"
+        tools:listitem="@layout/xsolla_elem_saved_method"
+        tools:context=".view.XsollaActivity"
+        android:id="@+id/recyclerView"/>
+
+
+    <TextView
+        android:text="@string/xsolla_choose_another_payment_method"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/xsolla_base_16"
+        android:textColor="@color/xsolla_purple_m"
+        android:textSize="@dimen/xsolla_textMedium"
+        android:id="@+id/tvChoseAnother" />
+
+</LinearLayout>

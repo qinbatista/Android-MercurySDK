@@ -1,0 +1,126 @@
+{
+	"APPID": "383DAED0D2CF4123A1F88C5E9953D8C4",
+	"APPKEY": "MIICdQIBADANBgkqhkiG9w0BAQEFAASCAl8wggJbAgEAAoGBALt+FsC9EYlAsSGrEv34bu0ryl03maF8ZN9Gb57DxIEkFlDHt6AEtzyNJr8L4K8g+1cKVRdm/OtK8zUc/pDQChGTnH8jU+y99wBUOZriu/UnbH6v9HReF1TBKybQr0LPhrbVwxrnnNkhc8c3Fk/26sW1aA3JgDqHHXgHNWwRiO6HAgMBAAECgYAPKOPIE8F+OofX9BAmDtdRP/At11gJsZgqYXSW/rc9xeA0CeH0A02ZjMQsQFabcmxAHmrA6KfckoPVsJF4vgmCPJmIPGomDRS3e9dtbqa2RJQj294dFXsSHpiGCxMM8bXiYTPuawODzVxuph08FVs4VbaTVBFXwyznNOuXsa0PqQJBAPiuL++Dwn+VNZWv8zWl6L5sCInaezOXU8NI6vlOAhTxy1xANWXJNat5wOgBDvrmgvF2P46iHsDPY7hyypXwY1MCQQDBAtl4luTbpUFSIdJIWcjPHI6wwV+Ofw6VTsH42tnKJWnmfGSRVnk+NuVh+m6DXpGpFoUatVebX2eOWOWKPvV9AkB96MPAg3fQ3R06YtHDUfNbpptUINjMMExqzdqay5JmRF5woNnoZU3VOlofnZmWE2wtEW/wqcjkWpzk4MoNzJ6dAkAwCj2GvkgIQ4GWp8RnLbHFmx4I8JiQJx/CGfA9uHsszVMmgx+k7RkQWymM0YBgQlGO/IP0ud4sVfq4e3fmiPUhAkBUUhReWaPQjBCT95yZQbKNtDlq2jhvGc72CrwSKwMr3iptBezuexuQxDYjFNzhACuSxRp393ZslTc+vKGSASZd",
+	"ADChannel": "",
+	"SDKPay": "0,1",
+	"production1": {
+		"ydpid": "001",
+		"ltpid": "001",
+		"dxpid": "001",
+		"channelpid": "a02",
+		"pricefloat": "18.00",
+		"desc": "1200点券"
+	},
+	"production2": {
+		"ydpid": "001",
+		"ltpid": "001",
+		"dxpid": "001",
+		"channelpid": "a02",
+		"pricefloat": "30.00",
+		"desc": "2200点券"
+	},
+	"production3": {
+		"ydpid": "001",
+		"ltpid": "001",
+		"dxpid": "001",
+		"channelpid": "a02",
+		"pricefloat": "68.00",
+		"desc": "5000点券"
+	},
+	"production4": {
+		"ydpid": "001",
+		"ltpid": "001",
+		"dxpid": "001",
+		"channelpid": "a02",
+		"pricefloat": "128.00",
+		"desc": "11000点券"
+	},
+	"production5": {
+		"ydpid": "001",
+		"ltpid": "001",
+		"dxpid": "001",
+		"channelpid": "a02",
+		"pricefloat": "328.00",
+		"desc": "30000点券"
+	},
+	"production6": {
+		"ydpid": "001",
+		"ltpid": "001",
+		"dxpid": "001",
+		"channelpid": "a02",
+		"pricefloat": "648.00",
+		"desc": "70000点券"
+	},
+	"production7": {
+		"ydpid": "001",
+		"ltpid": "001",
+		"dxpid": "001",
+		"channelpid": "a02",
+		"pricefloat": "18.00",
+		"desc": "命运女侠"
+	},
+	"production8": {
+		"ydpid": "001",
+		"ltpid": "001",
+		"dxpid": "001",
+		"channelpid": "a02",
+		"pricefloat": "18.00",
+		"desc": "风刃"
+	},
+	"production9": {
+		"ydpid": "001",
+		"ltpid": "001",
+		"dxpid": "001",
+		"channelpid": "a02",
+		"pricefloat": "18.00",
+		"desc": "虚空猎手"
+	},
+	"production10": {
+		"ydpid": "001",
+		"ltpid": "001",
+		"dxpid": "001",
+		"channelpid": "a02",
+		"pricefloat": "30.00",
+		"desc": "超能博士"
+	},
+	"production11": {
+		"ydpid": "001",
+		"ltpid": "001",
+		"dxpid": "001",
+		"channelpid": "a02",
+		"pricefloat": "30.00",
+		"desc": "达尔文"
+	},
+	"production12": {
+		"ydpid": "001",
+		"ltpid": "001",
+		"dxpid": "001",
+		"channelpid": "a02",
+		"pricefloat": "45.00",
+		"desc": "铁甲马克 "
+	},
+	"production13": {
+		"ydpid": "001",
+		"ltpid": "001",
+		"dxpid": "001",
+		"channelpid": "a02",
+		"pricefloat": "18.00",
+		"desc": "解锁游戏"
+	},
+	"production14": {
+		"ydpid": "001",
+		"ltpid": "001",
+		"dxpid": "001",
+		"channelpid": "a02",
+		"pricefloat": "18.00",
+		"desc": "桂英"
+	},
+	"production15": {
+		"ydpid": "001",
+		"ltpid": "001",
+		"dxpid": "001",
+		"channelpid": "a02",
+		"pricefloat": "30.00",
+		"desc": "自由猎人"
+	}
+}

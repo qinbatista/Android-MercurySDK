@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="com.east2west.thehouseofdavinci" platformBuildVersionCode="27" platformBuildVersionName="8.1.0">
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <application android:banner="@drawable/app_banner" android:debuggable="false" android:icon="@drawable/app_icon" android:isGame="true" android:label="@string/app_name" android:name="com.east2west.unitygame.GameSdkApplication" android:theme="@style/UnityThemeSelector">
+        <activity android:configChanges="locale|fontScale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.east2west.unitygame.MainActivity" android:screenOrientation="sensorLandscape">
+				<!--main-->   
+			<intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
+            </intent-filter>
+			<!--end-->	
+            <meta-data android:name="unityplayer.UnityActivity" android:value="true"/>
+            <meta-data android:name="unityplayer.ForwardNativeEventsToDalvik" android:value="true"/>
+        </activity>
+		<meta-data android:name="CHANNEL_NAME" android:value=""  />
+		<meta-data android:name="CHANNEL_SHOW" android:value=""  />
+        <meta-data android:name="CN_CHANNEL" android:value="13" />
+		<meta-data android:name="MOBILE_SPLASH" android:value="" />
+		<meta-data android:name="E2W_LOG" android:value="open" />
+		<meta-data android:name="E2W_NUMBER" android:value="east2west1" />
+		<meta-data android:name="E2W_EXCHANGE" android:value=""/>
+		<!--sdk-->  
+		<!--end-->	
+    </application>
+	<!-- allchannelstart -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-feature android:glEsVersion="0x00020000"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen.multitouch" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen.multitouch.distinct" android:required="false"/>
+	<!-- allchannelstartend -->
+	<!--sdkxml-->
+	<!--end-->
+</manifest>

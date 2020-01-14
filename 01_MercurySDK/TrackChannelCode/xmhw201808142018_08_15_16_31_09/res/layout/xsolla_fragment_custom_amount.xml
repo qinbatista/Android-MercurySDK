@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xsolla.android.sdk.view.fragment.CustomAmountFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/xsolla_base_16"
+        android:padding="@dimen/xsolla_base_16"
+        android:background="@color/xsolla_form_bg">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                style="@style/xsolla_BaseInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:id="@+id/edVirtualCurrencyAmount"/>
+
+            <ImageView
+                android:layout_width="@dimen/xsolla_base_24"
+                android:layout_height="@dimen/xsolla_base_24"
+                android:layout_marginRight="@dimen/xsolla_base_8"
+                android:layout_marginEnd="@dimen/xsolla_base_8"
+                android:layout_gravity="center_vertical|end"
+                android:contentDescription="@null"
+                android:id="@+id/ivCoins"/>
+
+        </FrameLayout>
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/xsolla_text_accent"
+            android:text="@string/xsolla_gold_holder"
+            android:id="@+id/tvVCName"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/xsolla_base_16"
+            android:layout_marginBottom="@dimen/xsolla_base_16"
+            android:background="@color/xsolla_divider_light"/>
+
+
+        <TextView
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/xsolla_gold_holder"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                style="@style/xsolla_BaseInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:id="@+id/edCurrencyAmount"/>
+
+            <!--android:focusable="false"-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/xsolla_base_1"
+                android:background="@drawable/xsolla_form_rounder_right_bg"
+                android:layout_gravity="end"
+                android:gravity="center"
+                android:paddingLeft="@dimen/xsolla_base_16"
+                android:paddingStart="@dimen/xsolla_base_16"
+                android:paddingRight="@dimen/xsolla_base_16"
+                android:paddingEnd="@dimen/xsolla_base_16"
+                android:textAllCaps="true"
+                android:text="USD"
+                android:textColor="@color/xsolla_text_accent"
+                android:textSize="@dimen/xsolla_textMedium"
+                android:id="@+id/tvCurrencyName"/>
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxWidth="@dimen/xsolla_max_width"
+        android:gravity="center">
+
+        <com.xsolla.android.sdk.view.widget.IconTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="-5dp"
+            android:layout_marginRight="-5dp"
+            android:includeFontPadding="false"
+            android:textColor="@color/xsolla_correct"
+            android:text="@string/xsolla_ic_total"
+            android:textSize="@dimen/xsolla_ic_other"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/xsolla_base_8"
+            android:textColor="@color/xsolla_correct"
+            android:textSize="@dimen/xsolla_textMedium"
+            android:text="Total $0.00"
+            android:id="@+id/tvTotal"/>
+    </LinearLayout>
+
+    <Button
+        style="@style/xsolla_ButtonPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/xsolla_base_16"
+        android:text="@string/xsolla_continue"
+        android:id="@+id/btnNext"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Price Packages"
+        android:textColor="@color/xsolla_purple_m"
+        android:gravity="center"
+        android:padding="@dimen/xsolla_base_8"
+        android:id="@+id/tvChange"/>
+
+</LinearLayout>

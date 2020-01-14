@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="mobile_max_length">11</integer>
+    <integer name="password_max_length">20</integer>
+    <integer name="reset_password_min_length">6</integer>
+    <integer name="reset_password_max_length">20</integer>
+</resources>

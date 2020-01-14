@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="vivo_game_appointment_dialog_content_view_bottom">11dp</dimen>
+    <dimen name="vivo_game_common_dialog_btn_textsize">16dp</dimen>
+    <dimen name="vivo_game_common_dialog_content_margin_bottom">11dip</dimen>
+    <dimen name="vivo_game_common_dialog_content_view_lineSpacing">5dp</dimen>
+    <dimen name="vivo_game_common_dialog_padding_left">13dip</dimen>
+    <dimen name="vivo_game_common_dialog_picture_title_view_paddingBottom">22dp</dimen>
+    <dimen name="vivo_game_common_dialog_three_bottom_width">90dip</dimen>
+    <dimen name="vivo_game_common_dialog_title_close_right">8dp</dimen>
+    <dimen name="vivo_game_common_dialog_title_close_top">8dp</dimen>
+    <dimen name="vivo_game_common_dialog_title_view_paddingBottom">20dp</dimen>
+    <dimen name="vivo_game_common_dialog_title_view_paddingTop">24dp</dimen>
+    <dimen name="vivo_game_common_dialog_width">285dip</dimen>
+    <dimen name="vivo_game_dialog_btn_margin_bottom">16dp</dimen>
+    <dimen name="vivo_game_dialog_btn_margin_left">13dp</dimen>
+    <dimen name="vivo_game_dialog_button_height">32dp</dimen>
+    <dimen name="vivo_game_dialog_button_width_one">216dp</dimen>
+    <dimen name="vivo_game_dialog_button_width_two">117dp</dimen>
+    <dimen name="vivo_game_dialog_content_padding_left">13dp</dimen>
+    <dimen name="vivo_game_dialog_picture_content_bottom">9dp</dimen>
+    <dimen name="vivo_game_dialog_picture_top">15dp</dimen>
+    <dimen name="vivo_game_picture_dialog_btn_margin_bottom">14dp</dimen>
+    <string name="vivo_game_app_name">authentication</string>
+    <string name="vivo_game_common_dialog_bug_game">您需要登录最新版vivo游戏中心购买本游戏</string>
+    <string name="vivo_game_common_dialog_button_bug">立即购买</string>
+    <string name="vivo_game_common_dialog_button_download">立即下载vivo游戏中心</string>
+    <string name="vivo_game_common_dialog_button_exchange_method">了解如何切换帐号</string>
+    <string name="vivo_game_common_dialog_download_exchange_account">您登录游戏的帐号与当前vivo游戏中心登录的帐号不一致。请保持两个帐号一致，才能正常进入游戏。</string>
+    <string name="vivo_game_common_dialog_download_new_version">您需要登录最新版vivo游戏中心购买本游戏。当前游戏中心版本过低，请先下载最新版本。</string>
+    <string name="vivo_game_common_dialog_title">温馨提示</string>
+    <style name="vivo_game_common_dialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+</resources>

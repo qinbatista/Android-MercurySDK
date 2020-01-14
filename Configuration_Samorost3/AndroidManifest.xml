@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="air.air.amanita_design.samorost3.E2W" platformBuildVersionCode="24" platformBuildVersionName="7.0" android:versionName="1.4.4.457" android:versionCode="1004457">
+  <application android:hardwareAccelerated="false" android:icon="@drawable/app_icon" android:label="@string/app_name" android:name="com.amanitadesign.ane.ApplicationForGame">
+
+    <activity android:configChanges="fontScale|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:label="@string/app_name" android:launchMode="singleTask"  android:name="air.air.amanita_design.samorost3.E2W.east2west.AppEntry" android:screenOrientation="landscape" android:theme="@style/Theme.NoShadow" android:windowSoftInputMode="adjustResize|stateHidden">
+      
+      <meta-data android:name="embeddedFonts" android:value="false" />
+      <meta-data android:name="namespaceVersion" android:value="24.0" />
+      <!--main-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <action android:name="android.intent.action.MAIN"/>
+            <category android:name="android.intent.category.LAUNCHER"/>
+	  <!--end-->
+      <meta-data android:name="aspectRatio" android:value="landscape" />
+      <meta-data android:name="autoOrients" android:value="true" />
+      <meta-data android:name="fullScreen" android:value="false" />
+      <meta-data android:name="uniqueappversionid" android:value="b862337b-c25a-41e4-aa69-f0afa87142fc" />
+      <meta-data android:name="initialcontent" android:value="Data/Main.swf" />
+      <meta-data android:name="containsVideo" android:value="false" />
+      <meta-data android:name="webContentsDebuggingEnabled" android:value="false" />
+    </activity>
+	
+	<meta-data android:name="CHANNEL_NAME" android:value="east2west" />
+    <meta-data android:name="MOBILE_SPLASH" android:value="close" />
+	<meta-data android:name="E2W_NUMBER" android:value="east2west1"/>
+    <meta-data android:name="UMENG_APPKEY" android:value="584e28b607fe6577a3000d5b" />
+    <meta-data android:name="UMENG_CHANNEL" android:value="east2west" />
+	<meta-data android:name="E2W_LOG" android:value="open" />
+	<meta-data android:name="E2W_EXCHANGE" android:value="open"/>
+<!--sdk-->  
+<!--end-->
+
+	
+  </application>
+  <supports-screens android:largeScreens="true" android:normalScreens="true" android:smallScreens="false" android:xlargeScreens="true" />
+  <compatible-screens>
+    <screen android:screenDensity="xhdpi" android:screenSize="normal" />
+    <screen android:screenDensity="213" android:screenSize="normal" />
+    <screen android:screenDensity="360" android:screenSize="normal" />
+    <screen android:screenDensity="420" android:screenSize="normal" />
+    <screen android:screenDensity="xxhdpi" android:screenSize="normal" />
+    <screen android:screenDensity="560" android:screenSize="normal" />
+    <screen android:screenDensity="xxxhdpi" android:screenSize="normal" />
+    <screen android:screenDensity="ldpi" android:screenSize="large" />
+    <screen android:screenDensity="mdpi" android:screenSize="large" />
+    <screen android:screenDensity="hdpi" android:screenSize="large" />
+    <screen android:screenDensity="xhdpi" android:screenSize="large" />
+    <screen android:screenDensity="213" android:screenSize="large" />
+    <screen android:screenDensity="280" android:screenSize="large" />
+    <screen android:screenDensity="360" android:screenSize="large" />
+    <screen android:screenDensity="420" android:screenSize="large" />
+    <screen android:screenDensity="xxhdpi" android:screenSize="large" />
+    <screen android:screenDensity="560" android:screenSize="large" />
+    <screen android:screenDensity="xxxhdpi" android:screenSize="large" />
+    <screen android:screenDensity="ldpi" android:screenSize="xlarge" />
+    <screen android:screenDensity="mdpi" android:screenSize="xlarge" />
+    <screen android:screenDensity="hdpi" android:screenSize="xlarge" />
+    <screen android:screenDensity="xhdpi" android:screenSize="xlarge" />
+    <screen android:screenDensity="213" android:screenSize="xlarge" />
+    <screen android:screenDensity="280" android:screenSize="xlarge" />
+    <screen android:screenDensity="360" android:screenSize="xlarge" />
+    <screen android:screenDensity="420" android:screenSize="xlarge" />
+    <screen android:screenDensity="xxhdpi" android:screenSize="xlarge" />
+    <screen android:screenDensity="560" android:screenSize="xlarge" />
+    <screen android:screenDensity="xxxhdpi" android:screenSize="xlarge" />
+  </compatible-screens>
+<!-- allchannelstart -->
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <meta-data android:name="android.support.VERSION" android:value="26.0.0-alpha1" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+  <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+  <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+  <uses-permission android:name="android.permission.GET_TASKS" />
+  <uses-permission android:name="android.permission.SEND_SMS" />
+  <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+  <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+  <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+  <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+  <!-- allchannelstartend -->
+
+
+<!--sdkxml-->
+<!--end-->
+  <uses-feature android:name="android.hardware.touchscreen.multitouch" android:required="true" />
+</manifest>

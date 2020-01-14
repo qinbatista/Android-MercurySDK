@@ -1,0 +1,204 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.VPSummaryFragment">
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/xsolla_base_16"
+        android:layout_marginTop="@dimen/xsolla_base_16"
+        android:layout_marginRight="@dimen/xsolla_base_16"
+        android:background="@color/xsolla_error"
+        android:padding="@dimen/xsolla_base_8"
+        android:id="@+id/llError"
+        android:gravity="center">
+
+        <com.xsolla.android.sdk.view.widget.IconTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:textColor="@color/xsolla_white"
+            android:text="@string/xsolla_ic_info"
+            android:textSize="@dimen/xsolla_ic_other"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/xsolla_base_16"
+            android:text="ERROR"
+            android:textColor="@color/xsolla_white"
+            android:textSize="@dimen/xsolla_textMedium"
+            android:id="@+id/tvError"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/xsolla_base_16"
+        android:background="@drawable/xsolla_bg_rounded_gray">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/xsolla_textMedium"
+            android:text="Order Summary"
+            android:id="@+id/xsolla_tv_orderSummary"
+            android:layout_marginLeft="@dimen/xsolla_base_8"
+            android:layout_marginTop="@dimen/xsolla_base_8"
+            android:layout_marginRight="@dimen/xsolla_base_8"
+            android:layout_marginBottom="@dimen/xsolla_base_8" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/xsolla_grey_300"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/xsolla_base_8"
+            android:paddingTop="@dimen/xsolla_base_4"
+            android:paddingBottom="@dimen/xsolla_base_4"
+            android:baselineAligned="false">
+
+            <View
+                android:layout_width="@dimen/xsolla_base_8"
+                android:layout_height="1dp"/>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/xsolla_grey_600"
+                android:padding="1dp">
+
+                <ImageView
+                    android:layout_width="@dimen/xsolla_base_32"
+                    android:layout_height="@dimen/xsolla_base_32"
+                    android:contentDescription="summary_item_image"
+                    android:background="@color/xsolla_white"
+                    android:padding="1dp"
+                    android:id="@+id/xsolla_iv"/>
+            </FrameLayout>
+
+            <View
+                android:layout_width="@dimen/xsolla_base_8"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity=""
+                    android:textColor="@color/xsolla_black"
+                    android:textSize="@dimen/xsolla_textMedium"
+                    android:text="Сhicken Leg"
+                    android:id="@+id/xsolla_tv_title" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="It is the cooked version of Raw Chicken Leg which is gutted from chicken."
+                    android:ellipsize="marquee"
+                    android:id="@+id/xsolla_tv_description" />
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/xsolla_green"
+                    android:textSize="@dimen/xsolla_textSmall"
+                    android:text=" Bonus"
+                    android:id="@+id/xsolla_tv_bonus"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/xsolla_grey_300"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/xsolla_base_8"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/xsolla_textMedium"
+                android:textColor="@color/xsolla_green"
+                android:text="Total"
+                android:id="@+id/xsolla_tv_total"
+                android:gravity="center_vertical|start"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/xsolla_textMedium"
+                android:textColor="@color/xsolla_green"
+                android:text="100"
+                android:id="@+id/xsolla_tv_total_value"
+                android:gravity="center_vertical|end" />
+
+            <ImageView
+                android:layout_width="@dimen/xsolla_base_16"
+                android:layout_height="@dimen/xsolla_base_16"
+                android:layout_margin="@dimen/xsolla_base_4"
+                android:scaleType="centerCrop"
+                android:contentDescription="@null"
+                android:id="@+id/xsolla_vc_image"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/xsolla_base_16"
+        android:layout_marginRight="@dimen/xsolla_base_16"
+        android:layout_marginBottom="@dimen/xsolla_base_16"
+        android:background="@drawable/xsolla_bg_rounded_gray"
+        android:padding="@dimen/xsolla_base_8"
+        android:textColor="@color/xsolla_text_accent"
+        android:text="Disable confitmation screen \nfor future item purchases"
+        android:id="@+id/xsolla_checkBox" />
+
+    <Button
+        style="@style/xsolla_ButtonPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxWidth="@dimen/xsolla_max_width"
+        android:layout_marginRight="@dimen/xsolla_base_16"
+        android:layout_marginBottom="@dimen/xsolla_base_16"
+        android:layout_marginLeft="@dimen/xsolla_base_16"
+        android:text="Buy item"
+        android:id="@+id/xsolla_button"/>
+
+
+</LinearLayout>

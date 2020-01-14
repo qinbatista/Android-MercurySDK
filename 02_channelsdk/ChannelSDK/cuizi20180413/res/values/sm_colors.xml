@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="sm_color_primary">#3F51B5</color>
+    <color name="sm_color_primary_dark">#303F9F</color>
+    <color name="sm_color_accent">#FF4081</color>
+
+    <color name="sm_text_color_title">#cc000000</color>
+    <color name="sm_text_color_info">#4c000000</color>
+</resources>

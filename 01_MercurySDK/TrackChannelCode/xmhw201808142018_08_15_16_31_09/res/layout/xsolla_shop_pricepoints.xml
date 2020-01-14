@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/xsolla_grey_300"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false">
+
+        <View
+            android:layout_width="@dimen/xsolla_base_8"
+            android:layout_height="1dp"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/xsolla_base_8"
+            android:paddingBottom="@dimen/xsolla_base_8">
+
+            <RelativeLayout
+                android:layout_width="@dimen/xsolla_base_64"
+                android:layout_height="@dimen/xsolla_base_64"
+                android:background="@color/xsolla_black"
+                android:padding="1dp"
+                android:id="@+id/xsolla_offer_label_border">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/xsolla_white"
+                    android:id="@+id/xsolla_iv"
+                    android:padding="@dimen/xsolla_base_4"
+                    android:contentDescription="item img" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/xsolla_black"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="@dimen/xsolla_textSmall"
+                    android:textColor="@color/xsolla_white"
+                    android:text="ADVICE"
+                    android:gravity="center"
+                    android:id="@+id/xsolla_tv_offer_label"/>
+            </RelativeLayout>
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="@dimen/xsolla_base_8"
+            android:layout_height="1dp"/>
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="80dp"
+            android:paddingLeft="@dimen/xsolla_base_8"
+            android:paddingTop="@dimen/xsolla_base_8"
+            android:paddingRight="@dimen/xsolla_base_8"
+            android:paddingBottom="@dimen/xsolla_base_8">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/xsolla_textMedium"
+                android:text="Chicken Leg"
+                android:id="@+id/xsolla_tv_title"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/xsolla_tv_title"
+                android:textSize="@dimen/xsolla_textSmall"
+                android:maxLines="2"
+                android:text="It is the cooked version of Raw Chicken Leg which is..."
+                android:id="@+id/xsolla_tv_description"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/xsolla_tv_description"
+                android:textColor="@color/xsolla_purple_m"
+                android:textSize="@dimen/xsolla_textSmall"
+                android:text="Learn More"
+                android:id="@+id/xsolla_tv_learn_more"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/xsolla_tv_learn_more"
+                android:textColor="@color/xsolla_green"
+                android:textSize="@dimen/xsolla_textSmall"
+                android:text=" + Rabbit"
+                android:id="@+id/xsolla_tv_bonus"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/xsolla_button_purple"
+            android:gravity="center"
+            android:paddingLeft="@dimen/xsolla_base_8"
+            android:paddingRight="@dimen/xsolla_base_8">
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/xsolla_textSmall"
+                android:text="$2000"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/xsolla_purple_l"
+                android:id="@+id/xsolla_tv_price_old"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/xsolla_textLarge"
+                    android:text="$199.99"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/xsolla_white"
+                    android:id="@+id/xsolla_tv_price"/>
+
+                <ImageView
+                    android:visibility="gone"
+                    android:layout_width="@dimen/xsolla_base_16"
+                    android:layout_height="@dimen/xsolla_base_16"
+                    android:layout_margin="@dimen/xsolla_base_4"
+                    android:layout_gravity="center_vertical|end"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@null"
+                    android:id="@+id/xsolla_vc_image"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/xsolla_textMini"
+                android:text="Buy"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/xsolla_white"
+                android:id="@+id/xsolla_tv_buy"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,30 @@
+﻿"configuration"
+"campaign_locked" : "true"
+是否锁住关卡
+"campaign_lock_stage" : "2",
+第几关解锁
+"campaign_unlocked_by_purchases" : "true"
+是否任意付费解锁
+"campaign_unlocked_by_stage_completed" : "true"
+是否锁住已完成关卡
+
+"iaps"
+加入任何礼包必须在iaps中加入对应价格和描述
+
+"specialOffers"
+identifier：礼包名字
+iapIdentifier：对应iaps的表
+rewards：奖励表
+duration：持续时间
+endingDate：结束时间
+
+修改解锁弹窗：
+解压unity，查找UNLOCK_CONTENT_REWARD
+
+
+广告控制：
+"ads_enabled": "true",
+"ads_map_button_enabled": "true",
+offer_credits_pack_ads 价格
+
+

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/updating"
+    android:layout_width="325dp"
+    android:layout_height="98dp"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/updating_title"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@drawable/game_corner_top">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="136dp"
+            android:text="@string/updating"
+            android:textColor="@color/black_87"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/updating_content"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/game_corner_bottom">
+
+        <TextView
+            android:id="@+id/updating_progress_text"
+            android:layout_width="wrap_content"
+            android:layout_height="16.5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:text="0％"
+            android:textColor="@color/bottom_bar_text_select"
+            android:textSize="12dp" />
+        <ProgressBar
+            android:id="@+id/updating_progress"
+            android:layout_width="265dp"
+            android:layout_height="5dp"
+            style="@style/mprogressbar"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</LinearLayout>

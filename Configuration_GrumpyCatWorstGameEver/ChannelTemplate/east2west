@@ -1,0 +1,177 @@
+{
+	"APPID":"wx7c97b63c06afd8f0",
+	"APPKEY":"1497178332,53236073337180470952250400959808,2088511798626863,2088511798626863,MIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBAKTrA5p/o++3KydmC66AY3V0fj1evRZEbEAEwETl1ISBzmK1kEQLnVtnwq2fFbUPWsJM49WktIVCqJyAQBZ4oQCS1w+bAZxSdz4cISr98OI5xwOXJT9uDhOQOOp2qyq11RNSrEfZppT19X29aZ86aPW92EFqitngHAk8f7cGXwDHAgMBAAECgYBhpEuD4+KaASbpsr9j19wLJKfBiiAF2QkGdkmoATNsKLabNshtoTrPbYWT6kad5rNjqsaSLWw8IhVWY5COPWmEy95Bwt/4Ted1wCu+dspibOe0zdeA8BVEMbA9GjXkNVxKb9n1oacSUtyEkSglRE9tNsY3LnFPwFkm/AMIqyGSUQJBANbhdiHybiW9dk+0B1xHzMW9QoEDUcPtZI5rmMPPHzNtkUbnH9dnB+VE7ompSroXi8E1xxQ7TYQNB9cazVjY4MUCQQDEef1GHUqcdtSPjAnD754HOsodbW0X4kt+6oBu3xBbYgHGSBh7CE2LQRp0BTgrC8yen2dYTMoJRBgY6iqmXtwbAkBnezKRzJdA84nrfk5hIW6695b0XG3fBg78C1MJUVC8SpLA64NJD6QcxGJ/xxhmn/o8tLJHyvtckY3qCE1F8UPlAkEAkshUKEp/0C6SlH9ZWFEubVZFYwC6LMq5/iIxOyNYs/yfOMPpzhig3fUQTzcLBFW3U5Xg/j23/n4pxotCu7JImwJBALPNI6/lr824upEK4p/2he0LqDWIQIOMmqHgMbnwkONAHrjaMWxUA9/b0GPy+9mmUhQcvVhIYja3kfzkRAekrQY=,MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCnxj/9qwVfgoUh/y2W89L6BkRAFljhNhgPdyPuBV64bfQNN1PjbCzkIM6qRdKBoLPXmKKMiFYnkd6rAoprih3/PrQEB/VsW8OoM8fxn67UDYuyBTqA23MML9q1+ilIZwBC2AQ2UBVOrFXfFl75p6/B5KsiNG9zpgmLCUYuLkxpLQIDAQAB",	
+	"ADChannel":"",
+	"SDKPay":"0,1",
+	"VerifyKey":"cd490b1862c361e9f8db827f7b62f77c",
+	"production1": 
+	{
+		"ydpid": "001",
+		"ltpid": "001",
+		"dxpid": "001",
+		"channelpid": "a02",
+		"pricefloat": "30.00",
+		"desc": "购买完整版"
+	},
+	"production2": {
+		"ydpid": "001",
+		"ltpid": "001",
+		"dxpid": "001",
+		"channelpid": "a02",
+		"pricefloat": "6.00",
+		"desc": "孩子们"
+	},
+	"production3": {
+		"ydpid": "001",
+		"ltpid": "001",
+		"dxpid": "001",
+		"channelpid": "a02",
+		"pricefloat": "68.00",
+		"desc": "5000点券"
+	},
+	"production4": {
+		"ydpid": "001",
+		"ltpid": "001",
+		"dxpid": "001",
+		"channelpid": "a02",
+		"pricefloat": "128.00",
+		"desc": "11000点券"
+	},
+	"production5": {
+		"ydpid": "001",
+		"ltpid": "001",
+		"dxpid": "001",
+		"channelpid": "a02",
+		"pricefloat": "328.00",
+		"desc": "30000点券"
+	},
+	"production6": {
+		"ydpid": "001",
+		"ltpid": "001",
+		"dxpid": "001",
+		"channelpid": "a02",
+		"pricefloat": "648.00",
+		"desc": "70000点券"
+	},
+	"production7": {
+		"ydpid": "001",
+		"ltpid": "001",
+		"dxpid": "001",
+		"channelpid": "a02",
+		"pricefloat": "9.00",
+		"desc": "命运女侠"
+	},
+	"production8": {
+		"ydpid": "001",
+		"ltpid": "001",
+		"dxpid": "001",
+		"channelpid": "a02",
+		"pricefloat": "9.00",
+		"desc": "风刃"
+	},
+	"production9": {
+		"ydpid": "001",
+		"ltpid": "001",
+		"dxpid": "001",
+		"channelpid": "a02",
+		"pricefloat": "12.00",
+		"desc": "虚空猎手"
+	},
+	"production10": {
+		"ydpid": "001",
+		"ltpid": "001",
+		"dxpid": "001",
+		"channelpid": "a02",
+		"pricefloat": "12.00",
+		"desc": "超能博士"
+	},
+	"production11": {
+		"ydpid": "001",
+		"ltpid": "001",
+		"dxpid": "001",
+		"channelpid": "a02",
+		"pricefloat": "9.00",
+		"desc": "达尔文"
+	},
+	"production12": {
+		"ydpid": "001",
+		"ltpid": "001",
+		"dxpid": "001",
+		"channelpid": "a02",
+		"pricefloat": "18.00",
+		"desc": "铁甲马克 "
+	},
+	"production13": {
+		"ydpid": "001",
+		"ltpid": "001",
+		"dxpid": "001",
+		"channelpid": "a02",
+		"pricefloat": "6.00",
+		"desc": "解锁游戏"
+	},
+	"production14": {
+		"ydpid": "001",
+		"ltpid": "001",
+		"dxpid": "001",
+		"channelpid": "a02",
+		"pricefloat": "9.00",
+		"desc": "桂英"
+	},
+	"production15": {
+		"ydpid": "001",
+		"ltpid": "001",
+		"dxpid": "001",
+		"channelpid": "a02",
+		"pricefloat": "12.00",
+		"desc": "自由猎人"
+	},
+	"production16": {
+		"ydpid": "001",
+		"ltpid": "001",
+		"dxpid": "001",
+		"channelpid": "a02",
+		"pricefloat": "38.00",
+		"desc": "大礼包1"
+	},
+	"production17": {
+		"ydpid": "001",
+		"ltpid": "001",
+		"dxpid": "001",
+		"channelpid": "a02",
+		"pricefloat": "15.00",
+		"desc": "大礼包2"	
+	},
+	"production18": {
+		"ydpid": "001",
+		"ltpid": "001",
+		"dxpid": "001",
+		"channelpid": "a02",
+		"pricefloat": "19.00",
+		"desc": "大礼包3"
+		
+	},
+	"production19": {
+		"ydpid": "001",
+		"ltpid": "001",
+		"dxpid": "001",
+		"channelpid": "a02",
+		"pricefloat": "18.00",
+		"desc": "星爵"	
+	},
+	"production20": {
+		"ydpid": "001",
+		"ltpid": "001",
+		"dxpid": "001",
+		"channelpid": "a02",
+		"pricefloat": "30.00",
+		"desc": "赛帕斯"	
+	},
+	"production21": {
+		"ydpid": "001",
+		"ltpid": "001",
+		"dxpid": "001",
+		"channelpid": "a02",
+		"pricefloat": "45.00",
+		"desc": "青翼"	
+	}
+ }

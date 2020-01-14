@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/xsolla_form_bg"
+    android:padding="@dimen/xsolla_base_16">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="@dimen/xsolla_textLarge"
+        android:textColor="@color/xsolla_purple_m"
+        android:text="Test Title"
+        android:id="@+id/xsolla_tv_title"/>
+
+</LinearLayout>

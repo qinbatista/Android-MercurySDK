@@ -1,0 +1,204 @@
+<!--sdk-->
+              <activity
+
+            android:name="com.tencent.ysdk.module.realName.impl.RegisterRealNameActivity"
+
+            android:configChanges="orientation|screenSize|keyboardHidden"
+
+            android:screenOrientation="landscape"
+
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+
+        </activity>
+
+        <activity
+
+            android:name="com.tencent.tauth.AuthActivity"
+
+            android:launchMode="singleTask"
+
+            android:noHistory="true">
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1106673341" />
+
+            </intent-filter>
+
+        </activity>
+
+        <activity
+
+            android:name="com.tencent.connect.common.AssistActivity"
+
+            android:configChanges="orientation|screenSize|keyboardHidden"
+
+            android:screenOrientation="portrait"
+
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity
+
+            android:name="com.drunkbytes.tikitaka.yyb.wxapi.WXEntryActivity"
+
+            android:excludeFromRecents="true"
+
+            android:exported="true"
+
+            android:label="WXEntryActivity"
+
+            android:launchMode="singleTop"
+
+            android:configChanges="orientation|screenSize|keyboardHidden"
+
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+
+            android:taskAffinity="com.drunkbytes.tikitaka.yyb.diff">
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wx5af77505208c9e03" />
+
+            </intent-filter>
+
+        </activity>
+
+        <activity
+
+            android:name="com.tencent.midas.proxyactivity.APMidasPayProxyActivity"
+
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+
+            android:screenOrientation="sensorLandscape"
+
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <activity
+
+            android:name="com.tencent.midas.wx.APMidasWXPayActivity"
+
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+
+            android:exported="true" />
+
+
+
+        <activity
+
+            android:name="com.tencent.midas.qq.APMidasQQWalletActivity"
+
+            android:launchMode="singleTop"
+
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+
+            android:configChanges="orientation|screenSize|keyboardHidden"
+
+            android:exported="true" >
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data android:scheme="qwallet100703379"/>
+
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name="com.tencent.midas.jsbridge.APWebJSBridgeActivity"
+
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+
+                <meta-data
+
+            android:name="UMENG_APPKEY"
+
+            android:value="548e3eeefd98c565e9000ff6" >
+
+        </meta-data>
+
+        <meta-data
+
+            android:name="UMENG_CHANNEL"
+
+            android:value="yyb" />   
+
+<!--end-->
+<!--sdkxml-->
+  	<supports-screens
+
+        android:anyDensity="true"
+
+        android:largeScreens="true"
+
+        android:normalScreens="true"
+
+        android:smallScreens="true" />
+
+
+
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+  <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+  <uses-permission android:name="android.permission.SEND_SMS" />
+
+  <uses-permission android:name="android.permission.INTERNET" />
+
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+  <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+  <uses-permission android:name="android.permission.GET_TASKS" />
+
+  <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+  <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+  <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+
+  <uses-permission android:name="android.permission.READ_SMS" />
+
+  <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+
+  <uses-permission android:name="android.permission.INTERNET" />
+
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+  <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+<!--end-->

@@ -1,0 +1,22 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.xsolla.android.sdk.directpayment.FormFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/xsolla_fragment_direct_payment_form"
+            android:id="@+id/form"
+            android:visibility="gone"/>
+
+        <include layout="@layout/xsolla_fragment_direct_payment_status"
+            android:id="@+id/status"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</ScrollView>

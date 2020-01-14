@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="276.0dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/pay_dialog_bg">
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10.67dp"
+        android:layout_marginRight="10.67dp"
+        android:minHeight="27dp"
+        android:minWidth="27dp"
+        android:scaleType="center"
+        android:src="@drawable/pay_dialog_close_bg" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="@string/pay_dialog_title"
+        android:textColor="@color/pay_dialog_title_color"
+        android:textSize="@dimen/pay_dialog_title_textsize" />
+
+    <include
+        android:id="@+id/pay_content"
+        layout="@layout/pay_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title" />
+
+    <LinearLayout
+        android:id="@+id/tt_pay_dialog_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pay_content"
+        android:background="#ffffff"
+        android:layout_marginTop="6.67dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/pay_dialog_item_divider"/>
+
+        <LinearLayout
+            android:id="@+id/tt_pay_dialog_container"
+            android:layout_width="276dp"
+            android:layout_height="103dp"
+            android:orientation="horizontal"
+            />
+
+        <LinearLayout
+            android:id="@+id/tt_pay_confirm"
+            android:layout_width="212dp"
+            android:layout_height="32.7dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/pay_button_bg"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="12sp"
+                android:textColor="@color/baise2"
+                android:text="确认支付"
+                android:layout_marginRight="7.3dp"
+                />
+            <TextView
+                android:id="@+id/tt_pay_dialog_confirm_currency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="14sp"
+                android:textColor="@color/baise2"
+                />
+            <TextView
+                android:id="@+id/tt_pay_dialog_confirm_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="14.67sp"
+                android:textColor="@color/baise2"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/consult"
+        layout="@layout/pay_consult_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tt_pay_dialog_pay" />
+
+</RelativeLayout>

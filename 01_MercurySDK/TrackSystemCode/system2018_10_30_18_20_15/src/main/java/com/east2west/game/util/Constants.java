@@ -1,0 +1,64 @@
+package com.east2west.game.util;
+
+/**
+ * Created by 80059209 on 2017-05-19.
+ */
+
+public final class Constants {
+    /**
+     * 应用ID和广告位ID；如果没有，可以去OPPO联盟管理后台申请
+     */
+    public static final String APP_ID = "100";//应用ID
+    public static final String BANNER_POS_ID = "328";//Banner广告位ID
+    public static final String INTERSTITIAL_POS_ID = "329";//插屏广告位ID
+    //
+    public static final String SPLASH_POS_ID = "331";//开屏广告位ID
+    public static final String NATIVE_ONE_POS_ID = "332";//原生广告样式一的广告位ID
+    //add 2018-03-29
+    public static final String MIX_BANNER_POS_ID = "10538";//Banner广告位ID
+    public static final String MIX_INTERSTITIAL_POS_ID = "10539";//插屏广告位ID
+    /**
+     * MONEY AMOUNT以分为单位。100分，即1元。MONEY AMOUNT大于等于100时，即定额支付。
+     */
+    public static final String DEMO_FIXED_PAY_MONEY_AMOUNT = "100";
+
+    /**
+     * MONEY AMOUNT为0分时，即不定额支付。
+     */
+    public static final String DEMO_NOT_FIXED_PAY_MONEY_AMOUNT = "0";
+
+    /**
+     * 人民币与游戏充值币的比例，例如2，代表1元人民币可以兑换2个游戏币，整数。
+     */
+    public static final String DEMO_PAY_EXCHANGE_RATE = "1";
+
+    /**
+     * 购买商品的商品id，应用指定，最大16字符。
+     */
+    public static final String DEMO_PAY_PRODUCT_ID = "100";
+
+    /**
+     * 应用内的用户id。 最大32字符。
+     */
+    public static final String DEMO_PAY_APP_USER_ID = "1888";
+
+    /**
+     * 应用服务器为360服务器提供的支付结果通知接口，由360服务器把支付结果通知到这个URI。URI最大255字符。具体协议请查看文档中，
+     * 支付结果通知接口。
+     */
+    public static final String DEMO_APP_SERVER_NOTIFY_URI = "http://mgame.360.cn/gamecp/status";
+
+    /**
+     * 应用服务器为应用客户端提供的接口Url，用于通过AuthorizationCode获取TokenInfo
+     * (DEMO使用的应用服务器url仅限DEMO示范使用
+     * ，禁止正式上线游戏把DEMO应用服务器当做正式应用服务器使用，请使用方自己搭建自己的应用服务器。)
+     */
+    public static final String DEMO_APP_SERVER_URL_GET_TOKEN_BY_CODE = "http://sdbxapp.msdk.mobilem.360.cn/mobileSDK/api.php?type=get_token_by_code&debug=1&code=";
+    /**
+     * 应用服务器为应用客户端提供的接口Url，用于通过AccessToken获取QihooUserInfo
+     * (DEMO使用的应用服务器url仅限DEMO示范使用
+     * ，禁止正式上线游戏把DEMO应用服务器当做正式应用服务器使用，请使用方自己搭建自己的应用服务器。)
+     */
+    public static final  String DEMO_APP_SERVER_URL_GET_USER_BY_TOKEN = "http://sdbxapp.msdk.mobilem.360.cn/mobileSDK/api.php?type=get_userinfo_by_token&debug=1&token=";
+    public static final String IS_LANDSCAPE = "is_landscape";
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/xsolla_base_16"
+    android:background="@color/xsolla_form_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="@dimen/xsolla_base_48"
+            android:layout_height="@dimen/xsolla_base_48"
+            android:layout_margin="@dimen/xsolla_base_16"
+            android:contentDescription="@null"
+            android:id="@+id/imageView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/xsolla_payment_system_name"
+            android:id="@+id/tvTitle"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView" />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

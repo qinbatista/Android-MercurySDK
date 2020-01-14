@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/xsolla_form_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/xsolla_base_8"
+        android:paddingTop="@dimen/xsolla_base_8"
+        android:paddingRight="@dimen/xsolla_base_8"
+        android:paddingBottom="@dimen/xsolla_base_8">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/xsolla_textMedium"
+                android:text="John Smith"
+                android:id="@+id/xsolla_tv_user"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/xsolla_base_4"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/xsolla_textMini"
+                android:text="Farm Fresh"
+                android:id="@+id/xsolla_tv_project"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3338"
+                    android:gravity="center_vertical"
+                    android:id="@+id/xsolla_tv_balance"/>
+
+                <ImageView
+                    android:layout_width="@dimen/xsolla_base_32"
+                    android:layout_height="@dimen/xsolla_base_32"
+                    android:layout_marginLeft="@dimen/xsolla_base_8"
+                    android:id="@+id/xsolla_iv"
+                    android:contentDescription="coins" />
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/xsolla_base_8"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your Balance: "
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/xsolla_textMini"
+                    android:id="@+id/xsolla_tv_real_balance"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$2.01"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/xsolla_textMini"
+                    android:id="@+id/xsolla_tv_real_balance_value"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.xsolla.android.sdk.view.widget.IconTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/xsolla_ic_arrow_forward"
+            android:layout_marginLeft="@dimen/xsolla_base_8"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ListView
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/xsolla_lv" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/xsolla_purple_d">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="@dimen/xsolla_base_8"
+            android:id="@+id/xsolla_country">
+
+            <com.xsolla.android.sdk.view.widget.IconTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/xsolla_textLarge"
+                android:textColor="@color/xsolla_white"
+                android:text="@string/xsolla_ic_country"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="USA"
+                android:textColor="@color/xsolla_white"
+                android:paddingLeft="@dimen/xsolla_base_8"
+                android:paddingStart="@dimen/xsolla_base_8"
+                android:paddingRight="@dimen/xsolla_base_8"
+                android:paddingEnd="@dimen/xsolla_base_8"
+                android:id="@+id/xsolla_tv_country"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/xsolla_purple_l"
+                android:text="Change"
+                android:id="@+id/xsolla_tv_change"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/xsolla_form_bg"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="@dimen/xsolla_base_8"
+            android:id="@+id/xsolla_user_agreement">
+
+            <com.xsolla.android.sdk.view.widget.IconTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/xsolla_textLarge"
+                android:textColor="@color/xsolla_white"
+                android:text="@string/xsolla_ic_user_agreement"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="User Agreement"
+                android:textColor="@color/xsolla_white"
+                android:paddingLeft="@dimen/xsolla_base_8"
+                android:paddingStart="@dimen/xsolla_base_8"
+                android:paddingRight="@dimen/xsolla_base_8"
+                android:paddingEnd="@dimen/xsolla_base_8"
+                android:id="@+id/xsolla_tv_user_agreement"/>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/xsolla_form_bg"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

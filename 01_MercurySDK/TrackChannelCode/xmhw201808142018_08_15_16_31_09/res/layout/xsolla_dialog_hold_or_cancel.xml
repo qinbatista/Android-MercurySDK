@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="@dimen/xsolla_base_16"
+    android:minWidth="600dp"
+    android:minHeight="400dp"
+    android:id="@+id/radioGroup">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please Select an Operation:"
+        android:id="@+id/tvTitle"/>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/xsolla_base_16"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/xsolla_textSmall"
+        android:text="Put on hold from"
+        android:id="@+id/rbHold"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/xsolla_base_8"
+            android:textSize="@dimen/xsolla_textSmall"
+            android:text="From: "/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/xsolla_base_8"
+            android:textColor="@color/xsolla_purple_d"
+            android:textSize="@dimen/xsolla_textSmall"
+            android:text="00/00/0000"
+            android:id="@+id/tvHoldFrom"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/xsolla_base_8"
+            android:textSize="@dimen/xsolla_textSmall"
+            android:text="To: "/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/xsolla_base_8"
+            android:textColor="@color/xsolla_purple_d"
+            android:textSize="@dimen/xsolla_textSmall"
+            android:text="00/00/0000"
+            android:id="@+id/tvHoldTo"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/xsolla_base_8"
+        android:textSize="@dimen/xsolla_textSmall"
+        android:text="The subscription will be prolonged by the on-hold period"
+        android:id="@+id/tvHold"/>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/xsolla_textSmall"
+        android:text="Cancel at renewal"
+        android:id="@+id/rbCancelAtRenew"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/xsolla_textSmall"
+        android:text="Canceling a subscription will cause it not to renew. If you cancel the subscription, it will continue until the end of the current period. On that date, the subscription will expire and not be invoiced again."
+        android:id="@+id/tvCancelAtRenew"/>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/xsolla_textSmall"
+        android:text="Terminate immediately"
+        android:id="@+id/rbCancel"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/xsolla_textSmall"
+        android:text="Your subscription will be cancelled now. The refund for the current period for the full amount will be issued."
+        android:id="@+id/tvCancel"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/xsolla_btn_action"
+        android:textColor="@color/xsolla_white"
+        android:layout_gravity="end"
+        android:text="Next"
+        android:id="@+id/btnAction"/>
+
+</RadioGroup>

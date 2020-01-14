@@ -1,0 +1,346 @@
+<!--sdk--> 
+    
+        <activity
+            android:name="com.ipaynow.wechatpay.plugin.inner_plugin.wechat_plugin.activity.WeChatNotifyActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+
+        <provider
+            android:name="com.qihoo360.replugin.component.process.ProcessPitProviderPersist"
+            android:authorities="com.east2west.IronMarine.mz.loader.p.main"
+            android:exported="false"
+            android:process="com.east2west.IronMarine.mz" />
+        <provider
+            android:name="com.qihoo360.replugin.component.provider.PluginPitProviderPersist"
+            android:authorities="v.Plugin.NP.PSP"
+            android:exported="false"
+            android:process="com.east2west.IronMarine.mz" />
+        <provider
+            android:name="com.qihoo360.mobilesafe.svcmanager.ServiceProvider"
+            android:authorities="com.east2west.IronMarine.mz.svcmanager"
+            android:exported="false"
+            android:multiprocess="false"
+            android:process="com.east2west.IronMarine.mz" />
+
+        <service
+            android:name="com.qihoo360.replugin.component.service.server.PluginPitServiceGuard"
+            android:process="com.east2west.IronMarine.mz" />
+
+        <activity
+            android:name="com.east2west.IronMarine.mz.loader.a.ActivityN1NRTS0"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.east2west.IronMarine.mz.loader.a.ActivityN1NRTS1"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+ 	<activity
+            android:name="com.east2west.IronMarine.mz.loader.a.ActivityN1NRTS2"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.east2west.IronMarine.mz.loader.a.ActivityN1STPTS0"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="$com.east2west.IronMarine.mz.loader.a.ActivityN1STTS0"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.east2west.IronMarine.mz.loader.a.ActivityN1SITS0"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:launchMode="singleInstance"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.east2west.IronMarine.mz.loader.a.ActivityN1NRNTS0"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.east2west.IronMarine.mz.loader.a.ActivityN1NRNTS1"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat" />
+	<activity
+            android:name="com.east2west.IronMarine.mz.loader.a.ActivityN1NRNTS2"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.east2west.IronMarine.mz.loader.a.ActivityN1STPNTS0"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.east2west.IronMarine.mz.loader.a.ActivityN1STNTS0"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.east2west.IronMarine.mz.loader.a.ActivityN1SINTS0"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:launchMode="singleInstance"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.east2west.IronMarine.mz.loader.a.ActivityN1TA0NRTS0"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="landscape"
+            android:taskAffinity=":t0"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.east2west.IronMarine.mz.loader.a.ActivityN1TA0NRTS1"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="landscape"
+            android:taskAffinity=":t0"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.east2west.IronMarine.mz.loader.a.ActivityN1TA0STPTS0"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:taskAffinity=":t0"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.east2west.IronMarine.mz.loader.a.ActivityN1TA0STTS0"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:taskAffinity=":t0"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.east2west.IronMarine.mz.loader.a.ActivityN1TA0NRNTS0"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="landscape"
+            android:taskAffinity=":t0"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.east2west.IronMarine.mz.loader.a.ActivityN1TA0NRNTS1"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="landscape"
+            android:taskAffinity=":t0"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.east2west.IronMarine.mz.loader.a.ActivityN1TA0STPNTS0"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:taskAffinity=":t0"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.east2west.IronMarine.mz.loader.a.ActivityN1TA0STNTS0"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:taskAffinity=":t0"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.east2west.IronMarine.mz.loader.a.ActivityP0NRTS0"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:process=":p0"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.east2west.IronMarine.mz.loader.a.ActivityP0NRTS1"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:process=":p0"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.east2west.IronMarine.mz.loader.a.ActivityP0STPTS0"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:process=":p0"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.east2west.IronMarine.mz.loader.a.ActivityP0STTS0"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:process=":p0"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.east2west.IronMarine.mz.loader.a.ActivityP0SITS0"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:launchMode="singleInstance"
+            android:process=":p0"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.east2west.IronMarine.mz.loader.a.ActivityP0NRNTS0"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:process=":p0"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.east2west.IronMarine.mz.loader.a.ActivityP0NRNTS1"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:process=":p0"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.east2west.IronMarine.mz.loader.a.ActivityP0STPNTS0"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:process=":p0"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.east2west.IronMarine.mz.loader.a.ActivityP0STNTS0"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:process=":p0"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.east2west.IronMarine.mz.loader.a.ActivityP0SINTS0"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:launchMode="singleInstance"
+            android:process=":p0"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.east2west.IronMarine.mz.loader.a.ActivityP0TA0NRTS0"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:process=":p0"
+            android:screenOrientation="landscape"
+            android:taskAffinity=":t0"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.east2west.IronMarine.mz.loader.a.ActivityP0TA0NRTS1"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:process=":p0"
+            android:screenOrientation="landscape"
+            android:taskAffinity=":t0"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.east2west.IronMarine.mz.loader.a.ActivityP0TA0STPTS0"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:process=":p0"
+            android:screenOrientation="landscape"
+            android:taskAffinity=":t0"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.east2west.IronMarine.mz.loader.a.ActivityP0TA0STTS0"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:process=":p0"
+            android:screenOrientation="landscape"
+            android:taskAffinity=":t0"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.east2west.IronMarine.mz.loader.a.ActivityP0TA0NRNTS0"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:process=":p0"
+            android:screenOrientation="landscape"
+            android:taskAffinity=":t0"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.east2west.IronMarine.mz.loader.a.ActivityP0TA0NRNTS1"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:process=":p0"
+            android:screenOrientation="landscape"
+            android:taskAffinity=":t0"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.east2west.IronMarine.mz.loader.a.ActivityP0TA0STPNTS0"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:process=":p0"
+            android:screenOrientation="landscape"
+            android:taskAffinity=":t0"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="com.east2west.IronMarine.mz.loader.a.ActivityP0TA0STNTS0"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:process=":p0"
+            android:screenOrientation="landscape"
+            android:taskAffinity=":t0"
+            android:theme="@style/Theme.AppCompat" />
+
+        <provider
+            android:name="com.qihoo360.replugin.component.provider.PluginPitProviderP0"
+            android:authorities="com.east2west.IronMarine.mz.Plugin.NP.0"
+            android:exported="false"
+            android:process=":p0" />
+        <provider
+            android:name="com.qihoo360.replugin.component.process.ProcessPitProviderP0"
+            android:authorities="com.east2west.IronMarine.mz.loader.p.mainN100"
+            android:exported="false"
+            android:process=":p0" />
+
+        <service
+            android:name="com.qihoo360.replugin.component.service.server.PluginPitServiceP0"
+            android:exported="false"
+            android:process=":p0" /> 
+            
+       
+
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="25.3.1" />
+<!--end-->
+
+<!--sdkxml-->
+	<uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+<!--end-->

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/update_hint"
+    android:layout_width="325dp"
+    android:layout_height="162dp"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/update_hint_title"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="@drawable/game_corner_top">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/update_hint"
+            android:textColor="@color/black_87"
+            android:textSize="19dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/update_hint_content"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:background="@drawable/game_corner_bottom">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="@string/update_version"
+                android:textColor="@color/black_60"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:text="1.10.0"
+                android:id="@+id/update_version_No"
+                android:textColor="@color/black_60"
+                android:textSize="14dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cur_version"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/black_60"
+                android:textSize="14dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.9.0"
+                android:id="@+id/cur_version_No"
+                android:textColor="@color/black_60"
+                android:textSize="14dp" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/button_cancel"
+            android:layout_width="125dp"
+            android:layout_height="35dp"
+            android:text="@string/cancelaqy"
+            android:background="@drawable/game_bg_green_hollow"
+            android:textColor="@color/text_color_green"
+            android:textSize="16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="30dp"/>
+        <Button
+            android:id="@+id/button_ensure"
+            android:layout_width="125dp"
+            android:layout_height="35dp"
+            android:text="@string/ensure"
+            android:background="@drawable/game_corner_green_button"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:layout_toRightOf="@id/button_cancel"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="15dp"/>
+    </RelativeLayout>
+</LinearLayout>

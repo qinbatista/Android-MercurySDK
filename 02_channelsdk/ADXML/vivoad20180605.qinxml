@@ -1,0 +1,115 @@
+<!--ad-->
+        <activity android:name=".BannerAdActivity">
+
+        </activity>
+
+        <activity android:name=".InterstialActivity">
+
+        </activity>
+
+        <activity android:name=".NativeAdActivity">
+
+        </activity>
+
+        <activity android:name=".MainActivity"></activity>
+
+
+
+        <!--百度申明start-->
+
+        <activity
+
+            android:name="com.baidu.mobads.AppActivity"
+
+            android:configChanges="keyboard|keyboardHidden|orientation"
+
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+
+
+        <!--如果targetSdkVersion设置值>=24，则需要添加provider申明，否则不需要添加，注意需要替换包名-->
+
+        <provider
+
+            android:name="com.baidu.mobads.openad.FileProvider"
+
+            android:authorities="com.invictus.giveitup2.bd.provider"
+
+            android:exported="false"
+
+            android:grantUriPermissions="true">
+
+            <meta-data
+
+                android:name="android.support.FILE_PROVIDER_PATHS"
+
+                android:resource="@xml/bd_file_paths"/>
+
+        </provider>
+
+        <!--百度申明end-->
+
+
+
+        <!-- GDT声明start -->
+
+        <service
+
+            android:name="com.qq.e.comm.DownloadService"
+
+            android:exported="false"/>
+
+        <!-- 请开发者注意字母的大小写，ADActivity，而不是AdActivity -->
+
+        <activity
+
+            android:name="com.qq.e.ads.ADActivity"
+
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"/>
+
+
+
+        <!-- targetSDKVersion >= 24时才需要添加这个provider。provider的authorities属性的值为${packageName}.fileprovider，请开发者根据自己的${applicationId}来设置这个值 -->
+
+        <provider
+
+            android:name="android.support.v4.content.FileProvider"
+
+            android:authorities="${applicationId}.fileprovider"
+
+            android:exported="false"
+
+            android:grantUriPermissions="true">
+
+            <meta-data
+
+                android:name="android.support.FILE_PROVIDER_PATHS"
+
+                android:resource="@xml/gdt_file_path"/>
+
+        </provider>
+
+        <!-- GDT声明end -->
+        <activity
+            android:name="com.vivo.mobilead.web.VivoADSDKWebView"
+            android:screenOrientation="portrait">
+        </activity>
+    
+
+<!--end-->
+<!--adxml-->
+		 <!-- SDK 相关声明 -->
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+<!--end-->

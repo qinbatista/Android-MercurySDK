@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/xsolla_base_8"
+    android:clickable="true"
+    android:background="@drawable/xsolla_form_bg_main_bordered">
+
+    <ImageView
+        android:layout_width="@dimen/xsolla_base_64"
+        android:layout_height="@dimen/xsolla_base_64"
+        android:layout_margin="@dimen/xsolla_base_8"
+        android:padding="@dimen/xsolla_base_4"
+        android:background="@drawable/xsolla_bg_white_b_black"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/ivPaymentSystem"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:text="Visa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/xsolla_base_4"
+        android:layout_marginLeft="@dimen/xsolla_base_8"
+        android:layout_marginStart="@dimen/xsolla_base_8"
+        android:layout_alignTop="@+id/ivPaymentSystem"
+        android:layout_toRightOf="@+id/ivPaymentSystem"
+        android:layout_toEndOf="@+id/ivPaymentSystem"
+        android:textSize="@dimen/xsolla_textLarge"
+        android:id="@+id/tvTitle" />
+
+    <TextView
+        android:text="4153 81** **** 7741"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/xsolla_base_4"
+        android:layout_marginLeft="@dimen/xsolla_base_8"
+        android:layout_marginStart="@dimen/xsolla_base_8"
+        android:layout_below="@+id/tvTitle"
+        android:layout_toRightOf="@+id/ivPaymentSystem"
+        android:layout_toEndOf="@+id/ivPaymentSystem"
+        android:textSize="@dimen/xsolla_textMedium"
+        android:id="@+id/tvSubTitle" />
+</RelativeLayout>

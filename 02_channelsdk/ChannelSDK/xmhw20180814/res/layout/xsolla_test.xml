@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/xsolla_white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/xsolla_base_16"
+        android:layout_marginRight="@dimen/xsolla_base_16"
+        android:layout_marginTop="@dimen/xsolla_base_16"
+        android:textSize="@dimen/xsolla_textMedium"
+        android:text="dscription"
+        android:id="@+id/tvDescription"/>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/xsolla_base_16">
+
+        <TextView
+            style="@style/xsolla_BaseInputTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/xsolla_textMedium"
+            android:text="Medium Text"
+            android:id="@+id/text1" />
+
+        <EditText
+            style="@style/xsolla_BaseInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/xsolla_min_width"
+            android:maxLength="16"
+            android:inputType="text"
+            android:singleLine="true"
+            android:id="@+id/editText"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/xsolla_base_16"
+        android:padding="@dimen/xsolla_base_16"
+        android:background="@drawable/xsolla_form_bg_main">
+
+        <TextView
+            style="@style/xsolla_BaseInputTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/xsolla_textMedium"
+            android:text="Card number"
+            android:id="@+id/tvCardNumber" />
+
+        <!--app:xsolla_notMaskedSymbol="#"-->
+        <com.xsolla.android.sdk.view.widget.maskededittext.CCEditText
+            style="@style/xsolla_BaseInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvCardNumber"
+            android:hint="Card number"
+            app:xsolla_mask="#### #### #### ####"
+            android:minWidth="@dimen/xsolla_min_width"
+            android:inputType="number"
+            android:lines="1"
+            android:id="@+id/edCardNumber"
+            android:nextFocusDown="@id/edMonth"/>
+
+        <TextView
+            style="@style/xsolla_BaseInputTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/xsolla_base_16"
+            android:textSize="@dimen/xsolla_textMedium"
+            android:text="Expiration Date"
+            android:layout_below="@+id/edCardNumber"
+            android:id="@+id/tvExpirationDate" />
+
+
+        <EditText
+            style="@style/xsolla_BaseInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="MM"
+            android:minEms="3"
+            android:maxLength="2"
+            android:inputType="number"
+            android:lines="1"
+            android:layout_below="@+id/tvExpirationDate"
+            android:nextFocusRight="@+id/edYear"
+            android:id="@+id/edMonth"/>
+
+        <EditText
+            style="@style/xsolla_BaseInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/edMonth"
+            android:layout_toRightOf="@+id/edMonth"
+            android:layout_toEndOf="@+id/edMonth"
+            android:nextFocusRight="@id/edZipCode"
+            android:nextFocusDown="@id/edCardHolder"
+            android:hint="YY"
+            android:minEms="3"
+            android:maxLength="2"
+            android:inputType="number"
+            android:lines="1"
+            android:id="@+id/edYear"/>
+
+
+        <TextView
+            android:visibility="gone"
+            style="@style/xsolla_BaseInputTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/xsolla_textMedium"
+            android:text="Zip Code"
+            android:id="@+id/tvZipCode"
+            android:layout_above="@+id/edYear"
+            android:layout_alignLeft="@+id/edZipCode"
+            android:layout_alignStart="@+id/edZipCode" />
+
+        <EditText
+            android:visibility="gone"
+            style="@style/xsolla_BaseInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tvZipCode"
+            android:nextFocusDown="@id/edCardHolder"
+            android:minEms="6"
+            android:maxLength="8"
+            android:inputType="text"
+            android:lines="1"
+            android:id="@+id/edZipCode"/>
+
+
+
+        <TextView
+            android:visibility="gone"
+            style="@style/xsolla_BaseInputTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="@dimen/xsolla_textMedium"
+            android:text="Card holder"
+            android:id="@+id/tvCardHolder"
+            android:layout_below="@+id/edMonth"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:visibility="gone"
+            style="@style/xsolla_BaseInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvCardHolder"
+            android:nextFocusDown="@id/edCvv"
+            android:minEms="8"
+            android:inputType="textPersonName"
+            android:lines="1"
+            android:id="@+id/edCardHolder"/>
+
+
+        <TextView
+            style="@style/xsolla_BaseInputTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/xsolla_base_16"
+            android:layout_below="@id/edCardHolder"
+            android:textSize="@dimen/xsolla_textMedium"
+            android:text="CVV/CVV2"
+            android:id="@+id/tvCvv" />
+
+        <EditText
+            style="@style/xsolla_BaseInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvCvv"
+            android:minEms="8"
+            android:inputType="number"
+            android:maxLength="4"
+            android:lines="1"
+            android:nextFocusRight="@id/edZipCode"
+            android:id="@+id/edCvv"/>
+
+        <com.xsolla.android.sdk.view.widget.IconTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/edCvv"
+            android:layout_centerVertical="@id/edCvv"
+            android:layout_toRightOf="@id/edCvv"
+            android:layout_toEndOf="@id/edCvv"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:text="@string/xsolla_ic_hint"
+            android:id="@+id/xsolla_cvv_info" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xsolla_base_8"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/xsolla_base_16"
+        android:textColor="@color/xsolla_text_main"
+        android:text="New CheckBox"
+        android:id="@+id/checkBox"
+        android:visibility="gone"/>
+
+</LinearLayout>

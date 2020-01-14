@@ -1,0 +1,130 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:id="@+id/xsolla_ll">
+
+<!--
+            android:visibility="gone"-->
+        <android.support.v7.widget.Toolbar
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/xsolla_form_bg"
+            android:id="@+id/my_awesome_toolbar">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hint_cvv"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Toolbar Title"
+                android:layout_gravity="center"
+                android:id="@+id/toolbar_title" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/xsolla_white"
+            android:id="@+id/xsolla_container">
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/xsolla_form_bg">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/xsolla_base_4">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/xsolla_textSmall"
+                    android:text="+1 877 797 65 52"
+                    android:id="@+id/tvSupportPhone"/>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/xsolla_textMini"
+                        android:layout_marginRight="@dimen/xsolla_base_4"
+                        android:layout_marginEnd="@dimen/xsolla_base_4"
+                        android:textColor="@color/xsolla_text_accent"
+                        android:text="Need help?"
+                        android:id="@+id/tvNeedHelp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/xsolla_textMini"
+                        android:textColor="@color/xsolla_text_accent"
+                        android:text=" Contact Us"
+                        android:id="@+id/tvContactUs"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/xsolla_form_input_border"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/xsolla_base_4">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/xsolla_textSmall"
+                    android:text="support@xsolla.com"
+                    android:id="@+id/tvSupportEmail"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/xsolla_textMini"
+                    android:textColor="@color/xsolla_text_accent"
+                    android:text="Customer Support"
+                    android:id="@+id/tvCustomerSupport"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.xsolla.android.sdk.view.widget.IconTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="bottom"
+        android:text="@string/xsolla_ic_waiting"
+        android:textSize="@dimen/xsolla_ic_progress"
+        android:visibility="gone"
+        android:id="@+id/progressBar"/>
+
+
+</FrameLayout>

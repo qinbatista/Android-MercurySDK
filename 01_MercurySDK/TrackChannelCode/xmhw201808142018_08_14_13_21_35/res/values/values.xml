@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="xsolla_advice">#ff809efc</color>
+    <color name="xsolla_best">#ff9896de</color>
+    <color name="xsolla_black">#000000</color>
+    <color name="xsolla_correct">#57c69a</color>
+    <color name="xsolla_divider">#b4b4b4</color>
+    <color name="xsolla_divider_light">#ffe0e0e0</color>
+    <color name="xsolla_error">#fa7464</color>
+    <color name="xsolla_form_bg">#f2f2f2</color>
+    <color name="xsolla_form_input_border">#d8d8d8</color>
+    <color name="xsolla_green">#58a989</color>
+    <color name="xsolla_green_d">#ff468c6c</color>
+    <color name="xsolla_grey_100">#f5f5f5</color>
+    <color name="xsolla_grey_300">#e0e0e0</color>
+    <color name="xsolla_grey_50">#fffafafa</color>
+    <color name="xsolla_grey_600">#757575</color>
+    <color name="xsolla_grey_800">#424242</color>
+    <color name="xsolla_grey_850">#303030</color>
+    <color name="xsolla_grey_900">#212121</color>
+    <color name="xsolla_progress">#ff9896de</color>
+    <color name="xsolla_purple_d">#ff605582</color>
+    <color name="xsolla_purple_l">#ffd7cded</color>
+    <color name="xsolla_purple_m">#9483bb</color>
+    <color name="xsolla_special">#fffcb07f</color>
+    <color name="xsolla_text_accent">#c7c6c6</color>
+    <color name="xsolla_text_main">#737377</color>
+    <color name="xsolla_text_main_dark">#464646</color>
+    <color name="xsolla_text_main_l">#aeaeae</color>
+    <color name="xsolla_white">#ffffff</color>
+    <declare-styleable name="xsolla_MaskedEditText"><attr format="string" name="xsolla_mask"/><attr format="string" name="xsolla_char_representation"/><attr format="string" name="xsolla_mask_fill"/></declare-styleable>
+    <declare-styleable name="xsolla_valid"><attr format="boolean" name="xsolla_state_correct"/><attr format="boolean" name="xsolla_state_wrong"/></declare-styleable>
+    <dimen name="xsolla_activity_horizontal_margin">16dp</dimen>
+    <dimen name="xsolla_activity_vertical_margin">16dp</dimen>
+    <dimen name="xsolla_base_1">1dp</dimen>
+    <dimen name="xsolla_base_16">16dp</dimen>
+    <dimen name="xsolla_base_24">24dp</dimen>
+    <dimen name="xsolla_base_32">32dp</dimen>
+    <dimen name="xsolla_base_4">4dp</dimen>
+    <dimen name="xsolla_base_48">48dp</dimen>
+    <dimen name="xsolla_base_64">64dp</dimen>
+    <dimen name="xsolla_base_8">8dp</dimen>
+    <dimen name="xsolla_base_80">80dp</dimen>
+    <dimen name="xsolla_base_96">96dp</dimen>
+    <dimen name="xsolla_ic_other">32sp</dimen>
+    <dimen name="xsolla_ic_progress">48sp</dimen>
+    <dimen name="xsolla_input_border">1dp</dimen>
+    <dimen name="xsolla_input_padding_horizontal">16dp</dimen>
+    <dimen name="xsolla_input_padding_vertical">8dp</dimen>
+    <dimen name="xsolla_input_radius">4dp</dimen>
+    <dimen name="xsolla_max_width">512dp</dimen>
+    <dimen name="xsolla_min_width">256dp</dimen>
+    <dimen name="xsolla_textLarge">22sp</dimen>
+    <dimen name="xsolla_textMedium">16sp</dimen>
+    <dimen name="xsolla_textMini">10sp</dimen>
+    <dimen name="xsolla_textSmall">14sp</dimen>
+    <dimen name="xsolla_text_margin">16dp</dimen>
+    <integer name="xsolla_listId">1526</integer>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="xsolla_accounts_hint">Payment accounts allow you to pay for items and subscriptions without filling out your details each time.</string>
+    <string name="xsolla_action_settings">Settings</string>
+    <string name="xsolla_activity_direct_payment">Direct Payment</string>
+    <string name="xsolla_activity_payment_methods">Payment Methods</string>
+    <string name="xsolla_activity_profile_title">Profile Activity</string>
+    <string name="xsolla_activity_user_sbscription_details">User Subscription Details</string>
+    <string name="xsolla_app_name">XsollaSDK</string>
+    <string name="xsolla_change_ps">Show Something</string>
+    <string name="xsolla_choose_another_payment_method">Choose Another Payment Method</string>
+    <string name="xsolla_continue">Continue</string>
+    <string name="xsolla_delete">Delete</string>
+    <string name="xsolla_error_holder">1000 : some error text</string>
+    <string name="xsolla_ext_id">ext_id</string>
+    <string name="xsolla_fish">By submitting payment information you acknowledge that you have read and
+        agree to be bound by the terms and conditions of the Xsolla End-User License Agreement.
+        Please note: your credit card statement will read: Xsolla USA Inc.</string>
+    <string name="xsolla_gold_holder">Gold</string>
+    <string name="xsolla_hello_blank_fragment">Hello blank fragment</string>
+    <string name="xsolla_hello_world">Hello world!</string>
+    <string name="xsolla_holder_balance">Balance</string>
+    <string name="xsolla_holder_card_holder">Card holder</string>
+    <string name="xsolla_holder_card_number">Card number</string>
+    <string name="xsolla_holder_cvv_cvv2">CVV/CVV2</string>
+    <string name="xsolla_holder_date">Date</string>
+    <string name="xsolla_holder_description">Description</string>
+    <string name="xsolla_holder_expiration_date">Expiration Date</string>
+    <string name="xsolla_holder_item">Item</string>
+    <string name="xsolla_holder_mm">MM</string>
+    <string name="xsolla_holder_price">Price</string>
+    <string name="xsolla_holder_saved_method_subtitle">Visa</string>
+    <string name="xsolla_holder_saved_method_title">417 81** **** 7741</string>
+    <string name="xsolla_holder_transactionid">TransactionID</string>
+    <string name="xsolla_holder_yy">YY</string>
+    <string name="xsolla_holder_zip_code">Zip Code</string>
+    <string name="xsolla_ic_arrow_back">{ic_arrow_back}</string>
+    <string name="xsolla_ic_arrow_down">{ic_arrow_down}</string>
+    <string name="xsolla_ic_arrow_forward">{ic_arrow_forward}</string>
+    <string name="xsolla_ic_arrow_up">{ic_arrow_up}</string>
+    <string name="xsolla_ic_calendar">{ic_calendar}</string>
+    <string name="xsolla_ic_card">{ic_card}</string>
+    <string name="xsolla_ic_cart">{ic_cart}</string>
+    <string name="xsolla_ic_country">{ic_country}</string>
+    <string name="xsolla_ic_currency">{ic_currency}</string>
+    <string name="xsolla_ic_error">{ic_error}</string>
+    <string name="xsolla_ic_hint">{ic_hint}</string>
+    <string name="xsolla_ic_info">{ic_info}</string>
+    <string name="xsolla_ic_lock">{ic_lock}</string>
+    <string name="xsolla_ic_map_pin">{ic_map_pin}</string>
+    <string name="xsolla_ic_menu">{ic_menu}</string>
+    <string name="xsolla_ic_phone">{ic_phone}</string>
+    <string name="xsolla_ic_ruble">{ic_ruble}</string>
+    <string name="xsolla_ic_sale">{ic_sale}</string>
+    <string name="xsolla_ic_search">{ic_search}</string>
+    <string name="xsolla_ic_send_by">{ic_send_by}</string>
+    <string name="xsolla_ic_shop">{ic_shop}</string>
+    <string name="xsolla_ic_subscription">{ic_subscription}</string>
+    <string name="xsolla_ic_success">{ic_success}</string>
+    <string name="xsolla_ic_tick_select">{ic_tick_select}</string>
+    <string name="xsolla_ic_total">{ic_total}</string>
+    <string name="xsolla_ic_user">{ic_user}</string>
+    <string name="xsolla_ic_user_agreement">{ic_user_agreement}</string>
+    <string name="xsolla_ic_waiting">{ic_waiting}</string>
+    <string name="xsolla_ic_xsolla_app">{ic_xsolla_app}</string>
+    <string name="xsolla_ic_zipcode">{ic_zipcode}</string>
+    <string name="xsolla_id">id</string>
+    <string name="xsolla_navigation_drawer_close">Close navigation drawer</string>
+    <string name="xsolla_navigation_drawer_open">Open navigation drawer</string>
+    <string name="xsolla_no_data">No data</string>
+    <string name="xsolla_no_saved_payment_accounts">No saved payment accounts</string>
+    <string name="xsolla_no_xps_holder">Payment option not found. Please make sure you put the name right or try to use a different option.</string>
+    <string name="xsolla_payment_system_name">Payment system name</string>
+    <string name="xsolla_title_activity_xsolla">Bill</string>
+    <string name="xsolla_your_payment_accounts">Your Payment Accounts</string>
+    <style name="xsolla_BaseInput" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/xsolla_input_base</item>
+        <item name="android:textColor">@color/xsolla_text_main</item>
+    </style>
+    <style name="xsolla_BaseInputTitle" parent="android:Widget.TextView">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/xsolla_text_main</item>
+    </style>
+    <style name="xsolla_ButtonAction" parent="android:Widget.Button">
+        <item name="android:background">@drawable/xsolla_btn_action</item>
+        <item name="android:textColor">@color/xsolla_white</item>
+    </style>
+    <style name="xsolla_ButtonPay" parent="android:Widget.Button">
+        <item name="android:background">@drawable/xsolla_button_pay</item>
+        <item name="android:textColor">@color/xsolla_white</item>
+        <item name="android:textAppearance">@style/xsolla_TextAppearanceLarge</item>
+    </style>
+    <style name="xsolla_ButtonPaySmall" parent="android:Widget.Button">
+        <item name="android:background">@drawable/xsolla_button_pay_small</item>
+        <item name="android:textColor">@color/xsolla_white</item>
+        <item name="android:textAppearance">@style/xsolla_TextAppearanceSmall</item>
+    </style>
+    <style name="xsolla_SDKTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+    </style>
+    <style name="xsolla_SDKTheme.NoActionBar">
+        <!--<item name="android:windowActionBar">false</item>-->
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <!--<item name="android:windowFullscreen">true</item>-->
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="android:textAppearanceLarge">@style/xsolla_TextAppearanceLarge</item>
+        <item name="android:textAppearanceMedium">@style/xsolla_TextAppearanceMedium</item>
+        <item name="android:textAppearanceSmall">@style/xsolla_TextAppearanceSmall</item>
+
+
+        <item name="android:textColorHint">@color/xsolla_text_accent</item>
+    </style>
+    <style name="xsolla_TextAppearanceLarge" parent="android:TextAppearance.Large">
+        <item name="android:textSize">22sp</item>
+    </style>
+    <style name="xsolla_TextAppearanceMedium" parent="android:TextAppearance.Medium">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="xsolla_TextAppearanceSmall" parent="android:TextAppearance.Small">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="xsolla_tableText">
+        <item name="android:paddingTop">@dimen/xsolla_base_16</item>
+        <item name="android:paddingLeft">@dimen/xsolla_base_16</item>
+        <item name="android:textColor">@color/xsolla_text_main_l</item>
+        <item name="android:textSize">@dimen/xsolla_textLarge</item>
+    </style>
+    <style name="xsolla_tableText.Title" parent="xsolla_tableText">
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

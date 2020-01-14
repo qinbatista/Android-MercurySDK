@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/xsolla_base_4"
+    android:background="@drawable/xsolla_bg_rounded_gray">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/xsolla_textMedium"
+        android:text="Order Summary"
+        android:id="@+id/xsolla_tv_orderSummary"
+        android:layout_marginLeft="@dimen/xsolla_base_8"
+        android:layout_marginTop="@dimen/xsolla_base_8"
+        android:layout_marginRight="@dimen/xsolla_base_8"
+        android:layout_marginBottom="@dimen/xsolla_base_8" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/xsolla_grey_300"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/xsolla_ll_summary_item_container">
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/xsolla_grey_300"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/xsolla_base_8">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/xsolla_textMedium"
+            android:text="SubTotal"
+            android:id="@+id/xsolla_tv_subtotal"
+            android:gravity="center_vertical|start" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/xsolla_textMedium"
+            android:text="$19.99"
+            android:id="@+id/xsolla_tv_subtotal_value"
+            android:gravity="center_vertical|end" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/xsolla_dotted"/>
+
+    <!--<LinearLayout-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/xsolla_ll_finance_items_container">-->
+    <!--</LinearLayout>-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/xsolla_grey_300"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/xsolla_base_8">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/xsolla_textSmall"
+                android:textColor="@color/xsolla_text_accent"
+                android:text="SubTotal1"
+                android:id="@+id/xsolla_tv_discount"
+                android:gravity="center_vertical|start" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/xsolla_textSmall"
+                android:textColor="@color/xsolla_text_accent"
+                android:text="$19.99"
+                android:id="@+id/xsolla_tv_discount_price"
+                android:gravity="center_vertical|end" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/xsolla_grey_300"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/xsolla_base_8">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/xsolla_textSmall"
+                android:textColor="@color/xsolla_text_accent"
+                android:text="SubTotal2"
+                android:id="@+id/xsolla_tv_fee"
+                android:gravity="center_vertical|start" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/xsolla_textSmall"
+                android:textColor="@color/xsolla_text_accent"
+                android:text="$19.99"
+                android:id="@+id/xsolla_tv_fee_price"
+                android:gravity="center_vertical|end" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/xsolla_grey_300"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/xsolla_base_8">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/xsolla_textSmall"
+                android:textColor="@color/xsolla_text_accent"
+                android:text="SubTotal3"
+                android:id="@+id/xsolla_tv_tax"
+                android:gravity="center_vertical|start" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/xsolla_textSmall"
+                android:textColor="@color/xsolla_text_accent"
+                android:text="$19.99"
+                android:id="@+id/xsolla_tv_tax_price"
+                android:gravity="center_vertical|end" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/xsolla_grey_300"/>
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/xsolla_base_8">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/xsolla_textSmall"
+                android:textColor="@color/xsolla_text_accent"
+                android:text="SubTotal"
+                android:id="@+id/xsolla_tv_vat"
+                android:gravity="center_vertical|start" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/xsolla_textSmall"
+                android:textColor="@color/xsolla_text_accent"
+                android:text="$19.99"
+                android:id="@+id/xsolla_tv_vat_price"
+                android:gravity="center_vertical|end" />
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/xsolla_grey_300"/>
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/xsolla_base_8">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/xsolla_textSmall"
+                android:textColor="@color/xsolla_text_accent"
+                android:text="SubTotal"
+                android:id="@+id/xsolla_tv_balance"
+                android:gravity="center_vertical|start" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/xsolla_textSmall"
+                android:textColor="@color/xsolla_text_accent"
+                android:text="$19.99"
+                android:id="@+id/xsolla_tv_balance_price"
+                android:gravity="center_vertical|end" />
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/xsolla_grey_300"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/xsolla_grey_300"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/xsolla_base_8">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/xsolla_textMedium"
+            android:textColor="@color/xsolla_green"
+            android:text="Total"
+            android:id="@+id/xsolla_tv_total"
+            android:gravity="center_vertical|start"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/xsolla_textMedium"
+            android:textColor="@color/xsolla_green"
+            android:text="$19.99"
+            android:id="@+id/xsolla_tv_total_value"
+            android:gravity="center_vertical|end" />
+    </LinearLayout>
+</LinearLayout>

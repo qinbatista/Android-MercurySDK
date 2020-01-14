@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="smartisan_back">取消</string>
+    <string name="smartisan_pay_title">支付订单</string>
+    <string name="smartisan_pay_goodsname">商品名称：</string>
+    <string name="smartisan_pay_goodsprice">商品金额：</string>
+    <string name="smartisan_pay_type">支付方式</string>
+    <string name="smartisan_pay_alipay">支付宝支付</string>
+    <string name="smartisan_pay_wxpay">微信支付</string>
+    <string name="smartisan_pay">立即支付</string>
+
+    <string name="sm_account_not_login">您还未登陆游戏中心账户</string>
+    <string name="sm_account_to_login">即将跳转到登陆界面</string>
+    <string name="sm_account_login_cancel">您已取消登陆</string>
+    <string name="sm_account_login_info">需登陆时会自动跳转到登陆界面</string>
+    <string name="sm_account_logining">正在自动登陆游戏</string>
+    <string name="sm_account_login_fail">登陆失败</string>
+    <string name="sm_account_login">已用账户 %s 自动登陆</string>
+    <string name="sm_unsupport_info">本应用仅能在 Smartisan OS v3.1.0 及以上版本的系统上运行</string>
+    <string name="sm_confirm">关闭</string>
+
+</resources>

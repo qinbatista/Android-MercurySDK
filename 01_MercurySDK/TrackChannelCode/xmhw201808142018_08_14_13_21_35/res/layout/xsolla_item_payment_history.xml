@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/xsolla_base_16">
+
+        <TextView
+            android:text="09/19/2016"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:id="@+id/tvDate"
+            android:textColor="@color/xsolla_grey_600"/>
+
+        <TextView
+            android:text="Credit/Debit Cards"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:id="@+id/tvPaymentMethod" />
+
+
+        <TextView
+            android:text="$0.30"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tvPrice"/>
+
+</LinearLayout>

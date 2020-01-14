@@ -1,0 +1,14 @@
+{
+	"library": [
+		 "AdSupport",
+		 "CoreFoundation",
+		 "CoreTelephony",
+		 "MobileCoreServices",
+		 "Webkit",
+		 "StoreKit"
+	],
+	"flag": [
+		 "-ObjC",
+		 "-all_load"
+	]
+}

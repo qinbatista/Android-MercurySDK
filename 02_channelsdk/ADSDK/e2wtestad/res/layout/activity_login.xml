@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/sm_login_loading_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/toast_login_bg">
+        <ImageView
+            android:id="@+id/sm_login_app_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/sm_login_game_icon"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/sm_login_app_icon"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/sm_login_text_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="260dp"
+            android:textSize="13.5sp"
+            android:textColor="@color/sm_text_color_title"
+            android:singleLine="true"
+            android:text="@string/sm_account_not_login"
+            android:ellipsize="end"/>
+        <TextView
+            android:id="@+id/sm_login_text_second"
+            android:layout_below="@id/sm_login_text_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="260dp"
+            android:textSize="13.5sp"
+            android:textColor="@color/sm_text_color_info"
+            android:singleLine="true"
+            android:text="@string/sm_account_to_login"
+            android:ellipsize="end"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,497 @@
+{
+	"configuration" : {
+		"credits_pack_most_popular" : "offer_credits_pack3",
+		"credits_pack_best_value" : "offer_credits_pack6",
+		"push_notifications_min_stage_completed" : "3",
+		"ads_enabled" : "true",
+		"ads_map_button_enabled" : "true",
+		"unity_remote_settings_override" : "true",
+		"restore_content_server" : "https://restore.ironhidegames.com/",
+
+		"stages_reward_multiplier_xp" : "1.0",
+		"stages_reward_multiplier_techpoints" : "1.0",
+		"stages_reward_multiplier_credits" : "1.0",
+		"achievements_reward_multiplier_techpoints" : "1.0",
+		"achievements_reward_multiplier_credits" : "1.0",
+
+		"level_selection_snow_particles" : "false"
+	},
+	"ratingSettings" : {
+		"minStage" : 4,
+		"minTimeAfterLaunchInMinutes" : 1,
+		"minTimeAfterPostponeInMinutes" : 180
+	},
+	"heroSale" : {
+		"heroes":[
+	         {
+	            "heroKey":"hero_shatra",
+				"discount":50
+	         },
+			 {
+	            "heroKey":"hero_tank",
+				"discount":25
+	         }
+	      ],
+		"metadata":{
+			"startingDate":"07/01/2017 09:05:33",
+        	"duration":"1.00:00:00"
+	      }
+	},
+	"iaps" : [
+		"com.ironhidegames.ironmarines.hero_mercenary",
+		"com.ironhidegames.ironmarines.hero_mecha",
+		"com.ironhidegames.ironmarines.hero_shatra",
+		"com.ironhidegames.ironmarines.hero_dr_graff",
+		"com.ironhidegames.ironmarines.hero_darwin",
+		"com.ironhidegames.ironmarines.hero_tank",
+		"com.ironhidegames.ironmarines.hero_paifeng",
+		"com.ironhidegames.ironmarines.hero_trabuco",
+		"com.ironhidegames.ironmarines.credits_pack1",
+		"com.ironhidegames.ironmarines.credits_pack2",
+		"com.ironhidegames.ironmarines.credits_pack3",
+		"com.ironhidegames.ironmarines.credits_pack4",
+		"com.ironhidegames.ironmarines.credits_pack5",
+		"com.ironhidegames.ironmarines.credits_pack6",
+        "com.ironhidegames.ironmarines.unlock_campaign"
+    ],
+	"creditPackOffers" : [
+
+		{
+	      "identifier":"offer_credits_pack_ads",
+	      "iapIdentifier":null,
+	      "offerType":1,
+	      "offerCost":{
+	         "currencyType":3,
+	         "cost":0
+	      },
+	      "rewards":[
+	         {
+	            "identifier":"offer_credits_pack_ads",
+	            "rewardType":2,
+	            "count":60
+	         }
+	      ],
+	      "metadata":{
+
+	      }
+	   },
+	   {
+	      "identifier":"offer_credits_pack1",
+	      "iapIdentifier":"com.ironhidegames.ironmarines.credits_pack1",
+	      "offerType":0,
+	      "offerCost":{
+	         "currencyType":0,
+	         "cost":0
+	      },
+	      "rewards":[
+	         {
+	            "identifier":"offer_credits_pack1",
+	            "rewardType":2,
+	            "count":1200
+	         }
+	      ],
+	      "metadata":{
+
+	      }
+	   },
+	   {
+	      "identifier":"offer_credits_pack2",
+	      "iapIdentifier":"com.ironhidegames.ironmarines.credits_pack2",
+	      "offerType":0,
+	      "offerCost":{
+	         "currencyType":0,
+	         "cost":0
+	      },
+	      "rewards":[
+	         {
+	            "identifier":"offer_credits_pack2",
+	            "rewardType":2,
+	            "count":2200
+	         }
+	      ],
+	      "metadata":{
+
+	      }
+	   },
+	   {
+	      "identifier":"offer_credits_pack3",
+	      "iapIdentifier":"com.ironhidegames.ironmarines.credits_pack3",
+	      "offerType":0,
+	      "offerCost":{
+	         "currencyType":0,
+	         "cost":0
+	      },
+	      "rewards":[
+	         {
+	            "identifier":"offer_credits_pack3",
+	            "rewardType":2,
+	            "count":5000
+	         }
+	      ],
+	      "metadata":{
+
+	      }
+	   },
+	   {
+	      "identifier":"offer_credits_pack4",
+	      "iapIdentifier":"com.ironhidegames.ironmarines.credits_pack4",
+	      "offerType":0,
+	      "offerCost":{
+	         "currencyType":0,
+	         "cost":0
+	      },
+	      "rewards":[
+	         {
+	            "identifier":"offer_credits_pack4",
+	            "rewardType":2,
+	            "count":11000
+	         }
+	      ],
+	      "metadata":{
+
+	      }
+	   },
+	   {
+	      "identifier":"offer_credits_pack5",
+	      "iapIdentifier":"com.ironhidegames.ironmarines.credits_pack5",
+	      "offerType":0,
+	      "offerCost":{
+	         "currencyType":0,
+	         "cost":0
+	      },
+	      "rewards":[
+	         {
+	            "identifier":"offer_credits_pack5",
+	            "rewardType":2,
+	            "count":30000
+	         }
+	      ],
+	      "metadata":{
+
+	      }
+	   },
+	   {
+	      "identifier":"offer_credits_pack6",
+	      "iapIdentifier":"com.ironhidegames.ironmarines.credits_pack6",
+	      "offerType":0,
+	      "offerCost":{
+	         "currencyType":0,
+	         "cost":0
+	      },
+	      "rewards":[
+	         {
+	            "identifier":"offer_credits_pack6",
+	            "rewardType":2,
+	            "count":70000
+	         }
+	      ],
+	      "metadata":{
+
+	      }
+	   }
+	],
+	"heroOffers" : [
+		{
+	      "identifier":"offer_hero_mercenary",
+	      "iapIdentifier":"com.ironhidegames.ironmarines.hero_mercenary",
+	      "offerType":0,
+	      "offerCost":{
+	         "currencyType":0,
+	         "cost":0
+	      },
+	      "rewards":[
+	         {
+	            "identifier":"hero_mercenary",
+	            "rewardType":0,
+	            "count":1
+	         }
+	      ],
+	      "metadata":{
+
+	      }
+	   },
+	   {
+	      "identifier":"offer_hero_mecha",
+	      "iapIdentifier":"com.ironhidegames.ironmarines.hero_mecha",
+	      "offerType":0,
+	      "offerCost":{
+	         "currencyType":0,
+	         "cost":0
+	      },
+	      "rewards":[
+	         {
+	            "identifier":"hero_mecha",
+	            "rewardType":0,
+	            "count":1
+	         }
+	      ],
+	      "metadata":{
+
+	      }
+	   },
+	   {
+	      "identifier":"offer_hero_shatra",
+	      "iapIdentifier":"com.ironhidegames.ironmarines.hero_shatra",
+	      "offerType":0,
+	      "offerCost":{
+	         "currencyType":0,
+	         "cost":0
+	      },
+	      "rewards":[
+	         {
+	            "identifier":"hero_shatra",
+	            "rewardType":0,
+	            "count":1
+	         }
+	      ],
+	      "metadata":{
+
+	      }
+	   },
+	   {
+	      "identifier":"offer_hero_dr_graff",
+	      "iapIdentifier":"com.ironhidegames.ironmarines.hero_dr_graff",
+	      "offerType":0,
+	      "offerCost":{
+	         "currencyType":0,
+	         "cost":0
+	      },
+	      "rewards":[
+	         {
+	            "identifier":"hero_dr_graff",
+	            "rewardType":0,
+	            "count":1
+	         }
+	      ],
+	      "metadata":{
+
+	      }
+	   },
+	   {
+	      "identifier":"offer_hero_darwin",
+	      "iapIdentifier":"com.ironhidegames.ironmarines.hero_darwin",
+	      "offerType":0,
+	      "offerCost":{
+	         "currencyType":0,
+	         "cost":0
+	      },
+	      "rewards":[
+	         {
+	            "identifier":"hero_darwin",
+	            "rewardType":0,
+	            "count":1
+	         }
+	      ],
+	      "metadata":{
+
+	      }
+	   },
+	   {
+	      "identifier":"offer_hero_tank",
+	      "iapIdentifier":"com.ironhidegames.ironmarines.hero_tank",
+	      "offerType":0,
+	      "offerCost":{
+	         "currencyType":0,
+	         "cost":0
+	      },
+	      "rewards":[
+	         {
+	            "identifier":"hero_tank",
+	            "rewardType":0,
+	            "count":1
+	         }
+	      ],
+	      "metadata":{
+
+	      }
+	   },
+	   {
+	      "identifier":"offer_hero_paifeng",
+	      "iapIdentifier":"com.ironhidegames.ironmarines.hero_paifeng",
+	      "offerType":0,
+	      "offerCost":{
+	         "currencyType":0,
+	         "cost":0
+	      },
+	      "rewards":[
+	         {
+	            "identifier":"hero_paifeng",
+	            "rewardType":0,
+	            "count":1
+	         }
+	      ],
+	      "metadata":{
+
+	      }
+	   },
+	   {
+	      "identifier":"offer_hero_trabuco",
+	      "iapIdentifier":"com.ironhidegames.ironmarines.hero_trabuco",
+	      "offerType":0,
+	      "offerCost":{
+	         "currencyType":0,
+	         "cost":0
+	      },
+	      "rewards":[
+	         {
+	            "identifier":"hero_trabuco",
+	            "rewardType":0,
+	            "count":1
+	         }
+	      ],
+	      "metadata":{
+
+	      }
+	   }
+	],
+	"specialOffers" : [
+	],
+	"powerOffers" : [
+		{
+	      "identifier":"power_titandoom",
+	      "offerType":1,
+	      "offerCost":{
+	         "currencyType":1,
+	         "cost":50
+	      },
+	      "rewards":[
+	         {
+	            "identifier":"power_titandoom",
+	            "rewardType":1,
+	            "count":1
+	         }
+	      ]
+	   },
+		{
+	      "identifier":"power_orbital_strike",
+	      "offerType":1,
+	      "offerCost":{
+	         "currencyType":1,
+	         "cost":1000
+	      },
+	      "rewards":[
+	         {
+	            "identifier":"power_orbital_strike",
+	            "rewardType":1,
+	            "count":1
+	         }
+	      ]
+	   },
+		{
+	      "identifier":"power_etherium_surge",
+	      "offerType":1,
+	      "offerCost":{
+	         "currencyType":1,
+	         "cost":60
+	      },
+	      "rewards":[
+	         {
+	            "identifier":"power_etherium_surge",
+	            "rewardType":1,
+	            "count":1
+	         }
+	      ]
+	   },
+		{
+	      "identifier":"power_mortarbros",
+	      "offerType":1,
+	      "offerCost":{
+	         "currencyType":1,
+	         "cost":500
+	      },
+	      "rewards":[
+	         {
+	            "identifier":"power_mortarbros",
+	            "rewardType":1,
+	            "count":1
+	         }
+	      ]
+	   },
+		{
+	      "identifier":"power_proximity_bollard",
+	      "offerType":1,
+	      "offerCost":{
+	         "currencyType":1,
+	         "cost":300
+	      },
+	      "rewards":[
+	         {
+	            "identifier":"power_proximity_bollard",
+	            "rewardType":1,
+	            "count":1
+	         }
+	      ]
+	   },
+		{
+	      "identifier":"power_accumulator",
+	      "offerType":1,
+	      "offerCost":{
+	         "currencyType":1,
+	         "cost":150
+	      },
+	      "rewards":[
+	         {
+	            "identifier":"power_accumulator",
+	            "rewardType":1,
+	            "count":1
+	         }
+	      ]
+	   },
+		{
+	      "identifier":"power_replicant_mines",
+	      "offerType":1,
+	      "offerCost":{
+	         "currencyType":1,
+	         "cost":75
+	      },
+	      "rewards":[
+	         {
+	            "identifier":"power_replicant_mines",
+	            "rewardType":1,
+	            "count":1
+	         }
+	      ]
+	   },
+		{
+	      "identifier":"power_frostbite_bomb",
+	      "offerType":1,
+	      "offerCost":{
+	         "currencyType":1,
+	         "cost":220
+	      },
+	      "rewards":[
+	         {
+	            "identifier":"power_frostbite_bomb",
+	            "rewardType":1,
+	            "count":1
+	         }
+	      ]
+	   }
+	],
+	"contentOffers" : [
+	   {
+	      "identifier":"offer_content_campaign",
+	      "iapIdentifier":"com.ironhidegames.ironmarines.unlock_campaign",
+	      "offerType":0,
+	      "offerCost":{
+	         "currencyType":0,
+	         "cost":0
+	      },
+	      "rewards":[
+	         {
+	            "identifier":"content_campaign",
+	            "rewardType":5,
+	            "count":1
+	         },
+	         {
+	            "identifier":"offer_credits_pack1",
+	            "rewardType":2,
+	            "count":750
+	         }
+	      ],
+	      "metadata": {
+
+	      }
+	   }
+	]
+}

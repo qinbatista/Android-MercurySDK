@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.drunkbytes.tikitaka.bilibili" android:versionName="1.6.1" android:versionCode="10008899" android:installLocation="auto">
+  <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="17" />
+  <uses-feature android:name="android.hardware.type.television" android:required="false" />
+  <application android:name="com.east2west.testapp.GameSdkApplication"  android:debuggable="false">
+    <activity android:name="com.east2west.testapp.MainActivity" android:configChanges="orientation|screenSize"  android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:hardwareAccelerated="false" android:largeHeap="true">
+		<intent-filter>
+		<action android:name="android.intent.action.MAIN"/>
+		<category android:name="android.intent.category.LAUNCHER" />
+		</intent-filter>
+    </activity>
+    
+    <!--sdk-->
+    	<activity
+android:name="com.drunkbytes.tikitaka.bilibili.wxapi.WXPayEntryActivity"
+android:exported="true"
+android:launchMode="singleTop" />
+<activity
+android:name="com.bsgamesdk.android.activity.PaymentActivity"
+android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+android:screenOrientation="portrait"
+android:theme="@style/bsgamesdk_customPaymentTheme"
+android:launchMode="singleTop" />
+<activity
+android:name="com.bsgamesdk.android.activity.BSGameSdkAgreementActivity"
+android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+android:launchMode="singleTop"/>
+<activity
+android:name="com.bsgamesdk.android.activity.Login_RegActivity"	
+android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+android:theme="@style/bsgamesdk_customDialog"
+android:launchMode="singleTop"/>
+<activity
+android:name="com.bsgamesdk.android.activity.LoadingActivity"
+android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+android:theme="@style/bsgamesdk_customDialog"
+android:launchMode="singleTop"/>
+<activity
+android:name="com.bsgamesdk.android.activity.TouristActivity"
+android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+android:theme="@style/bsgamesdk_customDialog"
+android:launchMode="singleTop"/>
+<activity
+android:name="com.bsgamesdk.android.activity.WelcomeActivity"
+android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+android:theme="@style/bsgemsdk_activity_welcome_style"
+android:launchMode="singleTop" />
+<activity
+android:name="com.bsgamesdk.android.activity.NoticeActivity"
+android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+android:theme="@style/bsgamesdk_customDialog"
+android:launchMode="singleTop"/>
+<activity
+android:name="com.bsgamesdk.android.activity.PointActivity"
+android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+android:theme="@style/bsgamesdk_customDialog"
+android:launchMode="singleTop"/>
+<activity
+android:name="com.bsgamesdk.android.activity.ExitActivity"
+android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+android:theme="@style/bsgamesdk_customDialog"
+android:launchMode="singleTop"/>
+<activity
+android:name="com.bsgamesdk.android.activity.RegisterActivity"
+android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+android:theme="@style/bsgamesdk_customDialog"
+android:launchMode="singleTop"/>
+<activity
+android:name="com.bsgamesdk.android.activity.LicenseAgreementActivity"
+android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+android:theme="@style/bsgamesdk_customDialog"
+android:launchMode="singleTop"/>
+<activity
+android:name="com.alipay.sdk.app.H5PayActivity"
+android:configChanges="orientation|keyboardHidden|navigation"
+android:exported="false"
+android:screenOrientation="behind" />
+<activity
+android:name="com.alipay.sdk.auth.AuthActivity"
+android:configChanges="orientation|keyboardHidden|navigation"
+android:exported="false"
+android:screenOrientation="behind" />
+<activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+<activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity"
+/>
+<activity
+android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
+<activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
+<activity
+android:name="com.paypal.android.sdk.payments.PayPalFuturePaymentActivity" />
+<activity
+android:name="com.paypal.android.sdk.payments.FuturePaymentConsentActivity" />
+<activity
+android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity" />
+<activity
+android:name="com.paypal.android.sdk.payments.PayPalProfileSharingActivity" />
+<activity
+android:name="com.paypal.android.sdk.payments.ProfileSharingConsentActivity"
+/>
+
+        <service android:name="com.paypal.android.sdk.payments.PayPalService"
+			android:exported="false" />
+		<activity
+	android:name="io.card.payment.CardIOActivity"
+	android:configChanges="keyboardHidden|orientation" />
+		<activity android:name="io.card.payment.DataEntryActivity" />
+ 	<service  
+          android:enabled="true" android:exported="true" android:name="com.bsgamesdk.android.dc.service.DcUpService"/>
+        
+       
+    <!--end-->
+    
+  </application>
+
+ 	 <!--sdkxml-->
+ 	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+	<uses-permission android:name="android.permission.WAKE_LOCK"/>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+  <!--end-->
+  
+  
+  <uses-feature android:glEsVersion="0x00020000" />
+  <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+  <uses-feature android:name="android.hardware.touchscreen.multitouch" android:required="false" />
+  <uses-feature android:name="android.hardware.touchscreen.multitouch.distinct" android:required="false" />
+  <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+  <uses-feature android:name="android.hardware.faketouch" android:required="false" />
+  <uses-feature android:name="android.hardware.telephony" android:required="false" />
+  <uses-feature android:name="android.hardware.camera" android:required="false" />
+  <uses-feature android:name="android.hardware.bluetooth" android:required="false" />
+  <uses-feature android:name="android.hardware.nfc" android:required="false" />
+  <uses-feature android:name="android.hardware.gps" android:required="false" />
+  <uses-feature android:name="android.hardware.microphone" android:required="true" />
+  <uses-feature android:name="android.hardware.sensor" android:required="false" />
+  <uses-feature android:name="android.software.leanback" android:required="false" />
+  <uses-feature android:name="android.hardware.microphone" android:required="false" />
+</manifest>

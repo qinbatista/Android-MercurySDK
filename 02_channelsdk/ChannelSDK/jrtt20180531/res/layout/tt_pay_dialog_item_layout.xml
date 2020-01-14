@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="66.7dp"
+        android:layout_height="66.7dp"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/tt_pay_dialog_item_image"
+            android:layout_width="46.7dp"
+            android:layout_height="46.7dp"
+            android:src="@drawable/tt_icon_alipay"
+            android:layout_margin="10dp"
+            />
+        <ImageView
+            android:id="@+id/tt_pay_dialog_item_select"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/tt_icon_select"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tt_pay_dialog_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="12dp"
+        android:text="支付宝支付"
+        android:textColor="#999"/>
+
+</LinearLayout>

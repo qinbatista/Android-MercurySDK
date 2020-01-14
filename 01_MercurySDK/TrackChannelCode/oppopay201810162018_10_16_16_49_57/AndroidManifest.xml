@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.AmanitaDesign.Machinarium.E2W.ipc.nearme.gamecenter"
+    android:installLocation="preferExternal"
+    android:versionCode="56324"
+    android:versionName="1.2" >
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17" />
+    <uses-feature
+        android:name="android.hardware.type.television"
+        android:required="true" />
+    <application
+        android:name="com.east2west.testapp.GameSdkApplication"
+        android:label="@string/app_name"
+        android:icon="@drawable/app_icon">
+        <activity
+            android:name="com.east2west.testapp.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data android:name="E2W_LOG" android:value="open"/>
+        <!--sdk-->
+        <meta-data android:name="game_mode" android:value="1" />
+        <meta-data android:name="debug_mode" android:value="true" />
+        <!-- 日志开关，发布时候设置为 false -->
+        <meta-data android:name="is_offline_game" android:value="true" />
+        <!-- true:单机游戏 false:网游 -->
+        <meta-data android:name="app_key" android:value="47RdbtaahXyC0ss0cwc0Ow8WK"/>
+        <!--appKey，游戏上线时请务必替换成游戏自身的 appkey-->
+        <activity
+        android:name="com.nearme.game.sdk.component.proxy.ProxyActivity" android:configChanges="keyboardHidden|orientation|screenSize" android:theme="@style/Theme_Dialog_Custom" android:process=":gcsdk">
+        </activity> <service
+            android:name="com.nearme.game.sdk.component.proxy.ProxyApiService" android:process=":gcsdk"
+            android:priority="1000">
+        </service>
+        <receiver android:name="com.nearme.game.sdk.component.proxy.ProxyUserCenterOperateReceiver"
+            android:exported="true" android:process=":gcsdk">
+            <intent-filter>
+                <action android:name="com.oppo.usercenter.account_login" />
+                <action android:name="com.oppo.usercenter.account_logout" />
+                <action android:name="com.oppo.usercenter.modify_name" />
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.nearme.game.sdk.component.proxy.ExitActivity" android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" >
+        </activity>
+        <!--end-->
+    </application>
+    <!--sdkxml-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+
+    <!--end-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-feature android:glEsVersion="0x00020000" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="false" />
+
+</manifest>

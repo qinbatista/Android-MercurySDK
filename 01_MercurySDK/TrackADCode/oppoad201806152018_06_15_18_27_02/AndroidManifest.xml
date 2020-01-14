@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.invictus.impossiball" android:versionName="1.6.1" android:versionCode="10008899" android:installLocation="auto">
+  <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="17" />
+  <uses-feature android:name="android.hardware.type.television" android:required="false" />
+  <application android:name="com.east2west.testapp.GameSdkApplication"  android:debuggable="false">
+    <activity android:name="com.east2west.testapp.MainActivity" android:configChanges="orientation|screenSize"  android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:hardwareAccelerated="false" android:largeHeap="true">
+		<intent-filter>
+		<action android:name="android.intent.action.MAIN"/>
+		<category android:name="android.intent.category.LAUNCHER" />
+		</intent-filter>
+    </activity>
+    
+    <!--ad-->
+    
+        <!--SDK 必选组件配置开始-->
+        <activity android:name="com.oppo.mobad.activity.AdActivity" />
+        <service android:name="com.oppo.mobad.service.AdService" />
+        <!--SDK 必选组件配置结束-->
+
+        <!--Demo 分渠道打包渠道号-->
+        <meta-data
+            android:name="OPPO_CHANNEL"
+            android:value="${OPPO_CHANNEL_VALUE}" />
+        <!--适配异形屏-->
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.2" />
+    <!--end-->
+    
+  </application>
+
+  <!--adxml-->
+	<!--SDK 必选权限配置开始-->
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+<uses-permission android:name="android.permission.INTERNET" />	
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+<uses-permission android:name="android.permission.READ_CALENDAR" />
+<uses-permission android:name="android.permission.WRITE_CALENDAR" />
+<!--SDK 必选权限配置结束-->
+
+<!--SDK 可选权限配置开始；建议应用配置定位权限，可以提升应用的广告收益-->
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<!--	权限-->
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<!--SDK 可选权限配置结束-->
+	
+  <!--end-->
+  
+  
+  <uses-feature android:glEsVersion="0x00020000" />
+  <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+  <uses-feature android:name="android.hardware.touchscreen.multitouch" android:required="false" />
+  <uses-feature android:name="android.hardware.touchscreen.multitouch.distinct" android:required="false" />
+  <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+  <uses-feature android:name="android.hardware.faketouch" android:required="false" />
+  <uses-feature android:name="android.hardware.telephony" android:required="false" />
+  <uses-feature android:name="android.hardware.camera" android:required="false" />
+  <uses-feature android:name="android.hardware.bluetooth" android:required="false" />
+  <uses-feature android:name="android.hardware.nfc" android:required="false" />
+  <uses-feature android:name="android.hardware.gps" android:required="false" />
+  <uses-feature android:name="android.hardware.microphone" android:required="true" />
+  <uses-feature android:name="android.hardware.sensor" android:required="false" />
+  <uses-feature android:name="android.software.leanback" android:required="false" />
+  <uses-feature android:name="android.hardware.microphone" android:required="false" />
+</manifest>

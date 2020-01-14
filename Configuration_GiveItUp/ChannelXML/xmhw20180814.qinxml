@@ -1,0 +1,78 @@
+<!--sdk-->
+        <activity
+
+            android:name="com.xsolla.android.sdk.view.XsollaActivity"
+
+            android:configChanges="keyboardHidden|orientation|screenSize"
+
+            android:label="@string/xsolla_app_name"
+
+            android:theme="@style/xsolla_SDKTheme.NoActionBar" />
+
+        <activity
+
+            android:name="com.xsolla.android.sdk.profile.ProfileActivity"
+
+            android:label="@string/xsolla_activity_profile_title" />
+
+        <activity
+
+            android:name="com.xsolla.android.sdk.payment.PaymentMethodsActivity"
+
+            android:label="@string/xsolla_activity_payment_methods" />
+
+        <activity
+
+            android:name="com.xsolla.android.sdk.directpayment.DirectPaymentActivity"
+
+            android:label="@string/xsolla_activity_direct_payment" />
+
+        <activity
+
+            android:name="com.xsolla.android.sdk.profile.managesubscriptions.subscriptiondetails.SubscriptionDetailsActivity"
+
+            android:label="@string/xsolla_activity_user_sbscription_details" />
+
+        <activity android:name="com.xsolla.android.sdk.shop.subscriptions.SubscriptionsActivity" />
+
+
+
+        <meta-data android:name="MiLinkGroupAppID"       android:value="@integer/MiLinkGroupAppID" />
+
+
+
+        <activity
+
+            android:name="com.xiaomi.gamecenter.sdk.ui.MiActivity"
+
+            android:configChanges="orientation|screenSize"
+
+            android:screenOrientation="behind"
+
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+
+        </activity>
+
+<!--end-->
+<!--sdkxml-->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+	<uses-permission android:name="com.xiaomi.permission.AUTH_SERVICE" />
+<!--end-->

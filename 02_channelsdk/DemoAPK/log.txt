@@ -1,0 +1,108 @@
+Buildfile: C:\MyProject\02_ChannelSDK\DemoAPK\build.xml
+
+-set-mode-check:
+
+-set-release-mode:
+
+-release-obfuscation-check:
+     [echo] proguard.config is ${proguard.config}
+
+-pre-build:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 25.2.5
+ [checkenv] Installed at D:\EnvTool\android-sdks
+
+-setup:
+     [echo] Project Name: game
+  [gettype] Project Type: Application
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 27.0.1
+     [echo] Resolving Build Target for game...
+[gettarget] Project Target:   Android 6.0
+[gettarget] API level:        23
+     [echo] ----------
+     [echo] Creating output directories if needed...
+    [mkdir] Created dir: C:\MyProject\02_ChannelSDK\DemoAPK\bin\rsObj
+    [mkdir] Created dir: C:\MyProject\02_ChannelSDK\DemoAPK\bin\rsLibs
+     [echo] ----------
+     [echo] Resolving Dependencies for game...
+[dependency] Library dependencies:
+[dependency] No Libraries
+[dependency] 
+[dependency] ------------------
+     [echo] ----------
+     [echo] Building Libraries with 'release'...
+   [subant] No sub-builds to iterate on
+
+-code-gen:
+[mergemanifest] Found Deleted Target File
+[mergemanifest] Merging AndroidManifest files into one.
+[mergemanifest] Manifest merger disabled. Using project manifest only.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] Found Deleted Target File
+     [aapt] Generating resource IDs...
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] No need to generate new BuildConfig.
+
+-pre-compile:
+
+-compile:
+    [javac] Compiling 1 source file to C:\MyProject\02_ChannelSDK\DemoAPK\bin\classes
+    [javac] 警告: [options] 源值1.5已过时, 将在未来所有发行版中删除
+    [javac] 警告: [options] 目标值1.5已过时, 将在未来所有发行版中删除
+    [javac] 警告: [options] 要隐藏有关已过时选项的警告, 请使用 -Xlint:-options。
+    [javac] 3 个警告
+
+-post-compile:
+
+-obfuscate:
+
+-dex:
+      [dex] input: C:\MyProject\02_ChannelSDK\DemoAPK\bin\classes
+      [dex] input: C:\MyProject\02_ChannelSDK\DemoAPK\libs\empty.jar
+      [dex] Using Pre-Dexed empty-0f5cfd57de0b57a76325e6a81bb7aa97.jar <- C:\MyProject\02_ChannelSDK\DemoAPK\libs\empty.jar
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into C:\MyProject\02_ChannelSDK\DemoAPK\bin\classes.dex...
+
+-crunch:
+   [crunch] Crunching PNG Files in source dir: C:\MyProject\02_ChannelSDK\DemoAPK\res
+   [crunch] To destination dir: C:\MyProject\02_ChannelSDK\DemoAPK\bin\res
+   [crunch] Crunched 0 PNG files to update cache
+
+-package-resources:
+     [aapt] Found Deleted Target File
+     [aapt] Creating full resource package...
+
+-package:
+[apkbuilder] Found Deleted Target File
+[apkbuilder] Creating game-release-unsigned.apk for release...
+
+-post-package:
+
+-release-prompt-for-password:
+
+-release-nosign:
+
+-release-sign:
+     [echo] Signing final apk...
+ [zipalign] Running zip align on final apk...
+     [echo] Release Package: C:\MyProject\02_ChannelSDK\DemoAPK\bin\game-release.apk
+[propertyfile] Updating property file: C:\MyProject\02_ChannelSDK\DemoAPK\bin\build.prop
+[propertyfile] Updating property file: C:\MyProject\02_ChannelSDK\DemoAPK\bin\build.prop
+[propertyfile] Updating property file: C:\MyProject\02_ChannelSDK\DemoAPK\bin\build.prop
+[propertyfile] Updating property file: C:\MyProject\02_ChannelSDK\DemoAPK\bin\build.prop
+
+-post-build:
+
+release:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds

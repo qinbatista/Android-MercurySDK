@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:padding="@dimen/xsolla_base_8">
+
+    <com.xsolla.android.sdk.view.widget.IconTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/xsolla_textLarge"
+        android:text="@string/xsolla_ic_waiting"
+        android:gravity="center"
+        android:id="@+id/xsolla_icon"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Item Shop"
+        android:paddingLeft="@dimen/xsolla_base_8"
+        android:paddingStart="@dimen/xsolla_base_8"
+        android:paddingRight="@dimen/xsolla_base_8"
+        android:paddingEnd="@dimen/xsolla_base_8"
+        android:id="@+id/xsolla_tv_title"/>
+
+</LinearLayout>

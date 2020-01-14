@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="back_ground_12">#1F000000</color>
+    <color name="black_60">#99000000</color>
+    <color name="black_87">#DE000000</color>
+    <color name="bottom_bar_text_select">#ff0bbe06</color>
+    <color name="text_color_green">#FF00C300</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="cancel">取消</string>
+    <string name="cur_version">当前版本:</string>
+    <string name="ensure">确定</string>
+    <string name="finish_percent">100%</string>
+    <string name="restart_game">重启游戏</string>
+    <string name="retry">重试</string>
+    <string name="update_fail">更新失败，请重试</string>
+    <string name="update_hint">有新版本需要更新</string>
+    <string name="update_success">更新成功，请重新启动游戏</string>
+    <string name="update_version">更新版本:</string>
+    <string name="updating">更新中…</string>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+	 
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="mprogressbar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/mprogress_bar</item><!-- progress_horizontal -->
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:minHeight">10dip</item>
+        <item name="android:maxHeight">10dip</item>
+    </style>
+    <style name="IFlexTranslucentThemeForAppCompatStub" parent="AppBaseTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+</resources>

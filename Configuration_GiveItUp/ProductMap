@@ -1,0 +1,19 @@
+{
+	"FreeCheckpoints":"production1",
+	"UnlockAllCharacter":"production2",
+	"SmallCoinPack":"production3",
+	"MediumCoinPack":"production4",
+	"LargeCoinPack":"production5",
+	"FreeCheckpoints_1":"production6",
+	"PermanentShield":"production7",
+	"UnlockCharacter12":"production8",
+	"CoinGift":"production9",
+	"RemoveAds":"production10",
+	"com.ironhidegames.ironmarines.hero_darwin":"production11",
+	"com.ironhidegames.ironmarines.hero_tank":"production12",
+	"com.ironhidegames.ironmarines.unlock_campaign":"production13",
+	"com.ironhidegames.ironmarines.hero_paifeng":"production14",
+	"com.ironhidegames.ironmarines.hero_trabuco":"production15"
+	
+
+ }

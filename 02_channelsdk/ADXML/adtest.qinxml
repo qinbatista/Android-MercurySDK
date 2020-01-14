@@ -1,0 +1,12 @@
+<!--ad-->
+    <meta-data android:name="SMARTISAN_APPID" android:value="20000054" />
+
+<!--end-->
+<!--adxml-->
+  <uses-permission android:name="android.permission.READ_PHONE_STATE" /> 
+
+  <uses-permission android:name="android.permission.INTERNET" /> 
+
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> 
+
+<!--end-->

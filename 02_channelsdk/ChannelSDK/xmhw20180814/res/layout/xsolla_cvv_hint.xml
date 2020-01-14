@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/xsolla_grey_600"
+    android:padding="1dp">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/xsolla_white"
+        android:padding="@dimen/xsolla_base_16">
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/xsolla_textMedium"
+            android:text="Where to find your security code"/>
+
+        <ImageView
+            android:layout_width="165dp"
+            android:layout_height="120dp"
+            android:background="@drawable/hint_cvv"
+            android:scaleType="centerInside"/>
+
+    </LinearLayout>
+
+</FrameLayout>

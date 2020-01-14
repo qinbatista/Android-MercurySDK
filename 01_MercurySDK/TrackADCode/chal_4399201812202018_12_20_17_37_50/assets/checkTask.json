@@ -1,0 +1,494 @@
+{"checkTask":[{
+    "taskName":"admobDomestic-v11.0.0",
+    "adType":[
+        "interstitial",
+        "video",
+        "banner"
+    ],
+    "checkConfig":{
+        "classCheck":[
+	    "com.google.android.gms.ads.AdListener",
+            "com.google.android.gms.ads.AdRequest",
+            "com.google.android.gms.ads.MobileAds"
+        ],
+        "manifestCheck":[
+            "com.google.android.gms.ads.AdActivity",
+            "com.google.android.gms.common.api.GoogleApiActivity"
+        ],
+        "metaDataCheck":[
+            "com.google.android.gms.version"
+        ],
+        "assetsCheck":[
+
+        ],
+        "resourceCheck":[
+            {
+                "resourceName":"common_google_signin_btn_icon_dark",
+                "type":"drawable"
+            },{
+                "resourceName":"provider_paths",
+                "type":"xml"
+            },{
+                "resourceName":"Theme.IAPTheme",
+                "type":"style"
+            },{
+                "resourceName":"google_play_services_version",
+                "type":"integer"
+            }
+        ]
+    }
+},{
+    "taskName":"aliyun-common-v2.4.31",
+    "adType":[
+        "interstitial",
+        "video"
+    ],
+    "checkConfig":{
+        "classCheck":[
+            "cn.sirius.nga.NGASDK"
+        ],
+        "manifestCheck":[
+            "cn.uc.gamesdk.activity.ProxyActivity"
+        ],
+        "metaDataCheck":[
+
+        ],
+        "assetsCheck":[
+            "ucgamesdk",
+            "adpsdk"
+        ],
+        "resourceCheck":[
+        ]
+    }
+},{
+    "taskName":"adview-v3.8.4",
+    "adType":[
+        "interstitial",
+        "video",
+        "splash"
+    ],
+    "checkConfig":{
+        "classCheck":[
+            "com.kuaiyou.loader.AdViewInstlManager",
+            "com.kuaiyou.loader.loaderInterface.AdViewInstlListener",
+            "com.kuaiyou.loader.loaderInterface.AdViewVideoListener"
+        ],
+        "manifestCheck":[
+            "com.kyview.AdViewVideoActivity",
+            "com.kyview.DownloadService",
+            "com.kyview.AdViewLandingPage",
+            "com.kyview.AdActivity",
+	    "com.qq.e.comm.DownloadService"
+        ],
+        "metaDataCheck":[
+
+        ],
+        "assetsCheck":[
+        ],
+        "resourceCheck":[
+
+        ]
+    }
+},    {
+      "taskName": "apponboard-v1.0.6",
+      "adType": [
+        "video"
+      ],
+      "checkConfig": {
+        "classCheck": [
+          "com.apponboard.sdk.AppOnboard"
+        ],
+        "manifestCheck": [],
+        "metaDataCheck": [],
+        "assetsCheck": [],
+        "resourceCheck": []
+      }
+    }
+,{
+    "taskName":"baidu",
+    "adType":[
+	"splash",
+        "interstitial",
+        "video"
+    ],
+    "checkConfig":{
+        "classCheck":[
+            "com.baidu.mobads.AdView",
+	    "com.baidu.mobads.InterstitialAd",
+	    "com.baidu.mobads.SplashAd",
+            "com.baidu.mobads.rewardvideo.RewardVideoAd"
+        ],
+        "manifestCheck":[
+            
+        ],
+        "metaDataCheck":[
+
+        ],
+        "assetsCheck":[
+        ],
+        "resourceCheck":[
+        ]
+    }
+},    {
+      "taskName": "GDT",
+      "adType": [
+        "video",
+        "splash",
+        "nativead",
+        "banner"
+      ],
+      "checkConfig": {
+        "classCheck": [
+          "com.qq.e.ads.interstitial.InterstitialAD",
+          "com.qq.e.ads.nativ.NativeAD"
+        ],
+        "manifestCheck": [
+          "com.qq.e.ads.ADActivity",
+          "com.qq.e.comm.DownloadService"
+        ],
+        "metaDataCheck": [],
+        "assetsCheck": [],
+        "resourceCheck":[
+           {
+                "resourceName":"provider_paths",
+                "type":"xml"
+            }
+        ]
+      }
+    },    {
+      "taskName": "inmobi-v7.1.1",
+      "adType": [
+        "interstitial",
+        "nativead"
+      ],
+      "checkConfig": {
+        "classCheck": [
+          "com.inmobi.sdk.InMobiSdk"
+        ],
+        "manifestCheck": [
+          "com.inmobi.rendering.InMobiAdActivity",
+          "com.inmobi.ads.ApkDownloader$ApkDownloadService"
+        ],
+        "metaDataCheck": [],
+        "assetsCheck": [],
+        "resourceCheck": []
+      }
+    },    {
+      "taskName": "kingsoft-v4.1.0",
+      "adType": [
+        "video"
+      ],
+      "checkConfig": {
+        "classCheck": [
+          "com.ksc.ad.sdk.KsyunAdSdk"
+        ],
+        "manifestCheck": [
+          "com.ksc.ad.sdk.ui.AdProxyActivity",
+          "com.ksc.ad.sdk.ui.AdPermissionProxyActivity",
+          "com.ksc.ad.sdk.service.AdProxyService",
+          "com.ksc.ad.sdk.util.KsyunFileProvider"
+        ],
+        "metaDataCheck": [
+	  
+	],
+        "assetsCheck": [
+          "kscplugin\\ksc_plugin_v410.apk"
+        ],
+        "resourceCheck": [
+            {
+                "resourceName":"ksyun_file_paths",
+                "type":"xml"
+            },{
+                "resourceName":"provider_paths",
+                "type":"xml"
+            }
+	]
+      }
+    },    {
+      "taskName": "lamJoy-v4.1.0",
+      "adType": [
+        "video"
+      ],
+      "checkConfig": {
+        "classCheck": [
+          "com.lam.video.LamVideo"
+        ],
+        "manifestCheck": [
+          "com.lam.service.ManService",
+          "com.lam.listener.FileProvider",
+          "com.lam.activity.DialogActivity",
+          "com.lam.activity.StimulateVideoActivity",
+          "com.lam.activity.InterstitialVideoActivity"
+        ],
+        "metaDataCheck": [
+
+	],
+        "assetsCheck": [
+	  "kernel.dat"
+	],
+        "resourceCheck": []
+      }
+    },    {
+      "taskName": "mobgi-v4.4.0",
+      "adType": [
+        "nativead"
+      ],
+      "checkConfig": {
+        "classCheck": [
+          "com.mobgi.platform.nativead.MobgiNative"
+        ],
+        "manifestCheck": [
+          "android.support.v4.content.FileProvider"
+        ],
+        "metaDataCheck": [],
+        "assetsCheck":[
+            "IdreamskyLogo.png",
+            "adLogo.png",
+            "adx_close.png",
+            "adx_close_end.png",
+            "adx_download_button.png",
+            "adx_exit_button_down_minimal.png",
+            "adx_mute_off.png",
+            "adx_mute_on.png",
+            "adx_replay_button_down_minimal.png"
+        ],
+        "resourceCheck": []
+      }
+    },    {
+      "taskName": "mobgi-v4.4.0",
+      "adType": [
+        "splash"
+      ],
+      "checkConfig": {
+        "classCheck": [
+          "com.mobgi.platform.splash.MobgiSplash"
+        ],
+        "manifestCheck": [
+          "android.support.v4.content.FileProvider"
+        ],
+        "metaDataCheck": [],
+        "assetsCheck":[
+            "IdreamskyLogo.png",
+            "adLogo.png",
+            "adx_close.png",
+            "adx_close_end.png",
+            "adx_download_button.png",
+            "adx_exit_button_down_minimal.png",
+            "adx_mute_off.png",
+            "adx_mute_on.png",
+            "adx_replay_button_down_minimal.png"
+        ],
+        "resourceCheck": []
+      }
+    },    {
+      "taskName": "mobgi-v4.4.0",
+      "adType": [
+        "video"
+      ],
+      "checkConfig": {
+        "classCheck": [
+          "com.mobgi.platform.video.MobgiVideo"
+        ],
+        "manifestCheck": [
+          "com.mobgi.adutil.download.ApkDownloadService",
+          "com.mobgi.adx.AdxVideoActivity",
+          "com.mobgi.adutil.download.CompleteReceiver",
+          "android.support.v4.content.FileProvider"
+        ],
+        "metaDataCheck": [],
+        "assetsCheck":[
+            "IdreamskyLogo.png",
+            "adLogo.png",
+            "adx_close.png",
+            "adx_close_end.png",
+            "adx_download_button.png",
+            "adx_exit_button_down_minimal.png",
+            "adx_mute_off.png",
+            "adx_mute_on.png",
+            "adx_replay_button_down_minimal.png"
+        ],
+        "resourceCheck": []
+      }
+    },    {
+      "taskName": "mobvista-v9.2.0",
+      "adType": [
+        "video"
+      ],
+      "checkConfig": {
+        "classCheck": [
+	  "com.mintegral.msdk.MIntegralSDK",
+          "com.mintegral.msdk.out.MIntegralSDKFactory",
+	  "com.mintegral.msdk.out.MTGRewardVideoHandler",
+	  "com.mintegral.msdk.out.RewardVideoListener"
+        ],
+        "manifestCheck": [
+          "com.mintegral.msdk.activity.MTGCommonActivity",
+          "com.mintegral.msdk.shell.MTGService"
+        ],
+        "metaDataCheck": [],
+        "assetsCheck": [],
+        "resourceCheck": [
+		{"resourceName":"mintegral_reward_end_shape_oval","type":"drawable"},
+		{"resourceName":"mintegral_cm_backward","type":"drawable"},
+		{"resourceName":"loading_alert","type":"layout"},
+		{"resourceName":"mintegral_playercommon_player_view","type":"layout"},
+		{"resourceName":"mintegral_reward_activity_video_templete","type":"layout"},
+		{"resourceName":"mintegral_video_common_full_star","type":"drawable"}
+	]
+      }
+    }
+,    {
+      "taskName": "mobvista-v9.2.0",
+      "adType": [
+        "interstitial"
+      ],
+      "checkConfig": {
+        "classCheck": [
+          "com.mintegral.msdk.MIntegralConstans",
+	  "com.mintegral.msdk.MIntegralSDK",
+          "com.mintegral.msdk.out.InterstitialListener",
+          "com.mintegral.msdk.out.MIntegralSDKFactory",
+          "com.mintegral.msdk.out.MTGInterstitialHandler"
+        ],
+        "manifestCheck": [
+          "com.mintegral.msdk.activity.MTGCommonActivity",
+          "com.mintegral.msdk.shell.MTGService"
+        ],
+        "metaDataCheck": [],
+        "assetsCheck": [],
+        "resourceCheck": [
+		{"resourceName":"mintegral_interstitial_over","type":"drawable"},
+		{"resourceName":"mintegral_interstitial_activity","type":"layout"},
+		{"resourceName":"loading_alert","type":"layout"}
+	]
+      }
+    },    {
+      "taskName": "mobvista-CY-v9.2.0",
+      "adType": [
+        "interstitial"
+      ],
+      "checkConfig": {
+        "classCheck": [
+          "com.mintegral.msdk.interstitialvideo.out.MTGInterstitialVideoHandler",
+	  "com.mintegral.msdk.MIntegralSDK",
+	  "com.mintegral.msdk.interstitialvideo.out.InterstitialVideoListener",
+	  "com.mintegral.msdk.out.MIntegralSDKFactory"
+        ],
+        "manifestCheck": [
+          "com.mintegral.msdk.activity.MTGCommonActivity",
+          "com.mintegral.msdk.shell.MTGService"
+        ],
+        "metaDataCheck": [],
+        "assetsCheck": [],
+        "resourceCheck": [
+		{"resourceName":"mintegral_cm_backward","type":"drawable"},
+		{"resourceName":"loading_alert","type":"layout"},
+		{"resourceName":"mintegral_playercommon_player_view","type":"layout"},
+		{"resourceName":"mintegral_video_common_full_star","type":"drawable"}
+	]
+      }
+    },    {
+      "taskName": "oneway-v2.1.3",
+      "adType": [
+        "video"
+      ],
+      "checkConfig": {
+        "classCheck": [
+          "mobi.oneway.sdk.OnewaySdk"
+        ],
+        "manifestCheck": [
+          "mobi.oneway.sdk.AdShowActivity"
+        ],
+        "metaDataCheck": [],
+        "assetsCheck": [],
+        "resourceCheck": []
+      }
+    },    {
+      "taskName": "toutiao-v1.9.7.0",
+      "adType": [
+        "interstitial",
+        "splash",
+        "video",
+        "nativead",
+        "banner"
+      ],
+      "checkConfig": {
+        "classCheck": [
+          "com.bytedance.sdk.openadsdk.TTAdManager"
+        ],
+        "manifestCheck": [
+          "com.bytedance.sdk.openadsdk.activity.TTLandingPageActivity",
+          "com.bytedance.sdk.openadsdk.activity.TTVideoLandingPageActivity",
+          "com.bytedance.sdk.openadsdk.activity.TTRewardVideoActivity",
+          "com.bytedance.sdk.openadsdk.activity.TTDelegateActivity"
+        ],
+        "metaDataCheck": [],
+        "assetsCheck": [],
+        "resourceCheck": [
+		{"resourceName":"action_bg","type":"drawable"},
+		{"resourceName":"tt_detail_video_btn_bg","type":"drawable"},
+		{"resourceName":"activity_interation_layout","type":"layout"},
+ 		{"resourceName":"provider_paths","type":"xml"},
+		{"resourceName":"tt_cancel","type":"string"}
+	]
+      }
+    },    {
+      "taskName": "uniplay-v5.7.4",
+      "adType": [
+        "interstitial",
+        "video"
+      ],
+      "checkConfig": {
+        "classCheck": [
+          "com.uniplay.adsdk.VideoAd"
+        ],
+        "manifestCheck": [
+          "com.uniplay.adsdk.AdActivity",
+          "com.uniplay.adsdk.PackageReceiver",
+          "com.uniplay.adsdk.DownloadService"
+        ],
+        "metaDataCheck": [],
+        "assetsCheck": [
+		"uniplayad_close.png",
+		"uniplayad_logo.png"
+        ],
+        "resourceCheck": []
+      }
+    },    {
+      "taskName": "unity-v2.3.0",
+      "adType": [
+        "video"
+      ],
+      "checkConfig": {
+        "classCheck": [
+          "com.unity3d.ads.UnityAds"
+        ],
+        "manifestCheck": [
+          "com.unity3d.ads.adunit.AdUnitActivity",
+          "com.unity3d.ads.adunit.AdUnitSoftwareActivity"
+        ],
+        "metaDataCheck": [],
+        "assetsCheck": [],
+        "resourceCheck": []
+      }
+    },    {
+      "taskName": "vungle-v6.3.8",
+      "adType": [
+        "video"
+      ],
+      "checkConfig": {
+        "classCheck": [
+          "com.vungle.warren.AdConfig",
+          "com.vungle.warren.InitCallback",
+          "com.vungle.warren.Vungle"
+        ],
+        "manifestCheck": [
+          "com.vungle.warren.ui.VungleActivity",
+          "com.vungle.warren.ui.VungleWebViewActivity",
+          "com.vungle.warren.ui.VungleFlexViewActivity"
+        ],
+        "metaDataCheck": [],
+        "assetsCheck": [],
+        "resourceCheck": []
+      }
+    }]}

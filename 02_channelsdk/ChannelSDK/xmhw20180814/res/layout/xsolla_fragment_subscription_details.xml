@@ -1,0 +1,228 @@
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xsolla.android.sdk.profile.managesubscriptions.subscriptiondetails.SubscriptionDetailsFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container">
+
+        <android.support.v7.widget.CardView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/xsolla_base_16"
+            android:id="@+id/cardDetails">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/xsolla_base_16">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Subscription Details"
+                    android:textSize="@dimen/xsolla_textLarge"
+                    android:id="@+id/tvSubDetails"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/xsolla_base_16"
+                    android:paddingStart="@dimen/xsolla_base_16"
+                    android:paddingEnd="@dimen/xsolla_base_16"
+                    android:paddingRight="@dimen/xsolla_base_16"
+                    android:paddingTop="@dimen/xsolla_base_16"
+                    android:scrollbars="none"
+                    app:layoutManager="LinearLayoutManager"
+                    tools:listitem="@layout/xsolla_item_sub_details"
+                    android:layout_below="@+id/tvSubDetails"
+                    android:id="@+id/rvSubDetails"/>
+
+                <Button
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|end"
+                    android:background="@drawable/xsolla_btn_action"
+                    android:textColor="@color/xsolla_white"
+                    android:text="Renew"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/btnRenew"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rvSubDetails"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="end">
+
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lines="1"
+                        android:layout_marginRight="@dimen/xsolla_base_16"
+                        android:layout_marginEnd="@dimen/xsolla_base_16"
+                        android:textColor="@color/xsolla_purple_d"
+                        android:text="Unhold"
+                        android:id="@+id/tvUnhold"/>
+
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lines="1"
+                        android:layout_marginRight="@dimen/xsolla_base_16"
+                        android:layout_marginEnd="@dimen/xsolla_base_16"
+                        android:textColor="@color/xsolla_purple_d"
+                        android:text="Hold or cancel"
+                        android:id="@+id/tvHoldOrCancel"/>
+
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lines="1"
+                        android:textColor="@color/xsolla_purple_d"
+                        android:text="Change plan"
+                        android:id="@+id/tvChangePlan"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/xsolla_base_16"
+            android:id="@+id/cardMethod">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/xsolla_base_16">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Payment Method"
+                    android:textSize="@dimen/xsolla_textLarge"
+                    android:id="@+id/tvPaymentDetails"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/xsolla_base_16"
+                    android:paddingStart="@dimen/xsolla_base_16"
+                    android:paddingEnd="@dimen/xsolla_base_16"
+                    android:paddingRight="@dimen/xsolla_base_16"
+                    android:paddingTop="@dimen/xsolla_base_16"
+                    android:scrollbars="none"
+                    app:layoutManager="LinearLayoutManager"
+                    tools:listitem="@layout/xsolla_item_sub_details"
+                    android:layout_below="@id/tvPaymentDetails"
+                    android:id="@+id/rvPaymentDetails"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/xsolla_purple_d"
+                    android:text="Delete"
+                    android:layout_below="@id/rvPaymentDetails"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/tvDeletePayment" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/xsolla_base_16"
+            android:id="@+id/cardHistory">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/xsolla_base_16">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/xsolla_base_8"
+                    android:text="Payment History"
+                    android:textSize="@dimen/xsolla_textLarge"
+                    android:id="@+id/tvPaymentHistory"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/xsolla_base_16">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:lines="1"
+                        android:text="Date"
+                        android:id="@+id/tvDate"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:lines="1"
+                        android:text="Payment method"
+                        android:id="@+id/tvMethod"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="1"
+                        android:text="Amount"
+                        android:id="@+id/tvAmount"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="@dimen/xsolla_base_16"
+                    android:background="@color/xsolla_divider"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layoutManager="LinearLayoutManager"
+                    tools:listitem="@layout/xsolla_item_payment_history"
+                    android:id="@+id/rvPaymentHistory"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

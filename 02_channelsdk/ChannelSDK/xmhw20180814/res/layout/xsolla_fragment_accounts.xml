@@ -1,0 +1,60 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.xsolla.android.sdk.profile.accounts.AccountsFragment">
+
+    <LinearLayout
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/xsolla_base_16"
+        android:id="@+id/noData">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/xsolla_base_8"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/xsolla_no_saved_payment_accounts"
+            android:id="@+id/tvNoAccountsTitle"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/xsolla_accounts_hint"
+            android:id="@+id/tvNoAccountsHint"/>
+
+    </LinearLayout>
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swipeRefreshLayout">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/xsolla_base_16"
+            app:layoutManager="LinearLayoutManager"
+            tools:context="com.xsolla.android.sdk.profile.accounts.AccountsFragment"
+            tools:listitem="@layout/xsolla_item_saved_method"
+            android:id="@+id/recyclerView"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/xsolla_base_16"
+        app:backgroundTint="@color/xsolla_purple_m"
+        app:srcCompat="@drawable/xsolla_ic_add_white_24dp" />
+
+</android.support.design.widget.CoordinatorLayout>

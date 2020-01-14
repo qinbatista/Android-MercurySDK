@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.east2west.IronMarine.drm.uc" android:versionName="1.6.1" android:versionCode="10008899" android:installLocation="auto">
+  <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="17" />
+  <uses-feature android:name="android.hardware.type.television" android:required="false" />
+  <application android:name="com.east2west.testapp.GameSdkApplication"  android:debuggable="false">
+    <activity android:name="com.east2west.testapp.MainActivity" android:configChanges="orientation|screenSize"  android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:hardwareAccelerated="false" android:largeHeap="true">
+		<intent-filter>
+		<action android:name="android.intent.action.MAIN"/>
+		<category android:name="android.intent.category.LAUNCHER" />
+		</intent-filter>
+    </activity>
+    
+    <!--sdk-->
+     <!-- UC支付SDK声明 -->
+           <activity
+            android:name="cn.uc.paysdk.SDKActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:launchMode="singleTask"
+             android:windowSoftInputMode="adjustPan|stateAlwaysHidden|adjustResize" >
+        </activity>
+        <service android:name="cn.uc.paysdk.service.SDKService" >
+        </service>
+        <!-- From SDK 1.4.0 -->
+        <service android:name="com.uc.crashsdk.CrashLogFilesUploader"
+           android:process=":TProcess">
+        </service>
+
+        <activity android:name="cn.uc.gamesdk.activity.ProxyActivity" 
+            android:configChanges="keyboardHidden|orientation|screenSize"          
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustResize" >
+
+            <!-- android:theme="@android:style/Theme.Translucent" -->
+            <intent-filter>
+                <action android:name="cn.uc.gamesdk.sdkweb" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <!-- 支付宝声明 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+    <!-- 支付宝声明结束 -->
+
+        <!-- ⑥ 需要增加分辨率适配设置 -->
+           <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+    <!--end-->
+    
+  </application>
+
+  <!--sdkxml-->
+  <uses-permission android:name="android.permission.INTERNET" />
+   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+   <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+   <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+   <uses-permission android:name="android.permission.SEND_SMS" />
+   <uses-permission android:name="android.permission.GET_TASKS" />
+   <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+   <uses-permission android:name="android.permission.VIBRATE" />
+   <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+   <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+   <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+   <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+   <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+   <uses-permission android:name="android.webkit.permission.PLUGIN" />
+   <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />  
+   <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <!--end-->
+  
+  
+  <uses-feature android:glEsVersion="0x00020000" />
+  <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+  <uses-feature android:name="android.hardware.touchscreen.multitouch" android:required="false" />
+  <uses-feature android:name="android.hardware.touchscreen.multitouch.distinct" android:required="false" />
+  <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+  <uses-feature android:name="android.hardware.faketouch" android:required="false" />
+  <uses-feature android:name="android.hardware.telephony" android:required="false" />
+  <uses-feature android:name="android.hardware.camera" android:required="false" />
+  <uses-feature android:name="android.hardware.bluetooth" android:required="false" />
+  <uses-feature android:name="android.hardware.nfc" android:required="false" />
+  <uses-feature android:name="android.hardware.gps" android:required="false" />
+  <uses-feature android:name="android.hardware.microphone" android:required="true" />
+  <uses-feature android:name="android.hardware.sensor" android:required="false" />
+  <uses-feature android:name="android.software.leanback" android:required="false" />
+  <uses-feature android:name="android.hardware.microphone" android:required="false" />
+</manifest>
