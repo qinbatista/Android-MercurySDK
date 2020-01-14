@@ -1,28 +1,447 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f0a7478-2ee1-49bb-8cd9-958e98126d18" name="Default Changelist" comment="" />
+    <list default="true" id="8f0a7478-2ee1-49bb-8cd9-958e98126d18" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/.settings/org.eclipse.buildship.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/Necessarylibs/alipaySdk-20160825.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/Necessarylibs/android-support-v4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/Necessarylibs/commons-net-3.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/Necessarylibs/libammsdk.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/Necessarylibs/org.apache.http.legacy.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/Necessarylibs/rt.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/Necessarysrc/Common/WXEntryActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/Necessarysrc/Common/WXPayEntryActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/Necessarysrc/YSDK/WXEntryActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/360SDK.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/AdUnion4399.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/AnzhiUserCenter.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/BaiduAppX_V2.4.0_20160317.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/Baidu_MobAds_SDK-5.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/Baidu_MobAds_SDK.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/Baidu_Mobstat_Android_FOR_GAME_SDK_1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/CMBilling.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/Cartoonsmsbilling1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/Centrixlink.cn.2.5.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/CloudUpdate_SDK_1.1.18.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/DKSingleSDK2_1_1_07251719_online_final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/FlashRuntimeExtensions.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/GDTUnionSDK.4.19.571.min.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/GDTUnionSDK.4.19.573.min.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/GDTUnionSDK.4.8.529.min.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/GameCenterLicense_release_1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/GameSdk.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/GameSdk_jrtt20181218.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/GioneeAdSDK1.0.7.e.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/HMSAgent_2.5.3.302.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/HMS_SDK_2.6.0.301.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/HeepayPlugin_v3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/HwID_OpenSDK.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/IHuaweipay.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/LamVideoSDK_v4.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/MIO_SDK_BASE_1.5.2_11051.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/MIO_SDK_BASE_1.5.2_11051_xm20181024.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/MIO_SDK_MOS_1.0.0_4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/MSDK_Android_2.14.5a_svn69822.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/MSDK_Android_2.15.1a_svn71263.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/MidasPlugin1.6.1b.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/MimoSdk.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/Multimode_UniPay_payinfo.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/Multimode_Unipay_base.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/MzOfflineGameSDK_1.3.0_P.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/OkDownload-okhttp.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/OkDownload-sqlite.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/OkDownload.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/OnewaySdk-2.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/PopSDK-popsdk-160621-30.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/SaaS_GameAnalytics_Android_SDK_V4.0.22.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/Toutiao-v1.9.7.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/UCGameSaSdk-ninegame-2.0.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/UCGameSaSdk-ninegame-2.0.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/UCGameSaSdk-ninegame-7.5.2.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/UPPayAssistEx.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/UPPayPluginExPro.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/UPPayPluginExStd.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/UniplayAdSDK_5.7.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/UnityPlugin.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/Xg_sdk_v2.46_20160531_1455.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/YSDK_Android_1.3.6_841.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/YSDK_Android_1.4.2_1002.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/YoumiSdk_v6.4.0_2016-09-23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/adapter-rxjava-2.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/advertise-2.0.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/adview-android-bid-3.8.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/ali_adp_sdk_shell_base-1.0.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/ali_alisdk-utdid-20160516.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/ali_gamesdk-framework-shellbase-7.1.5.61.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/ali_ngad-sdk-shell-1.0.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/alipaySdk-20160120.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/alipaySdk-20160120_xm20181024.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/alipaySdk-20160825.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/alipaySdk-20170309.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/alipaySdk_jrtt20181218.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/alipaySingle-20170510.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/alipaysdk.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/alipaysecsdk.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/alipayutdid.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/am.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/android-gif-drawable-1.2.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/android-query-full.0.26.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/android-support-v13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/android-support-v4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/android-support-v7-recyclerview.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/android-support-v7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/anzhiPay.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/apache-mime4j-0.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/app-server-util-1.0.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/applog-release_jrtt20181218.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/armeabi-v7a/libttEncrypt.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/async-httpclient-1.6.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/authentic.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/bdpwxpaysdk.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/bsgamedatasdk_android_library_1.0.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/bsgamedatasdk_android_library_1.0.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/bsgamesdk_android_library-1.8.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/buoyopensdk.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/classes.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/cn.egame.terminal.paysdk.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/com.gionee.game.offlinesdk.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/com.gionee.gamesdk.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/com.iqiyi.iflex.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/com.umeng.message_v2.8.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/commons-logging-1.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/commons-net-3.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/converter-gson-2.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/coolpad_uac_sdk_game.3.1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/dk_game_sdk_1_1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/east2westsdk.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/eclipse_iapppay_plugin.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/egame.ck.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/egame.log_20161103_out_release.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/empty.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/eventbus-3.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/eventbus-3.0.0_xm20181024.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/fluent-hc-4.2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/galaxy-lite-2.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/gamesdk-20171218.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/gamesdk-20180404.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/gamesdk-20180809_oppopay20181016.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/google-play-services-analytics.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/gson-2.6.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/gson-2.8.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/hianalytics_v2.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/hianalytics_v2.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/httpclient-cache-4.2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/httpcore-4.2.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/httpmime-4.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/httpmime.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/httpmime_jrtt20181218.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/huanju-data-raw-v2.1.2-20002a.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/iab_taptap_1.4.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/internal_impl-24.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/ipaynow_onlywechat_v1.3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/ipaynow_onlywechat_v2.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/ipaynow_onlywechat_v2.0.2d.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/ipaynow_plugin_onlyqqpay_v1.0.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/isad.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/jg_filter_sdk_1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/jrttandroid-query-full.0.26.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/jrttandroid-support-v4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/jrttopenadsdk.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/jrttsdk.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/ksc_sdk_core_v410.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/ksc_sdk_v410.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/lenovo-analytics-sdk3.2.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/letv-gamesdk-2.2.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/libalipaysdk.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/libammsdk.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/logging-interceptor-3.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/m4399SingleOperateSDK.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/m4399SingleOperateSDK_20180824.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/m4399SingleRechargeSDK.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/m4399SingleRechargeSDK__20180824.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/mid-sdk-2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/miniSmsPaySDK.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/miniapay.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/mintegral_alphab.9.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/mintegral_alphab.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/mintegral_china_common.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/mintegral_common.9.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/mintegral_interstitial.9.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/mintegral_interstitialvideo.9.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/mintegral_interstitialvideo.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/mintegral_mtgdownloads.9.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/mintegral_mtgdownloads.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/mintegral_mtgjscommon.9.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/mintegral_mtgjscommon.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/mintegral_optimizedata.9.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/mintegral_playercommon.9.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/mintegral_playercommon.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/mintegral_reward.9.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/mintegral_reward.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/mintegral_videocommon.9.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/mintegral_videocommon.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/mintegral_videojs.9.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/mintegral_videojs.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/mmbilling3.1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/mobgiads-checker-v1.4.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/mobgiads-v4.4.0-generic-release.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/mqqopenpay.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/mtgamesdk.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/mzw_onlinesdk_3300.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/need_lib.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/okhttp-3.10.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/okhttp-3.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/okhttp-3.9.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/okio-1.13.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/okio-1.14.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/okio-1.6.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/okio-1.8.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/onewaySdk-2.1.3_release.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/open_sdk_r5793.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/openadsdk.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/oppo_mobad_api_v251_2018_04_15_release.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/oppo_mobad_api_v271_2018_08_24_release.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/org.apache.http.legacy.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/org.apache.http.legacy_xm20181024.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/payapkplugin.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/paybyqqlib.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/paysdk20170327.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/playableads-v2.0.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/pps_sdk_plugin_library.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/ppssdkpluginlibrary.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/protobuf-java-2.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/protobuf-java-2.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/protobuf-java-2.6.1_xm20181024.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/pushservice-4.5.1.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/pushservice-5.5.0.50.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/retrofit-2.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/rt.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/rxandroid-1.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/rxjava-1.1.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/samsung_plugin.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/sapi-core-6.14.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/sdk-ad-3.6.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/shenqiad.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/singlegameadsdk_r85.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/smartisan_gamesdk_v1.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/sp_sdk_downjoy_1.1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/standalone-api.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/support-v4-24.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/tgsdk.1.8.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/tgsdkadbaidu.1.8.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/tgsdkadcentrixlink.1.8.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/tgsdkadguangdiantong.1.8.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/tgsdkadmobvista.1.8.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/tgsdkadoneway.1.8.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/tgsdkadshenqiad.1.8.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/tgsdkaduniplay.1.8.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/tgsdkadzplayads.1.8.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/ugpsdk-5.3.0.2-product-release.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/ugpsdk-proguard.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/ugpsdk-release-4.9.5.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/ugpsdk-release-4.9.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/umeng-analytics-v6.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/umeng-analytics-v6.1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/unity-ads-2.3.0-china.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/unityclasses.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/universal-image-loader-1.9.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/utdid4all-1.0.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/vivo_adsdk_v2.6.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/vivounionsdk_single_v2.2.41.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/vivounionsdk_v4.2.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/volley-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/volley-1.0.19.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/volley-1.0.19_xm20181024.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/volley.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/wepay-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/wgld1.37_08_pub5n1349_obe.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/wire-runtime-2.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/wlogin_sdk.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/wypmaframe-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/wypnetwork-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/x86/libttEncrypt.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/xm.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/xmhw20180814.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/yyh_sdk.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/zxing2_1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/libs/zxing2_1_xm20181024.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/E2WApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/QinConst.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/SdkApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/Show/InAppShowADMOD20180816.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/Show/InAppShowAM.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/Show/InAppShowBD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/Show/InAppShowCHAL_439920181220.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/Show/InAppShowCS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/Show/InAppShowE2WAD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/Show/InAppShowE2WTESTAD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/Show/InAppShowJD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/Show/InAppShowJINSANYUN20181123.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/Show/InAppShowJL.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/Show/InAppShowJRTTAD20181219.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/Show/InAppShowJS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/Show/InAppShowMZ.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/Show/InAppShowOPPO20181214.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/Show/InAppShowOPPOAD20180615.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/Show/InAppShowT1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/Show/InAppShowT2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/Show/InAppShowT3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/Show/InAppShowTESTAD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/Show/InAppShowTX.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/Show/InAppShowVIVOAD20180605.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/Show/InAppShowWZ.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/Show/InAppShowXIAOMIAD20181126.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/Show/InAppShowXM.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/Show/InAppShowXMAD20181212.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/Show/InAppShowYB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/Show/InAppShowYM.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/Show/InAppShowYOMOD20181112.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/System/InAppBackUp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/System/InAppBaseOperation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/System/InAppBaseRestore.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/System/InAppBaseStatistics.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/System/InAppWeChatShare.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/APPBaseInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppANZHI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppAQY.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppBAIDU.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppBILIBILI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppBILIBILI20180530.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppBILIBILI20180611.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppBILIBILIPAY20180629.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppCHEL_4399.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppCHEL_439920180801.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppCHINA3NET.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppCUIZI20180413.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppDEBUG20180620.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppDL.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppDefault.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppE2WWK.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppEAST2WEST.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppHUAWEI20180410.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppHW.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppHWPAY.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppIOS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppIQIYI20180425.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppIQIYI20180628.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppJINLI20180518.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppJL.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppJRTT20180531.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppJRTT20181218.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppKP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppLS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppLXLSD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppLXYX.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppMEITU.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppMZ.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppMZW.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppMobileMarket.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppOPPO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppOPPO20180817.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppOPPOPAY20181016.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppQIHOO36020180601.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppQIHU360.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppSAMSUNG.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppSMARTISAN.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppTAPTAP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppTEST.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppTXYYB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppTelecom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppUC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppUCPAY20180606.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppUCPAY20180628.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppUnicom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppVIVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppVIVOPAY20180813.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppWDJ.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppWDJPAY20180608.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppXM.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppXM20181024.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppXMHW20180814.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppYSDK20180516.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppYSDK20180816.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp/InAppYYH.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/util/Base64.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/util/Base64Util.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/util/Base64Utils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/util/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/util/Function.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/util/FunctionAD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/util/HTTPSTrustManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/util/HttpService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/util/JsonParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/util/LauncherActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/util/LetvUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/util/MD5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/util/MD5E2W.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/util/PackageUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/util/PayResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/util/ProgressUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/util/QihooPayInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/util/QihooUserInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/util/QihooUserInfoListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/util/QihooUserInfoTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/util/RSAUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/util/RSAUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/util/SDKBuild.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/util/SHA.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/util/SdkHttpListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/util/SdkHttpTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/util/SharedUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/util/SignUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/util/Snippet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/util/StringUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/util/Util.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/util/UtilTool.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/util/Utils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/util/VivoSignUtils.java" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="444" />
-    <option name="y" value="101" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/01_MercurySDKPlugin/mercury/src/main/java/com/mercury/game/inApp/APPBaseInterface.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="280" />
+    <option name="y" value="132" />
     <option name="width" value="1400" />
     <option name="height" value="635" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -36,12 +455,14 @@
       </pane>
       <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -69,27 +490,44 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="444" y="101" width="1400" height="635" extended-state="1" />
+    <frame x="280" y="132" width="1400" height="635" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" visible="true" weight="0.3298969" />
-      <window_info id="Structure" side_tool="true" />
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="Build Variants" side_tool="true" />
-      <window_info id="Resources Explorer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="TODO" />
-      <window_info anchor="bottom" id="Android Profiler" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Logcat" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="right" id="Device File Explorer" side_tool="true" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.3298969" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Build Variants" order="4" side_tool="true" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Designer" order="6" />
+      <window_info id="Resources Explorer" order="7" weight="0.3298969" />
+      <window_info id="Capture Tool" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Logcat" order="1" />
+      <window_info anchor="bottom" id="TODO" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Android Profiler" order="5" show_stripe_button="false" />
+      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Theme Preview" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
     </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/01_MercurySDKPlugin/mercury/src/main/java/com/east2west/game/E2WApp.java" />
+    <entry file="file://$PROJECT_DIR$/01_MercurySDKPlugin/mercury/src/main/java/com/east2west/game/QinConst.java" />
+    <entry file="file://$PROJECT_DIR$/01_MercurySDKPlugin/mercury/src/main/java/com/east2west/game/SdkApplication.java" />
+    <entry file="file://$PROJECT_DIR$/01_MercurySDKPlugin/mercury/src/main/java/com/mercury/game/inApp/APPBaseInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
