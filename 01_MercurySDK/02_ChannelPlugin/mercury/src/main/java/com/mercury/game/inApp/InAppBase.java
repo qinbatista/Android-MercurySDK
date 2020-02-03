@@ -1,4 +1,4 @@
-package com.east2west.game.inApp;
+package com.mercury.game.inApp;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -21,9 +21,9 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 
-import com.east2west.game.E2WApp;
-import com.east2west.game.QinConst;
-import com.east2west.game.SdkApplication;
+import com.mercury.game.MercuryActivity;
+import com.mercury.game.MercuryConst;
+import com.mercury.game.MercuryApplication;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Application;
@@ -45,7 +45,7 @@ public class InAppBase{
 	protected InAppBase mInstance;
 	public static APPBaseInterface appinterface;
 	public static boolean sTestMode = false;
-	public static QinConst qc;
+	public static MercuryConst qc;
 	public static Context forbassonly;
 	public static String OrderID="";
 	public static String key = "MIICeAIBADANBgkqhkiG9w0BAQEFAASCAmIwggJeAgEAAoGBALnMsImln+S8fxJt" +
@@ -68,10 +68,10 @@ public class InAppBase{
 		mContext = context;
 		mAppContext = appContext;
 		mInstance = this;
-		qc = new QinConst();
+		qc = new MercuryConst();
 		this.appinterface=appcall;
 		forbassonly=context;
-		E2WApp.LogLocal("[InAppBase]->init:InAppBase.appinterface="+appcall);
+		MercuryActivity.LogLocal("[InAppBase]->init:InAppBase.appinterface="+appcall);
 	}
 	
 
@@ -86,7 +86,7 @@ public class InAppBase{
 	public void ApplicationInit(Application appcontext)
 	{
 		mAppContext=appcontext;
-		E2WApp.LogLocal("[InAppBase]->init:InAppBase.ApplicationInit="+appcontext);
+		MercuryActivity.LogLocal("[InAppBase]->init:InAppBase.ApplicationInit="+appcontext);
 	}
 	public boolean isPurchase()
 	{

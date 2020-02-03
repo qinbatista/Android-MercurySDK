@@ -1,4 +1,4 @@
-package com.east2west.game;
+package com.mercury.game;
 import java.io.ByteArrayInputStream;
 import java.security.cert.CertificateException;
 import java.security.cert.CertificateFactory;
@@ -23,13 +23,13 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.east2west.game.inApp.InAppBase;
-import com.east2west.game.inApp.InAppDefault;
+import com.mercury.game.inApp.InAppBase;
+import com.mercury.game.inApp.InAppDefault;
 
 
-public class SdkApplication extends Application{//UnicomApplicationWrapper {
+public class MercuryApplication extends Application{//UnicomApplicationWrapper {
 	
-	public static int mSimOperatorId = QinConst.ChinaNull;
+	public static int mSimOperatorId = MercuryConst.ChinaNull;
 	private static int mExtSDKId = -1;
 	private static int mChannelId = -1;
 	public static String msg = "";
@@ -50,7 +50,7 @@ public class SdkApplication extends Application{//UnicomApplicationWrapper {
 	public void onCreate() {
 		super.onCreate();
 		//find carriers
-		QinConst.GetChannelID("");
+		MercuryConst.GetChannelID("");
 		checkSIM();	
 		checkChannel();		
 		checkExtSDK();
@@ -73,7 +73,7 @@ public class SdkApplication extends Application{//UnicomApplicationWrapper {
 		Log.e("IAP","[SDKApp]SdkName="+msg);		
 		if(iscarriersneed.equals("open"))
 		{				
-			if(!E2WApp.SortChannelID.equals("telecom")&&!E2WApp.SortChannelID.equals("unicom"))		
+			if(!MercuryActivity.SortChannelID.equals("telecom")&&!MercuryActivity.SortChannelID.equals("unicom"))
 				System.loadLibrary("megjb");
 		}
 		
@@ -83,7 +83,7 @@ public class SdkApplication extends Application{//UnicomApplicationWrapper {
 	public void APPApplicationInit(Application context)
 	{
 		Acontext=context;
-		QinConst.GetChannelID("");
+		MercuryConst.GetChannelID("");
 		//find carriers
 		checkSIM();	
 		checkChannel();		
@@ -111,7 +111,7 @@ public class SdkApplication extends Application{//UnicomApplicationWrapper {
 		{
 			if(iscarriersneed.equals("open"))
 			{				
-				if(!E2WApp.SortChannelID.equals("telecom")&&!E2WApp.SortChannelID.equals("unicom"))		
+				if(!MercuryActivity.SortChannelID.equals("telecom")&&!MercuryActivity.SortChannelID.equals("unicom"))
 					System.loadLibrary("megjb");
 			}		
 		}
@@ -163,7 +163,7 @@ public class SdkApplication extends Application{//UnicomApplicationWrapper {
 	}
 	private void checkSIM() {
 
-		mSimOperatorId = QinConst.ChinaMobile;			
+		mSimOperatorId = MercuryConst.ChinaMobile;
 
 		try {
 
@@ -174,12 +174,12 @@ public class SdkApplication extends Application{//UnicomApplicationWrapper {
 			if (imsi != null) {
 				if (imsi.startsWith("46000") || imsi.startsWith("46002")
 						|| imsi.startsWith("46007")) {
-					mSimOperatorId = QinConst.ChinaMobile;
+					mSimOperatorId = MercuryConst.ChinaMobile;
 				} else if (imsi.startsWith("46001") || imsi.startsWith("46006")|| imsi.startsWith("46009")) {
-					mSimOperatorId = QinConst.ChinaUnicom;
+					mSimOperatorId = MercuryConst.ChinaUnicom;
 				} else if (imsi.startsWith("46003") || imsi.startsWith("46005")
 						|| imsi.startsWith("20404")) {// 20404  Vodafone) {
-					mSimOperatorId = QinConst.ChinaTelecom;
+					mSimOperatorId = MercuryConst.ChinaTelecom;
 				}
 			} else {
 
@@ -193,7 +193,7 @@ public class SdkApplication extends Application{//UnicomApplicationWrapper {
 	private void checkExtSDK() 
 	{		
 
-			Log.e(QinConst.TAG, "[E2WApp] Default=ApplicationInit");
+			Log.e(MercuryConst.TAG, "[MercuryActivity] Default=ApplicationInit");
 	    	mInAppExt = new InAppDefault();
 	    	mInAppExt.ApplicationInit(Acontext);
 	}
@@ -204,10 +204,10 @@ public class SdkApplication extends Application{//UnicomApplicationWrapper {
 		    Bundle bundle = ai.metaData;
 		    mChannelId = bundle.getInt("EGAME_CHANNEL");
 		} catch (NameNotFoundException e) {
-		    Log.e(QinConst.TAG, "checkChannel:Failed to load meta-data, EGAME_CHANNEL NameNotFound: " + e.getMessage());
+		    Log.e(MercuryConst.TAG, "checkChannel:Failed to load meta-data, EGAME_CHANNEL NameNotFound: " + e.getMessage());
 		    mChannelId = 0;
 		} catch (NullPointerException e) {
-		    Log.e(QinConst.TAG, "checkChannel:Failed to load meta-data, EGAME_CHANNEL NullPointer: " + e.getMessage());         
+		    Log.e(MercuryConst.TAG, "checkChannel:Failed to load meta-data, EGAME_CHANNEL NullPointer: " + e.getMessage());
 		    mChannelId = -1;
 		}
 	}
@@ -219,205 +219,205 @@ public class SdkApplication extends Application{//UnicomApplicationWrapper {
 		{
 			appInfo = Acontext.getPackageManager().getApplicationInfo(Acontext.getPackageName(),PackageManager.GET_META_DATA);
 			String channelnametmp = appInfo.metaData.getString("CHANNEL_NAME");
-			E2WApp.SortChannelID=channelname =channelnametmp;
-			if(E2WApp.SortChannelID.equals("kp"))
+			MercuryActivity.SortChannelID=channelname =channelnametmp;
+			if(MercuryActivity.SortChannelID.equals("kp"))
 			{
-				E2WApp.LongChannelID="kupai";
+				MercuryActivity.LongChannelID="kupai";
 			}
-			else if(E2WApp.SortChannelID.equals("txyysc"))
+			else if(MercuryActivity.SortChannelID.equals("txyysc"))
 			{
-				E2WApp.LongChannelID="tengxunyingyongshichang";
+				MercuryActivity.LongChannelID="tengxunyingyongshichang";
 			}
-			else if(E2WApp.SortChannelID.equals("txyxzx"))
+			else if(MercuryActivity.SortChannelID.equals("txyxzx"))
 			{
-				E2WApp.LongChannelID="tengxunyouxizhongxin";
+				MercuryActivity.LongChannelID="tengxunyouxizhongxin";
 			}
-			else if(E2WApp.SortChannelID.equals("dxx"))
+			else if(MercuryActivity.SortChannelID.equals("dxx"))
 			{
-				E2WApp.LongChannelID="xuancaiweimi";
+				MercuryActivity.LongChannelID="xuancaiweimi";
 			}
-			else if(E2WApp.SortChannelID.equals("bf"))
+			else if(MercuryActivity.SortChannelID.equals("bf"))
 			{
-				E2WApp.LongChannelID="baofengyingyin";
+				MercuryActivity.LongChannelID="baofengyingyin";
 			}
-			else if(E2WApp.SortChannelID.equals("txllq"))
+			else if(MercuryActivity.SortChannelID.equals("txllq"))
 			{
-				E2WApp.LongChannelID="tengxunliulanqi";
+				MercuryActivity.LongChannelID="tengxunliulanqi";
 			}
-			else if(E2WApp.SortChannelID.equals("al"))
+			else if(MercuryActivity.SortChannelID.equals("al"))
 			{
-				E2WApp.LongChannelID="ali";
+				MercuryActivity.LongChannelID="ali";
 			}
-			else if(E2WApp.SortChannelID.equals("unicom"))
+			else if(MercuryActivity.SortChannelID.equals("unicom"))
 			{
-				E2WApp.LongChannelID="liantong";
+				MercuryActivity.LongChannelID="liantong";
 			}
-			else if(E2WApp.SortChannelID.equals("mobile"))
+			else if(MercuryActivity.SortChannelID.equals("mobile"))
 			{
-				E2WApp.LongChannelID="yidong";
+				MercuryActivity.LongChannelID="yidong";
 			}
-			else if(E2WApp.SortChannelID.equals("qqgj"))
+			else if(MercuryActivity.SortChannelID.equals("qqgj"))
 			{
-				E2WApp.LongChannelID="QQguanjia";
+				MercuryActivity.LongChannelID="QQguanjia";
 			}
-			else if(E2WApp.SortChannelID.equals("none"))
+			else if(MercuryActivity.SortChannelID.equals("none"))
 			{
-				E2WApp.LongChannelID="kongxiangmu";
+				MercuryActivity.LongChannelID="kongxiangmu";
 			}
-			else if(E2WApp.SortChannelID.equals("telecom"))
+			else if(MercuryActivity.SortChannelID.equals("telecom"))
 			{
-				E2WApp.LongChannelID="dianxin";
+				MercuryActivity.LongChannelID="dianxin";
 			}
-			else if(E2WApp.SortChannelID.equals("debug"))
+			else if(MercuryActivity.SortChannelID.equals("debug"))
 			{
-				E2WApp.LongChannelID="ceshi";
+				MercuryActivity.LongChannelID="ceshi";
 			}
-			else if(E2WApp.SortChannelID.equals("yy"))
+			else if(MercuryActivity.SortChannelID.equals("yy"))
 			{
-				E2WApp.LongChannelID="youyi";
+				MercuryActivity.LongChannelID="youyi";
 			}
-			else if(E2WApp.SortChannelID.equals("nd"))
+			else if(MercuryActivity.SortChannelID.equals("nd"))
 			{
-				E2WApp.LongChannelID="Nduo";
+				MercuryActivity.LongChannelID="Nduo";
 			}
-			else if(E2WApp.SortChannelID.equals("yyh"))
+			else if(MercuryActivity.SortChannelID.equals("yyh"))
 			{
-				E2WApp.LongChannelID="yingyonghui";
+				MercuryActivity.LongChannelID="yingyonghui";
 			}
-			else if(E2WApp.SortChannelID.equals("yk"))
+			else if(MercuryActivity.SortChannelID.equals("yk"))
 			{
-				E2WApp.LongChannelID="youku";
+				MercuryActivity.LongChannelID="youku";
 			}
-			else if(E2WApp.SortChannelID.equals("jf"))
+			else if(MercuryActivity.SortChannelID.equals("jf"))
 			{
-				E2WApp.LongChannelID="jifeng";
+				MercuryActivity.LongChannelID="jifeng";
 			}
-			else if(E2WApp.SortChannelID.equals("sg"))
+			else if(MercuryActivity.SortChannelID.equals("sg"))
 			{
-				E2WApp.LongChannelID="sougou";
+				MercuryActivity.LongChannelID="sougou";
 			}
-			else if(E2WApp.SortChannelID.equals("txyyb"))
+			else if(MercuryActivity.SortChannelID.equals("txyyb"))
 			{
-				E2WApp.LongChannelID="tengxunyingyongbao";
+				MercuryActivity.LongChannelID="tengxunyingyongbao";
 			}
-			else if(E2WApp.SortChannelID.equals("kw"))
+			else if(MercuryActivity.SortChannelID.equals("kw"))
 			{
-				E2WApp.LongChannelID="kuwo";
+				MercuryActivity.LongChannelID="kuwo";
 			}
-			else if(E2WApp.SortChannelID.equals("aqy"))
+			else if(MercuryActivity.SortChannelID.equals("aqy"))
 			{
-				E2WApp.LongChannelID="aiqiyi";
+				MercuryActivity.LongChannelID="aiqiyi";
 			}
-			else if(E2WApp.SortChannelID.equals("yw"))
+			else if(MercuryActivity.SortChannelID.equals("yw"))
 			{
-				E2WApp.LongChannelID="yiwan";
+				MercuryActivity.LongChannelID="yiwan";
 			}
-			else if(E2WApp.SortChannelID.equals("taptap"))
+			else if(MercuryActivity.SortChannelID.equals("taptap"))
 			{
-				E2WApp.LongChannelID="TapTap";
+				MercuryActivity.LongChannelID="TapTap";
 			}
-			else if(E2WApp.SortChannelID.equals("mzw"))
+			else if(MercuryActivity.SortChannelID.equals("mzw"))
 			{
-				E2WApp.LongChannelID="muzhiwan";
+				MercuryActivity.LongChannelID="muzhiwan";
 			}
-			else if(E2WApp.SortChannelID.equals("dl"))
+			else if(MercuryActivity.SortChannelID.equals("dl"))
 			{
-				E2WApp.LongChannelID="dangle";
+				MercuryActivity.LongChannelID="dangle";
 			}
-			else if(E2WApp.SortChannelID.equals("meitu"))
+			else if(MercuryActivity.SortChannelID.equals("meitu"))
 			{
-				E2WApp.LongChannelID="meitu";
+				MercuryActivity.LongChannelID="meitu";
 			}
-			else if(E2WApp.SortChannelID.equals("east2west"))
+			else if(MercuryActivity.SortChannelID.equals("east2west"))
 			{
-				E2WApp.LongChannelID="dongpinxishang";
+				MercuryActivity.LongChannelID="dongpinxishang";
 			}
-			else if(E2WApp.SortChannelID.equals("hw"))
+			else if(MercuryActivity.SortChannelID.equals("hw"))
 			{
-				E2WApp.LongChannelID="huawei";
+				MercuryActivity.LongChannelID="huawei";
 			}
-			else if(E2WApp.SortChannelID.equals("lxlsd"))
+			else if(MercuryActivity.SortChannelID.equals("lxlsd"))
 			{
-				E2WApp.LongChannelID="lianxiangleshangdian";
+				MercuryActivity.LongChannelID="lianxiangleshangdian";
 			}
-			else if(E2WApp.SortChannelID.equals("lxyx"))
+			else if(MercuryActivity.SortChannelID.equals("lxyx"))
 			{
-				E2WApp.LongChannelID="lianxiangyouxi";
+				MercuryActivity.LongChannelID="lianxiangyouxi";
 			}
-			else if(E2WApp.SortChannelID.equals("chel_4399"))
+			else if(MercuryActivity.SortChannelID.equals("chel_4399"))
 			{
-				E2WApp.LongChannelID="4399";
+				MercuryActivity.LongChannelID="4399";
 			}
-			else if(E2WApp.SortChannelID.equals("mz"))
+			else if(MercuryActivity.SortChannelID.equals("mz"))
 			{
-				E2WApp.LongChannelID="meizu";
+				MercuryActivity.LongChannelID="meizu";
 			}
-			else if(E2WApp.SortChannelID.equals("wdj"))
+			else if(MercuryActivity.SortChannelID.equals("wdj"))
 			{
-				E2WApp.LongChannelID="wandoujia";
+				MercuryActivity.LongChannelID="wandoujia";
 			}
-			else if(E2WApp.SortChannelID.equals("ls"))
+			else if(MercuryActivity.SortChannelID.equals("ls"))
 			{
-				E2WApp.LongChannelID="leshi";
+				MercuryActivity.LongChannelID="leshi";
 			}
-			else if(E2WApp.SortChannelID.equals("jinli"))
+			else if(MercuryActivity.SortChannelID.equals("jinli"))
 			{
-				E2WApp.LongChannelID="jinli";
+				MercuryActivity.LongChannelID="jinli";
 			}
-			else if(E2WApp.SortChannelID.equals("vivo"))
+			else if(MercuryActivity.SortChannelID.equals("vivo"))
 			{
-				E2WApp.LongChannelID="VIVO";
+				MercuryActivity.LongChannelID="VIVO";
 			}
-			else if(E2WApp.SortChannelID.equals("wxgame"))
+			else if(MercuryActivity.SortChannelID.equals("wxgame"))
 			{
-				E2WApp.LongChannelID="weixinyouxi";
+				MercuryActivity.LongChannelID="weixinyouxi";
 			}
-			else if(E2WApp.SortChannelID.equals("anzhi"))
+			else if(MercuryActivity.SortChannelID.equals("anzhi"))
 			{
-				E2WApp.LongChannelID="anzhi";
+				MercuryActivity.LongChannelID="anzhi";
 			}
-			else if(E2WApp.SortChannelID.equals("baidu_dk"))
+			else if(MercuryActivity.SortChannelID.equals("baidu_dk"))
 			{
-				E2WApp.LongChannelID="baiduduoku";
+				MercuryActivity.LongChannelID="baiduduoku";
 			}
-			else if(E2WApp.SortChannelID.equals("xm"))
+			else if(MercuryActivity.SortChannelID.equals("xm"))
 			{
-				E2WApp.LongChannelID="xiaomi";
+				MercuryActivity.LongChannelID="xiaomi";
 			}
-			else if(E2WApp.SortChannelID.equals("baidu_sjzs"))
+			else if(MercuryActivity.SortChannelID.equals("baidu_sjzs"))
 			{
-				E2WApp.LongChannelID="baidushoujizhushou";
+				MercuryActivity.LongChannelID="baidushoujizhushou";
 			}
-			else if(E2WApp.SortChannelID.equals("oppo"))
+			else if(MercuryActivity.SortChannelID.equals("oppo"))
 			{
-				E2WApp.LongChannelID="OPPO";
+				MercuryActivity.LongChannelID="OPPO";
 			}
-			else if(E2WApp.SortChannelID.equals("baidu_91"))
+			else if(MercuryActivity.SortChannelID.equals("baidu_91"))
 			{
-				E2WApp.LongChannelID="baidu91";
+				MercuryActivity.LongChannelID="baidu91";
 			}
-			else if(E2WApp.SortChannelID.equals("qihu360"))
+			else if(MercuryActivity.SortChannelID.equals("qihu360"))
 			{
-				E2WApp.LongChannelID="qihu360";
+				MercuryActivity.LongChannelID="qihu360";
 			}
-			else if(E2WApp.SortChannelID.equals("baidu_tb"))
+			else if(MercuryActivity.SortChannelID.equals("baidu_tb"))
 			{
-				E2WApp.LongChannelID="baidutieba";
+				MercuryActivity.LongChannelID="baidutieba";
 			}
-			else if(E2WApp.SortChannelID.equals("UC"))
+			else if(MercuryActivity.SortChannelID.equals("UC"))
 			{
-				E2WApp.LongChannelID="UCjiuyou";
+				MercuryActivity.LongChannelID="UCjiuyou";
 			}
-			else if(E2WApp.SortChannelID.equals("e2wwk"))
+			else if(MercuryActivity.SortChannelID.equals("e2wwk"))
 			{
-				E2WApp.LongChannelID="e2wwk";
+				MercuryActivity.LongChannelID="e2wwk";
 			}
 			
 		} catch (NameNotFoundException e) {
-		    Log.e(QinConst.TAG, "checkChannelName:Failed to load meta-data, CHANNEL_NAME NotFound: " + e.getMessage());
+		    Log.e(MercuryConst.TAG, "checkChannelName:Failed to load meta-data, CHANNEL_NAME NotFound: " + e.getMessage());
 		    mChannelId = 0;
 		} catch (NullPointerException e) {
-		    Log.e(QinConst.TAG, "checkChannelName:Failed to load meta-data, CHANNEL_NAME NullPointer: " + e.getMessage());         
+		    Log.e(MercuryConst.TAG, "checkChannelName:Failed to load meta-data, CHANNEL_NAME NullPointer: " + e.getMessage());
 		    mChannelId = -1;
 		}
 
@@ -431,10 +431,10 @@ public class SdkApplication extends Application{//UnicomApplicationWrapper {
 			String channelnametmp = appInfo.metaData.getString("MOBILE_SPLASH");
 			iscarriersneed =channelnametmp;
 		} catch (NameNotFoundException e) {
-		    Log.e(QinConst.TAG, "checkMobileSplash:Failed to load meta-data MOBILE_SPLASH, NameNotFound: " + e.getMessage());
+		    Log.e(MercuryConst.TAG, "checkMobileSplash:Failed to load meta-data MOBILE_SPLASH, NameNotFound: " + e.getMessage());
 		    
 		} catch (NullPointerException e) {
-		    Log.e(QinConst.TAG, "checkMobileSplash:Failed to load meta-data MOBILE_SPLASH, NullPointer: " + e.getMessage());         
+		    Log.e(MercuryConst.TAG, "checkMobileSplash:Failed to load meta-data MOBILE_SPLASH, NullPointer: " + e.getMessage());
 		}
 
 	}
@@ -447,10 +447,10 @@ public class SdkApplication extends Application{//UnicomApplicationWrapper {
 			String channelnametmp = appInfo.metaData.getString("CHANNEL_SPLASH");
 			channelSplash =channelnametmp;
 		} catch (NameNotFoundException e) {
-		    Log.e(QinConst.TAG, "checkChannelSplash to load meta-data CHANNEL_SPLASH, NameNotFound: " + e.getMessage());
+		    Log.e(MercuryConst.TAG, "checkChannelSplash to load meta-data CHANNEL_SPLASH, NameNotFound: " + e.getMessage());
 		    
 		} catch (NullPointerException e) {
-		    Log.e(QinConst.TAG, "checkChannelSplash to load meta-data CHANNEL_SPLASH, NullPointer: " + e.getMessage());         
+		    Log.e(MercuryConst.TAG, "checkChannelSplash to load meta-data CHANNEL_SPLASH, NullPointer: " + e.getMessage());
 		}
 
 	}
@@ -464,13 +464,13 @@ public class SdkApplication extends Application{//UnicomApplicationWrapper {
 			isAntLogOpen =isLogOpentmp;
 			if(isAntLogOpen.equals("open"))
 			{
-				Log.e("IAP","Log Verison:"+QinConst.LogVERSION);
+				Log.e("IAP","Log Verison:"+MercuryConst.LogVERSION);
 			}
 		} catch (NameNotFoundException e) {
-		    Log.e(QinConst.TAG, "checkLoge:Failed to load meta-data E2W_LOG, NameNotFound: " + e.getMessage());
+		    Log.e(MercuryConst.TAG, "checkLoge:Failed to load meta-data E2W_LOG, NameNotFound: " + e.getMessage());
 		    
 		} catch (NullPointerException e) {
-		    Log.e(QinConst.TAG, "checkLoge:Failed to load meta-data E2W_LOG, NullPointer: " + e.getMessage());         
+		    Log.e(MercuryConst.TAG, "checkLoge:Failed to load meta-data E2W_LOG, NullPointer: " + e.getMessage());
 		}
 
 	}
@@ -482,12 +482,12 @@ public class SdkApplication extends Application{//UnicomApplicationWrapper {
 			appInfo = Acontext.getPackageManager().getApplicationInfo(Acontext.getPackageName(),PackageManager.GET_META_DATA);
 			String isLogOpentmp = appInfo.metaData.getString("E2W_NUMBER");
 			e2wnumber =isLogOpentmp;
-			Log.e(QinConst.TAG, "E2W_NUMBER="+e2wnumber);			    
+			Log.e(MercuryConst.TAG, "E2W_NUMBER="+e2wnumber);
 		} catch (NameNotFoundException e) {
-		    Log.e(QinConst.TAG, "checkLoge:Failed to load meta-data E2W_NUMBER, NameNotFound: " + e.getMessage());
+		    Log.e(MercuryConst.TAG, "checkLoge:Failed to load meta-data E2W_NUMBER, NameNotFound: " + e.getMessage());
 		    
 		} catch (NullPointerException e) {
-		    Log.e(QinConst.TAG, "checkLoge:Failed to load meta-data E2W_NUMBER, NullPointer: " + e.getMessage());         
+		    Log.e(MercuryConst.TAG, "checkLoge:Failed to load meta-data E2W_NUMBER, NullPointer: " + e.getMessage());
 		}
 
 	}

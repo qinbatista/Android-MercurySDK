@@ -1,6 +1,6 @@
-package com.east2west.game.inApp;
-import com.east2west.game.inApp.APPBaseInterface;
-import com.east2west.game.inApp.InAppBase;
+package com.mercury.game.inApp;
+import com.mercury.game.inApp.APPBaseInterface;
+import com.mercury.game.inApp.InAppBase;
 
 //comment
 import android.app.Activity;
@@ -14,9 +14,9 @@ import android.content.DialogInterface.OnClickListener;
 import android.os.RemoteException;
 import android.util.Log;
 
-import com.east2west.game.E2WApp;
-import com.east2west.game.QinConst;
-import com.east2west.game.SdkApplication;
+import com.mercury.game.MercuryActivity;
+import com.mercury.game.MercuryConst;
+import com.mercury.game.MercuryApplication;
 
 import java.text.DateFormat;
 import java.util.Date;
@@ -38,17 +38,17 @@ public class InAppDefault extends InAppBase {
 	@Override
 	public void init(Context appContext, Activity context, final String strAppId, final String strAppSecret, APPBaseInterface appinterface)
 	{		
-		super.init(appContext, context, strAppId, strAppSecret,appinterface);	
+		super.init(appContext, context, strAppId, strAppSecret,appinterface);
+
+		MercuryActivity.LogLocal("["+Channelname+"] strAppKey="+strAppId);
+		MercuryActivity.LogLocal("["+Channelname+"] strAppSecret="+strAppSecret);
 		
-		E2WApp.LogLocal("["+Channelname+"] strAppKey="+strAppId);
-		E2WApp.LogLocal("["+Channelname+"] strAppSecret="+strAppSecret);
-		
-		mBaseInApp = E2WApp.activityforappbase.getBaseInApp();
+		mBaseInApp = MercuryActivity.activityforappbase.getBaseInApp();
 	}
 	public void ApplicationInit(Application appcontext)
 	{
 		mAppContext=appcontext;
-		E2WApp.LogLocal("["+Channelname+"]->init:InAppBase.ApplicationInit="+appcontext);
+		MercuryActivity.LogLocal("["+Channelname+"]->init:InAppBase.ApplicationInit="+appcontext);
 	}
 	public void AnalysisID(String IDString)
 	{
@@ -57,11 +57,11 @@ public class InAppDefault extends InAppBase {
 			String[] strArray=null;
 			strArray = convertStrToArray(IDString,",");
 			demovalue1=strArray[0].toString();
-			E2WApp.LogLocal("["+Channelname+"] demovalue1="+demovalue1);
+			MercuryActivity.LogLocal("["+Channelname+"] demovalue1="+demovalue1);
 		}
 		catch(Exception E)
 		{
-			E2WApp.LogLocal("[AnalysisID]Error="+E);
+			MercuryActivity.LogLocal("[AnalysisID]Error="+E);
 		}
 	}
 	public static String[] convertStrToArray(String str,String symbol){
@@ -77,45 +77,45 @@ public class InAppDefault extends InAppBase {
 	}
 	@Override
 	public void onPause()
-	{		
-		E2WApp.LogLocal("["+Channelname+"] onPause");
+	{
+		MercuryActivity.LogLocal("["+Channelname+"] onPause");
 	}
 	
 	@Override
 	public void onResume()
 	{
-		E2WApp.LogLocal("["+Channelname+"] onResume");
+		MercuryActivity.LogLocal("["+Channelname+"] onResume");
 	}
 	@Override
 	public void onDestroy()
 	{
-		E2WApp.LogLocal("["+Channelname+"] onDestroy");
+		MercuryActivity.LogLocal("["+Channelname+"] onDestroy");
 	}
 	@Override
 	public void onStop() 
 	{
-		E2WApp.LogLocal("["+Channelname+"] onStop");
+		MercuryActivity.LogLocal("["+Channelname+"] onStop");
 	}
 	@Override
 	public void onStart() 
 	{
-		E2WApp.LogLocal("["+Channelname+"] onStart");
+		MercuryActivity.LogLocal("["+Channelname+"] onStart");
 	}
 	@Override
 	public void onRestart()
 	{
-		E2WApp.LogLocal("["+Channelname+"] onRestart");
+		MercuryActivity.LogLocal("["+Channelname+"] onRestart");
 		
 	}
 	@Override
 	public void onActivityResult(int requestCode, int resultCode, Intent data) 
 	{
-		E2WApp.LogLocal("["+Channelname+"] onActivityResult(int requestCode, int resultCode, Intent data)");
+		MercuryActivity.LogLocal("["+Channelname+"] onActivityResult(int requestCode, int resultCode, Intent data)");
 	}
 	@Override
 	public void onNewIntent(Intent intent) 
 	{
-		E2WApp.LogLocal("["+Channelname+"] onNewIntent(Intent intent) ");
+		MercuryActivity.LogLocal("["+Channelname+"] onNewIntent(Intent intent) ");
 	}
 	
 
@@ -124,7 +124,7 @@ public class InAppDefault extends InAppBase {
 	public void ExitGame()
 	{
 
-		((Activity) E2WApp.mContext).finish();
+		((Activity) MercuryActivity.mContext).finish();
 		android.os.Process.killProcess(android.os.Process.myPid());
 		
 	}
@@ -132,40 +132,40 @@ public class InAppDefault extends InAppBase {
 
 	private void purchaseProduct()
 	{
-		E2WApp.LogLocal("["+Channelname+"] CarriersPayLock="+QinConst.CarriersPayLock);
-		E2WApp.LogLocal("["+Channelname+"] SDKPayLock="+QinConst.SDKPayLock);
+		MercuryActivity.LogLocal("["+Channelname+"] CarriersPayLock="+MercuryConst.CarriersPayLock);
+		MercuryActivity.LogLocal("["+Channelname+"] SDKPayLock="+MercuryConst.SDKPayLock);
 		
-		if(QinConst.CarriersPayLock.equals("0")&&QinConst.SDKPayLock.equals("0"))
+		if(MercuryConst.CarriersPayLock.equals("0")&&MercuryConst.SDKPayLock.equals("0"))
 		{
 			
 		}
-		else if(QinConst.CarriersPayLock.equals("1")&&QinConst.SDKPayLock.equals("0"))
+		else if(MercuryConst.CarriersPayLock.equals("1")&&MercuryConst.SDKPayLock.equals("0"))
 		{
 			 CarriersPay();
 		}
-		else if(QinConst.CarriersPayLock.equals("0")&&QinConst.SDKPayLock.equals("1"))
+		else if(MercuryConst.CarriersPayLock.equals("0")&&MercuryConst.SDKPayLock.equals("1"))
 		{
 			ChannelPay();
 		}
-		else if(QinConst.CarriersPayLock.equals("1")&&QinConst.SDKPayLock.equals("1"))
+		else if(MercuryConst.CarriersPayLock.equals("1")&&MercuryConst.SDKPayLock.equals("1"))
 		{
 			DoublePay();
 		}
 	}
 	public void CarriersPay()
 	{
-		if (mBaseInApp != null&&SdkApplication.iscarriersneed.equals("open")) 
+		if (mBaseInApp != null&&MercuryApplication.iscarriersneed.equals("open"))
 		{
-			mBaseInApp.purchase(QinConst.CarriersID, mProductDescription, mProductPrice);
+			mBaseInApp.purchase(MercuryConst.CarriersID, mProductDescription, mProductPrice);
 		}
 		else
 		{
-			E2WApp.LogLocal("["+Channelname+"] MOBILE_SPLASH Closed...Can't Use Carrier's Pay");
+			MercuryActivity.LogLocal("["+Channelname+"] MOBILE_SPLASH Closed...Can't Use Carrier's Pay");
 		}
 	}
 	public void ChannelPay()
 	{
-		Log.e(QinConst.TAG,"mProductId="+mProductId);
+		Log.e(MercuryConst.TAG,"mProductId="+mProductId);
 	}
 	public void DoublePay()
 	{

@@ -1,4 +1,4 @@
-package com.east2west.game.inApp;
+package com.mercury.game.inApp;
 
 public interface APPBaseInterface {
 	abstract void onPurchaseSuccessCallBack(String strProductId);

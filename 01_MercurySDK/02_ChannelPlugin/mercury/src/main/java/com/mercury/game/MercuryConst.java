@@ -1,4 +1,4 @@
-package com.east2west.game;
+package com.mercury.game;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
@@ -22,7 +22,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 
-import com.east2west.game.inApp.InAppBase;
+import com.mercury.game.inApp.InAppBase;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
@@ -34,7 +34,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 
-public class QinConst {
+public class MercuryConst {
 	public static String LogVERSION= "1.1";
 	public static final int ChinaNull = 0;
 	public static final int ChinaMobile = 1;
@@ -235,8 +235,8 @@ public class QinConst {
 
     public static void PayInfo(String SavePid)
     {
-    	QinConst.CarriersPayLock="0";
-    	QinConst.SDKPayLock="1";
+		MercuryConst.CarriersPayLock="0";
+		MercuryConst.SDKPayLock="1";
     	  String  ydpid="";
     	  String  ltpid="";
     	  String  dxpid="";
@@ -266,7 +266,7 @@ public class QinConst {
 	              break;	
 	      }
 
-		  switch (SdkApplication.mSimOperatorId)
+		  switch (MercuryApplication.mSimOperatorId)
 	      {
 	          case 1: strProductId = ydpid; break;
 	          case 2: strProductId = ltpid; break;
@@ -289,29 +289,29 @@ public class QinConst {
 		  QinPid = strProductId + ","+ChannelPid+"," + SDKPAY;
 		  Qindesc= desc;
 		  Qinpricefloat=pricefloat;
-		  E2WApp.LogLocal("[QinConst PayInfo] QinPid="+QinPid+" Qindesc="+Qindesc+" Qinpricefloat="+Qinpricefloat);
+		MercuryActivity.LogLocal("[MercuryConst PayInfo] QinPid="+QinPid+" Qindesc="+Qindesc+" Qinpricefloat="+Qinpricefloat);
     }
     
 	public void FunctionL(String number)
 	{
-		E2WApp.isLogOpen=number;
+		MercuryActivity.isLogOpen=number;
 	}
 	public void ExitGame()
 	{
-		E2WApp.LogLocal("[QinConst] SdkApplication.mSimOperatorId="+SdkApplication.mSimOperatorId);
-		((Activity) E2WApp.mContext).finish();
+		MercuryActivity.LogLocal("[MercuryConst] MercuryApplication.mSimOperatorId="+MercuryApplication.mSimOperatorId);
+		((Activity) MercuryActivity.mContext).finish();
 		android.os.Process.killProcess(android.os.Process.myPid());
-//		if(SdkApplication.iscarriersneed.equals("open")&&SdkApplication.mSimOperatorId!=QinConst.ChinaMobile)
+//		if(MercuryApplication.iscarriersneed.equals("open")&&MercuryApplication.mSimOperatorId!=MercuryConst.ChinaMobile)
 //		{
-//			E2WApp.LogLocal("[InAppBase] Android Exit With Mobile Code");
+//			MercuryActivity.LogLocal("[InAppBase] Android Exit With Mobile Code");
 //			// exit
-//			AlertDialog.Builder builder = new Builder(E2WApp.mContext);
+//			AlertDialog.Builder builder = new Builder(MercuryActivity.mContext);
 //			builder.setMessage("确认退出吗?");
 //			builder.setTitle("提示");
 //			builder.setPositiveButton("确认", new OnClickListener() {
 //				@Override
 //				public void onClick(DialogInterface dialog, int which) {
-//					((Activity) E2WApp.mContext).finish();
+//					((Activity) MercuryActivity.mContext).finish();
 //					android.os.Process.killProcess(android.os.Process.myPid());
 //				}
 //			});
@@ -325,81 +325,81 @@ public class QinConst {
 //		}
 //		else
 //		{
-//			E2WApp.LogLocal("[QinConst] Kill Process");
-//			((Activity) E2WApp.mContext).finish();
+//			MercuryActivity.LogLocal("[MercuryConst] Kill Process");
+//			((Activity) MercuryActivity.mContext).finish();
 //			android.os.Process.killProcess(android.os.Process.myPid());
 //		}
 	}
 	
 	public void onPurchaseSuccess(String message,InAppBase inbase,String mProductId) {
-		E2WApp.LogLocal("[QinConst] onPurchaseSuccess callback->strProductId="+mProductId+" message->"+message+" inbase->"+inbase+" SdkApplication.msg="+SdkApplication.getExtSDKId());
+		MercuryActivity.LogLocal("[MercuryConst] onPurchaseSuccess callback->strProductId="+mProductId+" message->"+message+" inbase->"+inbase+" MercuryApplication.msg="+MercuryApplication.getExtSDKId());
 		if(message!="3"||"exchange"!=message)
 		{
 			
 		}
 		else
 		{
-			E2WApp.LogLocal("[QinConst] onPurchaseSuccess");
+			MercuryActivity.LogLocal("[MercuryConst] onPurchaseSuccess");
 		}
-		if(SdkApplication.getExtSDKId()==QinConst.ChinaTencent)
+		if(MercuryApplication.getExtSDKId()==MercuryConst.ChinaTencent)
 		{
-			E2WApp.LogLocal("[QinConst] onPurchaseSuccess->wxgame:"+message);
+			MercuryActivity.LogLocal("[MercuryConst] onPurchaseSuccess->wxgame:"+message);
 			//UnityPlayer.UnitySendMessage("DontDestroy_Qin", "BuySuccess", message);
 		}
 		else
 			inbase.appinterface.onPurchaseSuccessCallBack(message);
 	}
-	public void onPurchaseFailed(String strError,InAppBase inbase,String mProductId) {		
-		E2WApp.LogLocal("[QinConst] onPurchaseFailed callback->strError="+strError+" inbase->"+inbase+" SdkApplication.msg="+SdkApplication.getExtSDKId());
+	public void onPurchaseFailed(String strError,InAppBase inbase,String mProductId) {
+		MercuryActivity.LogLocal("[MercuryConst] onPurchaseFailed callback->strError="+strError+" inbase->"+inbase+" MercuryApplication.msg="+MercuryApplication.getExtSDKId());
 		
-		if(SdkApplication.getExtSDKId()==QinConst.ChinaTencent)
+		if(MercuryApplication.getExtSDKId()==MercuryConst.ChinaTencent)
 		{
-			E2WApp.LogLocal("[QinConst] onPurchaseFailed->wxgame:"+strError);
+			MercuryActivity.LogLocal("[MercuryConst] onPurchaseFailed->wxgame:"+strError);
 			//UnityPlayer.UnitySendMessage("DontDestroy_Qin", "BuyFail", strError);
 		}
 		else
 			inbase.appinterface.onPurchaseFailedCallBack(strError);
 	}
 	public void onPurchaseCanceled(String strError,InAppBase inbase) {
-		E2WApp.LogLocal("[QinConst] onPurchaseCanceled callback->strError="+strError+" inbase->"+inbase+" SdkApplication.msg="+SdkApplication.getExtSDKId());	
+		MercuryActivity.LogLocal("[MercuryConst] onPurchaseCanceled callback->strError="+strError+" inbase->"+inbase+" MercuryApplication.msg="+MercuryApplication.getExtSDKId());
 		
-		if(SdkApplication.getExtSDKId()==QinConst.ChinaTencent)
+		if(MercuryApplication.getExtSDKId()==MercuryConst.ChinaTencent)
 		{
-			E2WApp.LogLocal("[QinConst] onPurchaseFailed->wxgame:"+strError);
+			MercuryActivity.LogLocal("[MercuryConst] onPurchaseFailed->wxgame:"+strError);
 			//UnityPlayer.UnitySendMessage("DontDestroy_Qin", "BuyFail", strError);
 		}
 		else
 			inbase.appinterface.onPurchaseCancelCallBack(strError);
 	}
 	public void onLoginSuccess(String strError,InAppBase inbase) {
-		E2WApp.LogLocal("[QinConst] onLoginSuccess callback->strError="+strError+" inbase->"+inbase);	
+		MercuryActivity.LogLocal("[MercuryConst] onLoginSuccess callback->strError="+strError+" inbase->"+inbase);
 		
 		inbase.appinterface.onLoginSuccessCallBack(strError);	
 	}
 	public void onLoginCancel(String strError,InAppBase inbase) {
-		E2WApp.LogLocal("[QinConst] onLoginCancel callback->strError="+strError+" inbase->"+inbase);	
+		MercuryActivity.LogLocal("[MercuryConst] onLoginCancel callback->strError="+strError+" inbase->"+inbase);
 		inbase.appinterface.onLoginCancelCallBack(strError);
 	}
-	public void onLoginFailed(String strError,InAppBase inbase) {		
-		E2WApp.LogLocal("[QinConst] onLoginFailed callback->strError="+strError+" inbase->"+inbase);	
+	public void onLoginFailed(String strError,InAppBase inbase) {
+		MercuryActivity.LogLocal("[MercuryConst] onLoginFailed callback->strError="+strError+" inbase->"+inbase);
 		inbase.appinterface.onLoginFailedCallBack(strError);	
 	}
-	public void onFunctionCallBack(String strError,InAppBase inbase) {		
-		E2WApp.LogLocal("[QinConst] onFunctionCallBack callback->strError="+strError+" inbase->"+inbase);	
+	public void onFunctionCallBack(String strError,InAppBase inbase) {
+		MercuryActivity.LogLocal("[MercuryConst] onFunctionCallBack callback->strError="+strError+" inbase->"+inbase);
 		inbase.appinterface.onFunctionCallBack(strError);	
 	}
 	public void QinUnityMessage(String ObjectName,String MethodName,String QinMessage)
 	{
-		if(E2WApp.Platform==QinConst.Unity)
+		if(MercuryActivity.Platform==MercuryConst.Unity)
 		{
 			//UnityPlayer.UnitySendMessage(ObjectName,MethodName,QinMessage);
 		}
 	}
 	public void ShareResult(int result )
 	{
-		if(E2WApp.Platform==QinConst.Unity)
+		if(MercuryActivity.Platform==MercuryConst.Unity)
 		{
-			E2WApp.LogLocal("[QinConst Unity] ShareResult->"+result);
+			MercuryActivity.LogLocal("[MercuryConst Unity] ShareResult->"+result);
 			//UnityPlayer.UnitySendMessage("DontDestroy_Qin","ShareResult",result+"");
 		}
 		else
@@ -409,9 +409,9 @@ public class QinConst {
 	}
 	public void Exchange(String text) {
 		// TODO Auto-generated method stub
-		if(E2WApp.Platform==QinConst.Unity)
+		if(MercuryActivity.Platform==MercuryConst.Unity)
 		{
-			E2WApp.LogLocal("[QinConst Unity] Exchange->"+text);
+			MercuryActivity.LogLocal("[MercuryConst Unity] Exchange->"+text);
 			//UnityPlayer.UnitySendMessage("DontDestroy_Qin", "ExchangeString", text);
 		}
 		else
@@ -421,11 +421,11 @@ public class QinConst {
 	}
 	public void Exchange(final InAppBase inbase) {
 		// TODO Auto-generated method stub
-		E2WApp.LogLocal("[QinConst Unity] Exchange->"+inbase);
-		E2WApp.LogLocal("[QinConst Unity] Exchange->Android");
-		final EditText inputServer = new EditText(((Activity) E2WApp.mContext));
+		MercuryActivity.LogLocal("[MercuryConst Unity] Exchange->"+inbase);
+		MercuryActivity.LogLocal("[MercuryConst Unity] Exchange->Android");
+		final EditText inputServer = new EditText(((Activity) MercuryActivity.mContext));
 		inputServer.setFilters(new InputFilter[] { new InputFilter.LengthFilter(10) });
-		AlertDialog.Builder builder = new AlertDialog.Builder(((Activity) E2WApp.mContext));
+		AlertDialog.Builder builder = new AlertDialog.Builder(((Activity) MercuryActivity.mContext));
 		builder.setTitle("兑换中心").setView(inputServer).setNegativeButton("取消", null);
 		builder.setPositiveButton("确定",new DialogInterface.OnClickListener() 
 		{

@@ -1,4 +1,4 @@
-package com.east2west.game;
+package com.mercury.game;
 import java.io.InputStream;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -6,9 +6,9 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.Random;
 
-import com.east2west.game.inApp.APPBaseInterface;
-import com.east2west.game.inApp.InAppBase;
-import com.east2west.game.inApp.InAppDefault;
+import com.mercury.game.inApp.APPBaseInterface;
+import com.mercury.game.inApp.InAppBase;
+import com.mercury.game.inApp.InAppDefault;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
@@ -33,7 +33,7 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 import android.widget.ImageView.ScaleType;
 
-public class E2WApp  {
+public class MercuryActivity  {
 
 	public static Context mContext = null;
 	private InAppBase mInApp;
@@ -51,7 +51,7 @@ public class E2WApp  {
 	public int platform;
 	public static String packagenameforuse;
 	public static String isLogOpen="";
-	public static E2WApp activityforappbase=null;
+	public static MercuryActivity activityforappbase=null;
 	public static int Platform=-1;
 	public static String DeviceId="";
 	public static String SavePidName="";
@@ -62,7 +62,7 @@ public class E2WApp  {
 	{
 		mContext = ContextForE2wSDK;	
 		ChannelSplash();
-		QinConst.GetChannelID("");
+		MercuryConst.GetChannelID("");
 		mInApp = new InAppDefault() ;
 		mInAppExt= new InAppDefault() ;
 		activityforappbase=this;
@@ -70,7 +70,7 @@ public class E2WApp  {
 	}
 	public void ChannelSplash()
 	{
-		E2WApp.LogLocal("[inapp] ChannelSplash.png");
+		MercuryActivity.LogLocal("[inapp] ChannelSplash.png");
 		try {
 			final RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(
 					RelativeLayout.LayoutParams.MATCH_PARENT,
@@ -115,7 +115,7 @@ public class E2WApp  {
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
-			E2WApp.LogLocal("[inapp] init e="+e.toString());
+			MercuryActivity.LogLocal("[inapp] init e="+e.toString());
 		}
 	}
  	public String SavePidName(){    
@@ -133,8 +133,8 @@ public class E2WApp  {
 	public void InitChannel(final APPBaseInterface appcall)
 	{
 		final Context applicationContext = mContext.getApplicationContext();		
-		LogLocal("[E2WApp] Local InitChannel()->"+mInApp);
-		mInApp.init(applicationContext, (Activity)mContext, QinConst.APPID, QinConst.APPKEY,appcall);
+		LogLocal("[MercuryActivity] Local InitChannel()->"+mInApp);
+		mInApp.init(applicationContext, (Activity)mContext, MercuryConst.APPID, MercuryConst.APPKEY,appcall);
 	
 	}
 	public void InitCarriers(final APPBaseInterface appcall)
@@ -144,9 +144,9 @@ public class E2WApp  {
 	
 	public void purchaseProduct(String pidname) 
 	{
-		LogLocal("[E2WApp] purchaseProduct: " + pidname);
-		QinConst.PayInfo(pidname);
-		mInApp.purchase(QinConst.QinPid, QinConst.Qindesc, QinConst.Qinpricefloat);		
+		LogLocal("[MercuryActivity] purchaseProduct: " + pidname);
+		MercuryConst.PayInfo(pidname);
+		mInApp.purchase(MercuryConst.QinPid, MercuryConst.Qindesc, MercuryConst.Qinpricefloat);
 	}
 	public void ExitGame()
 	{    		
@@ -301,7 +301,7 @@ public class E2WApp  {
 	
 	public static Object getInstance() {	
 		Log.e("IAP","Unity Game");
-		Platform=QinConst.Unity;
+		Platform=MercuryConst.Unity;
 		return mContext;
 	}
 
@@ -312,7 +312,7 @@ public class E2WApp  {
 	
 	public InAppBase getBaseInApp()
 	{
-		LogLocal("[E2WApp] getBaseInApp()->mInApp="+mInApp);
+		LogLocal("[MercuryActivity] getBaseInApp()->mInApp="+mInApp);
 		InAppBase myapp = new InAppDefault();
 		return myapp;
 	}
@@ -342,7 +342,7 @@ public class E2WApp  {
 	}
 	private void GetmInAppExt()
 	{
-		LogLocal("[E2WApp] GetmInAppExt()->"+mExtSDKId);
+		LogLocal("[MercuryActivity] GetmInAppExt()->"+mExtSDKId);
 		switch(mExtSDKId)
 		{
 			
@@ -362,7 +362,7 @@ public class E2WApp  {
 	
 	public void letUserLogin() 
 	{
-		E2WApp.LogLocal("[E2WApp]->letUserLogin:mInAppExt="+mInAppExt);
+		MercuryActivity.LogLocal("[MercuryActivity]->letUserLogin:mInAppExt="+mInAppExt);
 		if(mInAppExt != null)
 		{			
 			mInAppExt.letUserLogin();
@@ -370,7 +370,7 @@ public class E2WApp  {
 	}
 	public void stopWaiting() {
 		// TODO Auto-generated method stub
-		E2WApp.LogLocal("[E2WApp]->stopWaiting:mInAppExt="+mInAppExt);
+		MercuryActivity.LogLocal("[MercuryActivity]->stopWaiting:mInAppExt="+mInAppExt);
 		if(mInAppExt != null)
 		{			
 			mInAppExt.stopWaiting();
@@ -378,7 +378,7 @@ public class E2WApp  {
 	}
 	public void letUserLogout() {
 		// TODO Auto-generated method stub
-		E2WApp.LogLocal("[E2WApp]->letUserLogout:mInAppExt="+mInAppExt);
+		MercuryActivity.LogLocal("[MercuryActivity]->letUserLogout:mInAppExt="+mInAppExt);
 		if(mInAppExt != null)
 		{			
 			mInAppExt.letUserLogout();
@@ -386,7 +386,7 @@ public class E2WApp  {
 	}
 	public void showDiffLogin() 
 	{
-		E2WApp.LogLocal("[E2WApp]->showDiffLogin:mInAppExt="+mInAppExt);
+		MercuryActivity.LogLocal("[MercuryActivity]->showDiffLogin:mInAppExt="+mInAppExt);
 		if(mInAppExt != null)
 		{
 			mInAppExt.showDiffLogin();
@@ -395,7 +395,7 @@ public class E2WApp  {
 
 	public void TencentLogin(int kind)
 	{
-		E2WApp.LogLocal("[E2WApp]->TencentLogin:mInAppExt="+mInAppExt+" kind="+kind);
+		MercuryActivity.LogLocal("[MercuryActivity]->TencentLogin:mInAppExt="+mInAppExt+" kind="+kind);
 		if(mInAppExt != null)
 		{
 			mInAppExt.login(kind);
@@ -403,7 +403,7 @@ public class E2WApp  {
 	}
 	public void TencentLoginOut()
 	{
-		E2WApp.LogLocal("[E2WApp]->TencentLoginOut:mInAppExt="+mInAppExt);
+		MercuryActivity.LogLocal("[MercuryActivity]->TencentLoginOut:mInAppExt="+mInAppExt);
 		if(mInAppExt != null)
 		{
 			mInAppExt.logout();
@@ -411,7 +411,7 @@ public class E2WApp  {
 	}
 	public void TencentLoginOutOnly()
 	{
-		E2WApp.LogLocal("[E2WApp]->TencentLoginOutOnly:mInAppExt="+mInAppExt);
+		MercuryActivity.LogLocal("[MercuryActivity]->TencentLoginOutOnly:mInAppExt="+mInAppExt);
 		if(mInAppExt != null)
 		{
 			mInAppExt.TencentLoginOutOnly();
@@ -419,7 +419,7 @@ public class E2WApp  {
 	}
 	public void ShowTencentAd()
 	{
-		E2WApp.LogLocal("[E2WApp]->ShowTencentAd:mInAppExt="+mInAppExt);
+		MercuryActivity.LogLocal("[MercuryActivity]->ShowTencentAd:mInAppExt="+mInAppExt);
 		if(mInAppExt != null)
 		{
 			mInAppExt.ShowTencentAd();
@@ -435,7 +435,7 @@ public class E2WApp  {
 	}
 	public void showMessageDialog()
 	{
-		E2WApp.LogLocal("[E2WApp]->showMessageDialog:mInAppExt="+mInAppExt);
+		MercuryActivity.LogLocal("[MercuryActivity]->showMessageDialog:mInAppExt="+mInAppExt);
 		if(mInAppExt != null)
 		{
 			mInAppExt.showMessageDialog();
@@ -443,7 +443,7 @@ public class E2WApp  {
 	}
 	public void onActivityResult(int requestCode, int resultCode, Intent data) 
 	{
-		E2WApp.LogLocal("[E2WApp]->onActivityResult:mInAppExt="+mInAppExt);
+		MercuryActivity.LogLocal("[MercuryActivity]->onActivityResult:mInAppExt="+mInAppExt);
 		if(mInAppExt != null)
 		{
 			mInAppExt.onActivityResult(requestCode,resultCode,data);
@@ -451,7 +451,7 @@ public class E2WApp  {
 	}
 	public void onNewIntent(Intent intent) {
 		// TODO Auto-generated method stub
-		E2WApp.LogLocal("[E2WApp]->onNewIntent:mInAppExt="+mInAppExt);
+		MercuryActivity.LogLocal("[MercuryActivity]->onNewIntent:mInAppExt="+mInAppExt);
 		if(mInAppExt != null)
 		{
 			mInAppExt.onNewIntent(intent);
@@ -459,7 +459,7 @@ public class E2WApp  {
 	}
 	public static void LogLocal(final String news)
 	{		
-		Log.e(QinConst.TAG,news);
+		Log.e(MercuryConst.TAG,news);
 	}
 
 }
