@@ -39,12 +39,7 @@ android {
 }
 // task to export contents as jar
 task makeJar(type: Copy) {
-    from ('build/intermediates/bundles/debug/')
-    into ('build/outputs/jar')
-	exclude('test/', 'BuildConfig.class', 'R.class')
-    exclude{ it.name.startsWith('R$');}
-    include ('classes.jar')
-    rename('classes.jar', 'UnityPlugin.jar')
+
 }
 
 makeJar.dependsOn(clearJar, build)

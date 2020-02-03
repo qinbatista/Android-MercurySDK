@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/02_ChannelPlugin.iml" filepath="$PROJECT_DIR$/02_ChannelPlugin.iml" />
-      <module fileurl="file://$PROJECT_DIR$/east2west/east2west.iml" filepath="$PROJECT_DIR$/east2west/east2west.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mercury/mercury.iml" filepath="$PROJECT_DIR$/mercury/mercury.iml" />
     </modules>
   </component>
 </project>
