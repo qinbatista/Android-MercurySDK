@@ -1,4 +1,4 @@
-package com.AmanitaDesign.Machinarium.E2W;
+package com.qinbatista.mercury;
 
 import com.east2west.game.E2WApp;
 import com.east2west.game.QinConst;
@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 import com.AmanitaDesign.Machinarium.E2W.R;
 
-public class ActivityMain extends Activity  {
+public class MainActivity extends Activity  {
 	public static Context context;
 	public E2WApp e2w;
 	public QinConst qin; 

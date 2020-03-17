@@ -1,4 +1,4 @@
-package com.AmanitaDesign.Machinarium.E2W;
+package com.qinbatista.mercury;
 
 
 import com.east2west.game.SdkApplication;
@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 
 
-public class ChinaE2WUNILauncher extends Application { 
+public class QinApplication extends Application {
  
 	@Override
 	public void onCreate() {
