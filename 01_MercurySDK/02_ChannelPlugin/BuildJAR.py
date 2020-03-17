@@ -8,11 +8,19 @@ def main():
 	#PythonFunction.FuncFunctionList.CleanCache()
 	#PythonFunction.FuncFunctionList.RestSetting()
 	os.chdir(PythonLocation())
-	if os.path.isfile(os.path.dirname(os.path.realpath(__file__))+"/UnityPlugin.jar"):
-		os.remove("UnityPlugin.jar")
+	if os.path.isfile("./UnityPlugin.jar"):
+		os.remove("./UnityPlugin.jar")
+	if os.path.isfile("./classes.jar"):
+		os.remove("./classes.jar")
+	if os.path.isfile("./R.txt"):
+		os.remove("./R.txt")
+	if os.path.isfile("./AndroidManifest.xml"):
+		os.remove("./AndroidManifest.xml")
 	os.system("gradle clean makejar")
-	if os.path.isfile("east2west/build/outputs/jar/UnityPlugin.jar"):
-		os.rename("east2west/build/outputs/jar/UnityPlugin.jar",PythonLocation()+"/UnityPlugin.jar")
+	os.system('pwd')
+	if os.path.isfile("./mercury/build/outputs/aar/mercury-release.aar"):
+		os.system("unzip ./mercury/build/outputs/aar/mercury-release.aar")
+		os.rename("./classes.jar","./UnityPlugin.jar")
 
 
 if __name__ == '__main__':

@@ -142,10 +142,10 @@ def CheckIfHaveSignature(_CheckLocation):
 	os.chdir(r''+CallMethodPath)
 	return True
 def MoveWorkSpace():
-	if(os.path.isfile(PythonLocation()+"/../01_E2WSDKPlugin/workspace.xml")) and os.path.exists(PythonLocation()+"/../01_E2WSDKPlugin/.idea"):
-		shutil.copy(PythonLocation()+"/../01_E2WSDKPlugin/workspace.xml",PythonLocation()+"/../01_E2WSDKPlugin/.idea/workspace.xml")
-	#if(os.path.isfile(PythonLocation()+"/../01_E2WSDKPlugin/workspace.xml")):
-	#	shutil.copy(PythonLocation()+"/../01_E2WSDKPlugin/workspace.xml",PythonLocation()+"/../01_E2WSDKPlugin/workspace.xml")
+	if(os.path.isfile(PythonLocation()+"/../01_MercurySDKPlugin/workspace.xml")) and os.path.exists(PythonLocation()+"/../01_MercurySDKPlugin/.idea"):
+		shutil.copy(PythonLocation()+"/../01_MercurySDKPlugin/workspace.xml",PythonLocation()+"/../01_MercurySDKPlugin/.idea/workspace.xml")
+	#if(os.path.isfile(PythonLocation()+"/../01_MercurySDKPlugin/workspace.xml")):
+	#	shutil.copy(PythonLocation()+"/../01_MercurySDKPlugin/workspace.xml",PythonLocation()+"/../01_MercurySDKPlugin/workspace.xml")
 def CleanCache():
 	MoveWorkSpace()
 	MyList = FindAllInFolder(os.path.dirname(os.path.realpath(__file__))+"/__pycache__")
@@ -168,23 +168,23 @@ def RestSetting():
 	if os.path.isfile(PythonLocation()+"/../MultiThread"):
 		os.remove(PythonLocation()+"/../MultiThread")
 def SwitchBuildMode():
-	if os.path.isfile(PythonLocation()+"/../../01_E2WSDK/FastBuild")==False:
-		shutil.copy(PythonLocation()+"/../../02_ChannelSdk/ChannelTemplate/Template",PythonLocation()+"/../../01_E2WSDK/FastBuild")
+	if os.path.isfile(PythonLocation()+"/../../01_MercurySDK/FastBuild")==False:
+		shutil.copy(PythonLocation()+"/../../02_ChannelSdk/ChannelTemplate/Template",PythonLocation()+"/../../01_MercurySDK/FastBuild")
 		print("Fast Build Mode [Open]")
 	else:
-		os.remove(PythonLocation()+"/../../01_E2WSDK/FastBuild")
+		os.remove(PythonLocation()+"/../../01_MercurySDK/FastBuild")
 		print("Fast Build Mode [Close]")
 	time.sleep(1)
 def MultiThreadState():
-	if os.path.isfile(PythonLocation()+"/../../01_E2WSDK/MultiThread")==False:
-		shutil.copy(PythonLocation()+"/../../02_ChannelSdk/ChannelTemplate/Template",PythonLocation()+"/../../01_E2WSDK/MultiThread")
+	if os.path.isfile(PythonLocation()+"/../../01_MercurySDK/MultiThread")==False:
+		shutil.copy(PythonLocation()+"/../../02_ChannelSdk/ChannelTemplate/Template",PythonLocation()+"/../../01_MercurySDK/MultiThread")
 		print("MultiThread Mode [Open]")
 	else:
-		os.remove(PythonLocation()+"/../../01_E2WSDK/MultiThread")
+		os.remove(PythonLocation()+"/../../01_MercurySDK/MultiThread")
 		print("MultiThread Mode [Close]")
 	time.sleep(1)
 def UpdateProject():
-	ChannelList = ListFolder(PythonLocation()+"/../01_E2WSDKPlugin/east2west/src/main/java/com/east2west/game/inApp")
+	ChannelList = ListFolder(PythonLocation()+"/../01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp")
 	ChannelListName =[]
 	ConfigurationName = []
 	ConfigurationList = ListFolder(PythonLocation()+"/../../")
@@ -292,8 +292,8 @@ def CurrentPlatform():
 	else:
 		return "None"
 def CreateBuildPython(Cfoler,channelname):
-	if os.path.isfile(PythonLocation()+"/../../01_E2WSDK/BuildingConfigration") and os.path.isfile(PythonLocation()+"/../../"+Cfoler+"/BuildingConfigration")==False :
-			shutil.copy(PythonLocation()+"/../../01_E2WSDK/BuildingConfigration",PythonLocation()+"/../../"+Cfoler+"/BuildingConfigration")
+	if os.path.isfile(PythonLocation()+"/../../01_MercurySDK/BuildingConfigration") and os.path.isfile(PythonLocation()+"/../../"+Cfoler+"/BuildingConfigration")==False :
+			shutil.copy(PythonLocation()+"/../../01_MercurySDK/BuildingConfigration",PythonLocation()+"/../../"+Cfoler+"/BuildingConfigration")
 
 	if os.path.isfile(PythonLocation()+"/../31_Template.py"):
 		file_object = open(PythonLocation()+"/../31_Template.py",encoding=GetEncoding(PythonLocation()+"/../31_Template.py"))
@@ -327,9 +327,9 @@ def CreateGamePython(Cfoler,channelname):
 				i.replace(" ","")
 				if i.find("os.system")!=-1:
 					if CurrentPlatform()=="Windows":
-						PythonCode.append("	os.system(GetPythonCommand()"+"+\" \"+ PythonLocation()+\"/../01_E2WSDK/"+channelname+".py "+Cfoler+"\")\n")
+						PythonCode.append("	os.system(GetPythonCommand()"+"+\" \"+ PythonLocation()+\"/../01_MercurySDK/"+channelname+".py "+Cfoler+"\")\n")
 					if CurrentPlatform()=="Mac":
-						PythonCode.append("	os.system(GetPythonCommand()"+"+\" \"+ PythonLocation()+\"/../01_E2WSDK/"+channelname+".py "+Cfoler+"\")\r")
+						PythonCode.append("	os.system(GetPythonCommand()"+"+\" \"+ PythonLocation()+\"/../01_MercurySDK/"+channelname+".py "+Cfoler+"\")\r")
 						
 				else:
 					PythonCode.append(i)
@@ -341,8 +341,8 @@ def CreateGamePython(Cfoler,channelname):
 		for i in PythonCode:
 			json_file.writelines(i)
 def CreateGameSetting():
-	if os.path.isfile(PythonLocation()+"/../01_E2WSDKPlugin/src/com/east2west/game/QinConst.java"):
-		file_object = open(PythonLocation()+"/../01_E2WSDKPlugin/src/com/east2west/game/QinConst.java",encoding=GetEncoding(PythonLocation()+"/../01_E2WSDKPlugin/src/com/east2west/game/QinConst.java"))
+	if os.path.isfile(PythonLocation()+"/../01_MercurySDKPlugin/src/com/east2west/game/QinConst.java"):
+		file_object = open(PythonLocation()+"/../01_MercurySDKPlugin/src/com/east2west/game/QinConst.java",encoding=GetEncoding(PythonLocation()+"/../01_MercurySDKPlugin/src/com/east2west/game/QinConst.java"))
 		isEnter=False
 
 		SettingDic = {}
@@ -468,16 +468,16 @@ def PythonLocation():
 @CallMethodLocation("")
 @UsePlatform("Windows")
 def BuildE2WTestAPK():
-	if(os.path.exists(PythonLocation()+"/../DemoProject/01_E2WSDKDemoCopy")):
-		DeleteFolder(PythonLocation()+"/../DemoProject/01_E2WSDKDemoCopy")
-	if(os.path.exists(PythonLocation()+"/../DemoProject/01_E2WSDKDemo")):
-		CopyFiles(PythonLocation()+"/../DemoProject/01_E2WSDKDemo",PythonLocation()+"/../DemoProject/01_E2WSDKDemoCopy")
-	os.chdir(r''+PythonLocation()+"/../DemoProject/01_E2WSDKDemoCopy")
+	if(os.path.exists(PythonLocation()+"/../DemoProject/01_MercurySDKDemoCopy")):
+		DeleteFolder(PythonLocation()+"/../DemoProject/01_MercurySDKDemoCopy")
+	if(os.path.exists(PythonLocation()+"/../DemoProject/01_MercurySDKDemo")):
+		CopyFiles(PythonLocation()+"/../DemoProject/01_MercurySDKDemo",PythonLocation()+"/../DemoProject/01_MercurySDKDemoCopy")
+	os.chdir(r''+PythonLocation()+"/../DemoProject/01_MercurySDKDemoCopy")
 	os.system("android update project --name game -p ./")
 	os.system("ant clean")
 	os.system("ant release")
 	os.chdir(r''+CallMethodPath)
-	SDKpath = PythonLocation()+"/../DemoProject/01_E2WSDKDemoCopy"
+	SDKpath = PythonLocation()+"/../DemoProject/01_MercurySDKDemoCopy"
 	global isTestBuild 
 	isTestBuild = True
 	return SDKpath
@@ -829,7 +829,7 @@ def CleanEmptyFolder(path):
 			print('Remove Empty Folder:' + path)
 def BuildE2WJar(_ChannelName,_AD):
 	SDKFolder = CopyEmptyDemo("")
-	CopyFiles(PythonLocation()+"/../01_E2WSDKPlugin" ,PythonLocation()+"/__pycache__/"+SDKFolder)
+	CopyFiles(PythonLocation()+"/../01_MercurySDKPlugin" ,PythonLocation()+"/__pycache__/"+SDKFolder)
 	os.chdir(r''+PythonLocation()+"/__pycache__/"+SDKFolder+"/")
 	CreatePackageNameForWX(_ChannelName,True,SDKFolder)
 	CommentCode(PythonLocation()+"/__pycache__/"+SDKFolder+"/east2west/src/main/java/com/east2west/game/inApp",_ChannelName.lower(), True)
@@ -852,7 +852,7 @@ def BuildE2WJar(_ChannelName,_AD):
 	os.chdir(r''+CallMethodPath)
 	return SDKFolder
 def CopyNecessaryLibs():
-	CopyFiles(PythonLocation()+"/../01_E2WSDKPlugin/east2west/Necessarylibs",PythonLocation()+"/../01_E2WSDKPlugin/east2west/libs" )
+	CopyFiles(PythonLocation()+"/../01_MercurySDKPlugin/east2west/Necessarylibs",PythonLocation()+"/../01_MercurySDKPlugin/east2west/libs" )
 
 def CommentCode(_Path,_ChannelName,_isComment):
 	ListJavaFiles = ListFolder(_Path)
@@ -1123,7 +1123,7 @@ def CopyE2WSDKToFolder(SDKFolder,JarFolder):
 	if os.path.isfile(PythonLocation()+"/__pycache__/"+JarFolder+"/UnityPlugin.jar"):
 		shutil.copy(PythonLocation()+"/__pycache__/"+JarFolder+"/UnityPlugin.jar",PythonLocation()+"/__pycache__/"+SDKFolder+"/app/src/main/libs/UnityPlugin.jar")
 		os.chdir(r''+PythonLocation()+"/__pycache__/"+SDKFolder)
-		AddRemoteJarToGradle(PythonLocation()+"/../01_E2WSDKPlugin/east2west/demo.gradle",PythonLocation()+"/__pycache__/"+SDKFolder+"/app/build.gradle")
+		AddRemoteJarToGradle(PythonLocation()+"/../01_MercurySDKPlugin/east2west/demo.gradle",PythonLocation()+"/__pycache__/"+SDKFolder+"/app/build.gradle")
 		os.system(GetPythonCommand()+" BuildAPK.py")
 		os.chdir(r''+CallMethodPath)
 	else:
@@ -1549,16 +1549,16 @@ def DecompileE2WPlugin(De_APKName,_ChannelName,_AD):
 	SDKFolder = ""
 	SDKFolder = CopyEmptyDemo(SDKFolder)
 	JarFolder = ""
-	if os.path.isfile(r''+PythonLocation()+"/../01_E2WSDKPlugin/UnityPlugin.jar")==True:
+	if os.path.isfile(r''+PythonLocation()+"/../01_MercurySDKPlugin/UnityPlugin.jar")==True:
 		JarFolder = BuildE2WJar(_ChannelName,_AD)
 	else:
-		while(os.path.isfile(r''+PythonLocation()+"/../01_E2WSDKPlugin/UnityPlugin.jar")==False and JarChecker()):
+		while(os.path.isfile(r''+PythonLocation()+"/../01_MercurySDKPlugin/UnityPlugin.jar")==False and JarChecker()):
 			time.sleep(5)
 			if MultiThread==False:
 				JarFolder = BuildE2WJar(_ChannelName,_AD)
 				if os.path.isfile(PythonLocation()+"/__pycache__/"+JarFolder+"/UnityPlugin.jar"):
-					if os.path.isfile(r''+PythonLocation()+"/../01_E2WSDKPlugin/UnityPlugin.jar")==False:
-						shutil.copy(PythonLocation()+"/__pycache__/"+JarFolder+"/UnityPlugin.jar",PythonLocation()+"/../01_E2WSDKPlugin/UnityPlugin.jar")
+					if os.path.isfile(r''+PythonLocation()+"/../01_MercurySDKPlugin/UnityPlugin.jar")==False:
+						shutil.copy(PythonLocation()+"/__pycache__/"+JarFolder+"/UnityPlugin.jar",PythonLocation()+"/../01_MercurySDKPlugin/UnityPlugin.jar")
 					break
 			else:
 				print("Waiting Building new Jar")
@@ -1571,7 +1571,7 @@ def DecompileE2WPlugin(De_APKName,_ChannelName,_AD):
 	ChoiceSDKSmaliToCopy(De_APKName,SDKFolder,_ChannelName,_AD)
 	return SDKFolder
 def JarChecker():
-	Mylist =  ListFolder(PythonLocation()+"/../01_E2WSDKPlugin/east2west")
+	Mylist =  ListFolder(PythonLocation()+"/../01_MercurySDKPlugin/east2west")
 	for i in Mylist:
 		if i.find(".jar"):
 			return True
@@ -1584,8 +1584,8 @@ def CombineChannelXML(De_APKName,_ChannelName):
 		if os.path.isfile(PythonLocation()+"/../../"+GameConfiguration+"/AndroidManifest.xml"):
 			file_object = open(PythonLocation()+"/../../"+GameConfiguration+"/AndroidManifest.xml",encoding="utf8")
 	else:
-		if os.path.isfile(PythonLocation()+"/../DemoProject/01_E2WSDKDemoCopy/AndroidManifest.xml"):
-			file_object = open(PythonLocation()+"/../DemoProject/01_E2WSDKDemoCopy/AndroidManifest.xml",encoding="utf8")
+		if os.path.isfile(PythonLocation()+"/../DemoProject/01_MercurySDKDemoCopy/AndroidManifest.xml"):
+			file_object = open(PythonLocation()+"/../DemoProject/01_MercurySDKDemoCopy/AndroidManifest.xml",encoding="utf8")
 	JavaCode=[]
 	try:
 		all_the_text = file_object.readlines()
@@ -2203,7 +2203,7 @@ def CheckResource(_ChannelName,_AD):
 	#	print("Don't have sdk smali folder:"+_ChannelName)
 	#	#input()
 	#	return False
-	MyJava = ListFolder(PythonLocation()+"/../../01_E2WSDK/01_E2WSDKPlugin/east2west/src/main/java/com/east2west/game/inApp")
+	MyJava = ListFolder(PythonLocation()+"/../../01_MercurySDK/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp")
 	isFindJava = False
 	for i in MyJava:
 		if "InApp"+_ChannelName.upper()+".java" in i:
@@ -2212,7 +2212,7 @@ def CheckResource(_ChannelName,_AD):
 		print("Don't have sdk code:"+"InApp"+_ChannelName+".java")
 		#input()
 		return False
-	MyJava = ListFolder(PythonLocation()+"/../../01_E2WSDK/01_E2WSDKPlugin/east2west/src/main/java/com/east2west/game/Show")
+	MyJava = ListFolder(PythonLocation()+"/../../01_MercurySDK/01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/Show")
 	isFindJava = False
 	if _AD !="":
 		for i in MyJava:
@@ -2262,8 +2262,8 @@ def CleanProject(folderName1,folderName2,folderName3,De_APKName,APKname,Build_AP
 		DeleteFolder(get_desktop()+"/BuildConfig/DecompileFolder")
 	if os.path.exists(PythonLocation()+"/__pycache__/"+foldername_De_APKName) and isFastBuild==False and MultiThread==False:
 		CopyFiles(PythonLocation()+"/../../02_ChannelSdk/ChannelSDK/"+_ChannelName.lower(),get_desktop()+"/BuildConfig/CompilesSDK")
-		shutil.copy(PythonLocation()+"/../01_E2WSDKPlugin/UnityPlugin.jar",get_desktop()+"/BuildConfig/CompilesSDK/libs/UnityPlugin.jar")
-		shutil.copy(PythonLocation()+"/../01_E2WSDKPlugin/UnityPlugin.jar",get_desktop()+"/BuildConfig/CompilesSDK/libs/UnityPlugin.jar")
+		shutil.copy(PythonLocation()+"/../01_MercurySDKPlugin/UnityPlugin.jar",get_desktop()+"/BuildConfig/CompilesSDK/libs/UnityPlugin.jar")
+		shutil.copy(PythonLocation()+"/../01_MercurySDKPlugin/UnityPlugin.jar",get_desktop()+"/BuildConfig/CompilesSDK/libs/UnityPlugin.jar")
 		shutil.copy(get_desktop()+"/BuildConfig/DecompileSDK/AndroidManifest.xml",get_desktop()+"/BuildConfig/CompilesSDK/AndroidManifest.xml")
 		if os.path.exists(PythonLocation()+"/../../02_ChannelSdk/ADSDK/"+_AD.lower()) and _AD !="":
 			CopyFiles(PythonLocation()+"/../../02_ChannelSdk/ADSDK/"+_AD.lower(), get_desktop()+"/BuildConfig/CompilesSDK")
@@ -2295,14 +2295,14 @@ def BuildChannelAPK(_APKLocation,_ChannelName,_AD,_Packagename,_VersionName,_Ver
 	GameConfiguration = _Configuration
 	NewName = GetPackageNameJson(_ChannelName)
 	#isFastBuild = True
-	if os.path.isfile(PythonLocation()+"/../../01_E2WSDK/FastBuild")==False:
+	if os.path.isfile(PythonLocation()+"/../../01_MercurySDK/FastBuild")==False:
 		isFastBuild=False
 	else:
 		isFastBuild=True
-	if os.path.isfile(PythonLocation()+"/../../01_E2WSDK/MultiThread")==False:
+	if os.path.isfile(PythonLocation()+"/../../01_MercurySDK/MultiThread")==False:
 		MultiThread=False
 		CleanCache()
-		shutil.copy(PythonLocation()+"/../../02_ChannelSdk/ChannelTemplate/Template",PythonLocation()+"/../../01_E2WSDK/MultiThread")
+		shutil.copy(PythonLocation()+"/../../02_ChannelSdk/ChannelTemplate/Template",PythonLocation()+"/../../01_MercurySDK/MultiThread")
 	else:
 		MultiThread=True
 	if NewName == "":
@@ -2437,7 +2437,7 @@ def UpdateGameConfiguration():
 		with open(PythonLocation()+"/../../"+Cfoler+"/GameConfiguration", 'w',encoding=GetEncoding(PythonLocation()+"/../../"+Cfoler+"/GameConfiguration")) as json_file:
 			json_file.write(json.dumps(JsonChannelList,ensure_ascii=False,sort_keys=True, indent=4, separators=(',', ':')))
 def ADJson():
-	ChannelList = ListFolder(PythonLocation()+"/../01_E2WSDKPlugin/east2west/src/main/java/com/east2west/game/inApp")
+	ChannelList = ListFolder(PythonLocation()+"/../01_MercurySDKPlugin/east2west/src/main/java/com/east2west/game/inApp")
 	ChannelListName =[]
 	ConfigurationName = []
 	ConfigurationList = ListFolder(PythonLocation()+"/../../")
