@@ -1,4 +1,4 @@
-package com.east2west.game.util;
+package com.mercury.game.util;
 
 public final class Function {
 
