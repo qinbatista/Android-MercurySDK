@@ -70,7 +70,7 @@ public class MercuryActivity  {
 	}
 	public void ChannelSplash()
 	{
-		MercuryActivity.LogLocal("[inapp] ChannelSplash.png");
+		MercuryActivity.LogLocal("[MercuryActivity][ChannelSplash] ChannelSplash.png->"+mContext);
 		try {
 			final RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(
 					RelativeLayout.LayoutParams.MATCH_PARENT,
